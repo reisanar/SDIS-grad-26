@@ -1,105 +1,125 @@
 {
-  "n_participants": 7,
+  "n_participants": 73,
   "programs": [
     [
+      "MS in LS",
+      30
+    ],
+    [
+      "CHIP MS",
+      12
+    ],
+    [
       "Faculty",
-      2
+      8
     ],
     [
       "MS in DS",
-      1
+      7
     ],
     [
-      "CHIP PhD",
-      1
-    ],
-    [
-      "Staff",
-      1
-    ],
-    [
-      "MS in LS",
-      1
+      "MS in IS",
+      5
     ],
     [
       "PhD in DS",
+      4
+    ],
+    [
+      "PhD in ILS",
+      4
+    ],
+    [
+      "Staff",
+      2
+    ],
+    [
+      "CHIP PhD",
       1
     ]
   ],
   "top_locations": [
     [
       "NC",
-      2
+      23
+    ],
+    [
+      "China",
+      5
     ],
     [
       "FL",
-      1
-    ],
-    [
-      "Colombia",
-      1
-    ],
-    [
-      "NY",
-      1
-    ],
-    [
-      "TX",
-      1
+      4
     ],
     [
       "VA",
-      1
+      4
+    ],
+    [
+      "TX",
+      3
+    ],
+    [
+      "NJ",
+      3
+    ],
+    [
+      "USA",
+      3
+    ],
+    [
+      "Colombia",
+      2
     ]
   ],
-  "n_locations": 6,
+  "n_locations": 29,
   "top_backgrounds": [
     [
-      "Music & Arts",
-      1
-    ],
-    [
-      "Mathematics",
-      1
-    ],
-    [
-      "Physics",
-      1
-    ],
-    [
-      "Economics",
-      1
+      "English & Literature",
+      12
     ],
     [
       "Computer Science",
-      1
+      8
     ],
     [
-      "English & Literature",
-      1
+      "Biology & Life Sciences",
+      7
+    ],
+    [
+      "History",
+      7
+    ],
+    [
+      "Mathematics",
+      4
+    ],
+    [
+      "Data Science",
+      4
     ]
   ],
   "top_genres": [
     [
-      "Indie Rock",
-      3
+      "Pop",
+      48
     ],
     [
-      "Hip-Hop",
-      2
+      "Indie Rock",
+      35
+    ],
+    [
+      "Rock",
+      29
+    ],
+    [
+      "Folk",
+      25
     ],
     [
       "R&B",
-      2
-    ],
-    [
-      "Pop",
-      2
-    ],
-    [
-      "Classical",
-      1
+      18
     ]
   ],
-  "n_unique_songs": 7
+  "n_unique_songs": 72
 }
