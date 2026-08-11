@@ -1,13 +1,13 @@
 *The map is built from free-text answers to 'how this song makes you feel'.*
 
-**PC1** (22.6% of the variance) separates `empowered`, `empowered empowered`, `chorus`, `gives`, `singing`, `singing chorus` on one side from `excited proud`, `excited`, `proud`, `proud excited`, `days`, `dancing` on the other.
+**PC1** (19.5% of the variance) separates `empowered`, `empowered empowered`, `singing`, `singing chorus`, `power singing`, `power` on one side from `hopeful`, `thoughtful`, `relaxed thoughtful`, `relaxed`, `thoughtful hopeful`, `happy` on the other.
 
-**PC2** (20.2% of the variance) separates `excited proud`, `excited`, `proud`, `proud excited`, `empowered empowered`, `empowered` on one side from `ignoring problems`, `problems`, `ignoring`, `dancing ignoring`, `dancing`, `problems dancing` on the other.
+**PC2** (18.0% of the variance) separates `hopeful`, `empowered`, `thoughtful hopeful`, `thoughtful`, `relaxed thoughtful`, `relaxed` on one side from `excited proud`, `excited`, `proud`, `proud excited`, `dancing ignoring`, `ignoring problems` on the other.
 
-**PC3** (20.2% of the variance) separates `happy seen`, `hopeful happy`, `seen`, `happy`, `hopeful`, `seen hopeful` on one side from `ignoring problems`, `problems`, `ignoring`, `dancing ignoring`, `dancing`, `problems dancing` on the other.
+**PC3** (16.9% of the variance) separates `missing`, `missing old`, `old`, `days`, `old days`, `days missing` on one side from `excited proud`, `excited`, `proud`, `proud excited`, `dancing ignoring`, `ignoring problems` on the other.
 
 
 ### Neighborhoods
 
-- **empowered, empowered empowered, seen** — 3 people
-- **excited proud, excited, proud** — 3 people
+- **empowered, empowered empowered, singing** — 2 people
+- **hopeful, excited, proud** — 5 people

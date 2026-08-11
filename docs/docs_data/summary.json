@@ -1,5 +1,5 @@
 {
-  "n_participants": 6,
+  "n_participants": 7,
   "programs": [
     [
       "Faculty",
@@ -20,19 +20,23 @@
     [
       "MS in LS",
       1
+    ],
+    [
+      "PhD in DS",
+      1
     ]
   ],
   "top_locations": [
+    [
+      "NC",
+      2
+    ],
     [
       "FL",
       1
     ],
     [
       "Colombia",
-      1
-    ],
-    [
-      "NC",
       1
     ],
     [
@@ -97,5 +101,5 @@
       1
     ]
   ],
-  "n_unique_songs": 6
+  "n_unique_songs": 7
 }
