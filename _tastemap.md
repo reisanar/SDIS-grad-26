@@ -1,17 +1,17 @@
 *The map is built from free-text answers to 'how this song makes you feel'.*
 
-**PC1** (8.6% of the variance) separates `happy`, `energetic`, `happy happy`, `energetic energetic`, `relaxed`, `light` on one side from `energized`, `nostalgic`, `empowered`, `pumped`, `good`, `nostalgic nostalgic` on the other.
+**PC1** (8.2% of the variance) separates `energetic`, `happy`, `happy happy`, `energetic energetic`, `ready`, `hopeful` on one side from `energized`, `nostalgic`, `empowered`, `nostalgic nostalgic`, `pumped`, `excited` on the other.
 
-**PC2** (7.9% of the variance) separates `energetic`, `energized`, `energetic energetic`, `pumped`, `good`, `want` on one side from `nostalgic`, `happy`, `happy happy`, `nostalgic nostalgic`, `empowered`, `moved` on the other.
+**PC2** (7.7% of the variance) separates `happy`, `happy happy`, `relaxed`, `hopeful`, `nostalgic`, `light` on one side from `energetic`, `energized`, `energetic energetic`, `ready`, `pumped`, `good` on the other.
 
-**PC3** (7.5% of the variance) separates `energetic`, `nostalgic`, `empowered`, `nostalgic nostalgic`, `energetic energetic`, `excited` on one side from `energized`, `happy`, `happy happy`, `relaxed`, `pumped`, `light` on the other.
+**PC3** (7.0% of the variance) separates `nostalgic`, `empowered`, `nostalgic nostalgic`, `energetic`, `excited`, `moved` on one side from `energized`, `pumped`, `relaxed`, `happy`, `happy happy`, `hopeful` on the other.
 
 
 ### Neighborhoods
 
-- **empowered, seen, pumped** — 30 people
-- **energetic, energetic energetic, happy** — 5 people
+- **energetic, energetic energetic, ready** — 5 people
+- **energetic, happy, dance want** — 1 people
 - **energized, pumped, dance want** — 4 people
-- **good, calm, warm** — 22 people
-- **happy, happy happy, light** — 6 people
+- **good, home, days** — 56 people
+- **happy, happy happy, hopeful** — 7 people
 - **nostalgic, nostalgic nostalgic, excited** — 6 people

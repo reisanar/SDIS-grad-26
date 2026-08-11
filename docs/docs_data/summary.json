@@ -1,21 +1,21 @@
 {
-  "n_participants": 73,
+  "n_participants": 79,
   "programs": [
     [
       "MS in LS",
-      30
+      31
     ],
     [
       "CHIP MS",
-      12
+      14
+    ],
+    [
+      "MS in DS",
+      10
     ],
     [
       "Faculty",
       8
-    ],
-    [
-      "MS in DS",
-      7
     ],
     [
       "MS in IS",
@@ -44,6 +44,10 @@
       23
     ],
     [
+      "VA",
+      5
+    ],
+    [
       "China",
       5
     ],
@@ -52,15 +56,11 @@
       4
     ],
     [
-      "VA",
+      "NJ",
       4
     ],
     [
       "TX",
-      3
-    ],
-    [
-      "NJ",
       3
     ],
     [
@@ -72,45 +72,45 @@
       2
     ]
   ],
-  "n_locations": 29,
+  "n_locations": 33,
   "top_backgrounds": [
     [
       "English & Literature",
       12
     ],
     [
-      "Computer Science",
-      8
+      "Biology & Life Sciences",
+      11
     ],
     [
-      "Biology & Life Sciences",
-      7
+      "Computer Science",
+      8
     ],
     [
       "History",
       7
     ],
     [
-      "Mathematics",
-      4
+      "Other",
+      5
     ],
     [
-      "Data Science",
+      "Mathematics",
       4
     ]
   ],
   "top_genres": [
     [
       "Pop",
-      48
+      53
     ],
     [
       "Indie Rock",
-      35
+      36
     ],
     [
       "Rock",
-      29
+      30
     ],
     [
       "Folk",
@@ -118,8 +118,8 @@
     ],
     [
       "R&B",
-      18
+      20
     ]
   ],
-  "n_unique_songs": 72
+  "n_unique_songs": 78
 }

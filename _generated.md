@@ -1,8 +1,8 @@
 ::: {.callout-note}
-**73 people** have filled out the cohort survey. Last refreshed August 11, 2026 at 01:40 PM.
+**79 people** have filled out the cohort survey. Last refreshed August 11, 2026 at 04:49 PM.
 :::
 
-Families are spread across 29 states and countries, most often **NC** (23), **China** (5), **FL** (4). The most common undergraduate backgrounds are **English & Literature**, **Computer Science**, **Biology & Life Sciences**. Most-listened genres: **Pop** (48), **Indie Rock** (35), **Rock** (29). 72 distinct songs were nominated for the playlist.
+Families are spread across 33 states and countries, most often **NC** (23), **VA** (5), **China** (5). The most common undergraduate backgrounds are **English & Literature**, **Biology & Life Sciences**, **Computer Science**. Most-listened genres: **Pop** (53), **Indie Rock** (36), **Rock** (30). 78 distinct songs were nominated for the playlist.
 
 ![Where the cohort grew up](docs_assets/family_location_cloud.png){fig-alt="Where the cohort grew up"}
 

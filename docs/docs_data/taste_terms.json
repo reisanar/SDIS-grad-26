@@ -1,83 +1,83 @@
 {
   "PC1": {
-    "explained_variance": 0.08611020363524922,
+    "explained_variance": 0.08187757595995929,
     "positive": [
-      "happy",
       "energetic",
+      "happy",
       "happy happy",
       "energetic energetic",
-      "relaxed",
-      "light",
+      "ready",
       "hopeful",
-      "seen",
-      "moved",
-      "relaxed relaxed"
+      "light",
+      "relaxed",
+      "silly",
+      "seen"
     ],
     "negative": [
       "energized",
       "nostalgic",
       "empowered",
-      "pumped",
-      "good",
       "nostalgic nostalgic",
+      "pumped",
       "excited",
-      "want",
+      "good",
       "home",
-      "driving"
+      "want",
+      "days"
     ]
   },
   "PC2": {
-    "explained_variance": 0.07915891022090032,
+    "explained_variance": 0.0769551381066752,
     "positive": [
+      "happy",
+      "happy happy",
+      "relaxed",
+      "hopeful",
+      "nostalgic",
+      "light",
+      "seen",
+      "moved",
+      "silly",
+      "relaxed relaxed"
+    ],
+    "negative": [
       "energetic",
       "energized",
       "energetic energetic",
+      "ready",
       "pumped",
       "good",
       "want",
-      "driving",
-      "warm",
+      "calm",
       "days",
-      "calm"
-    ],
-    "negative": [
-      "nostalgic",
-      "happy",
-      "happy happy",
-      "nostalgic nostalgic",
-      "empowered",
-      "moved",
-      "excited",
-      "relaxed",
-      "light",
-      "hopeful"
+      "driving"
     ]
   },
   "PC3": {
-    "explained_variance": 0.07537406509090572,
+    "explained_variance": 0.06968790545417786,
     "positive": [
-      "energetic",
       "nostalgic",
       "empowered",
       "nostalgic nostalgic",
-      "energetic energetic",
+      "energetic",
       "excited",
       "moved",
+      "energetic energetic",
+      "ready",
       "home",
-      "home home",
-      "dance want"
+      "home home"
     ],
     "negative": [
       "energized",
+      "pumped",
+      "relaxed",
       "happy",
       "happy happy",
-      "relaxed",
-      "pumped",
-      "light",
       "hopeful",
       "relaxed relaxed",
-      "seen",
-      "thoughtful"
+      "good",
+      "light",
+      "silly"
     ]
   },
   "_source": "free-text answers to 'how this song makes you feel'"
