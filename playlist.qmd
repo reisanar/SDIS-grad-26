@@ -1,0 +1,27 @@
+---
+title: "The cohort playlist"
+---
+
+One song per person, sequenced by the taste map: the order walks through
+"neighborhoods" and moves along PC1 within each one, so it drifts rather than
+lurches.
+
+{{< include _playlist.md >}}
+
+<!-- ## How the matching works -->
+
+<!-- Every pick is resolved against the **public iTunes Search catalog**, which needs -->
+<!-- no API key, no account, and no registration. A strict "title + artist" query -->
+<!-- runs first; if that misses, a looser title-only query runs and the result whose -->
+<!-- artist best resembles what was typed wins. That single free lookup gives us the -->
+<!-- canonical title and artist, the album and year, cover art, a 30-second preview -->
+<!-- clip, and a direct Apple Music link — which is why this page can play music for -->
+<!-- you without asking anyone to log in. -->
+
+<!-- Spotify links in the table are deep links into Spotify's own search, so they -->
+<!-- open the right song for any visitor, subscriber or not. -->
+
+<!-- Anything the catalog couldn't find lands in -->
+<!-- [`playlist_unmatched.csv`](docs_data/playlist_unmatched.csv) — usually a typo or -->
+<!-- an unusually-named cover. Fixing it is a one-line edit in the response sheet -->
+<!-- followed by a rebuild. -->

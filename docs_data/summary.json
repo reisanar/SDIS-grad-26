@@ -1,0 +1,101 @@
+{
+  "n_participants": 6,
+  "programs": [
+    [
+      "Faculty",
+      2
+    ],
+    [
+      "MS in DS",
+      1
+    ],
+    [
+      "CHIP PhD",
+      1
+    ],
+    [
+      "Staff",
+      1
+    ],
+    [
+      "MS in LS",
+      1
+    ]
+  ],
+  "top_locations": [
+    [
+      "FL",
+      1
+    ],
+    [
+      "Colombia",
+      1
+    ],
+    [
+      "NC",
+      1
+    ],
+    [
+      "NY",
+      1
+    ],
+    [
+      "TX",
+      1
+    ],
+    [
+      "VA",
+      1
+    ]
+  ],
+  "n_locations": 6,
+  "top_backgrounds": [
+    [
+      "Music & Arts",
+      1
+    ],
+    [
+      "Mathematics",
+      1
+    ],
+    [
+      "Physics",
+      1
+    ],
+    [
+      "Economics",
+      1
+    ],
+    [
+      "Computer Science",
+      1
+    ],
+    [
+      "English & Literature",
+      1
+    ]
+  ],
+  "top_genres": [
+    [
+      "Indie Rock",
+      3
+    ],
+    [
+      "Hip-Hop",
+      2
+    ],
+    [
+      "R&B",
+      2
+    ],
+    [
+      "Pop",
+      2
+    ],
+    [
+      "Classical",
+      1
+    ]
+  ],
+  "n_unique_songs": 6
+}

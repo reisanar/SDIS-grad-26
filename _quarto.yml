@@ -1,0 +1,45 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - docs_assets/**
+    - docs_data/**
+
+website:
+  title: "SDIS Grad Student Playlist (2026)"
+  description: "Who we are, what we listen to, and the playlist we made together."
+  site-url: "https://reisanar.github.io/SDIS-grad-26/"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: taste-map.qmd
+        text: Taste map
+      - href: playlist.qmd
+        text: Playlist
+      - href: data.qmd
+        text: Data
+
+    right:
+      - icon: github
+        href: https://github.com/reisanar/SDIS-grad-26
+        aria-label: GitHub repository
+  page-footer:
+    left: "Built with Quarto | data collected via Google Forms"
+    right: "School of Data and Information Sciences (2026)"
+
+format:
+  html:
+    theme: [cosmo, styles.scss]
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    code-tools: true
+    fig-align: center
+    smooth-scroll: true
+    link-external-newwindow: true
+
+execute:
+  freeze: auto
+  warning: false
+  message: false

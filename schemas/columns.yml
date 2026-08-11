@@ -1,0 +1,97 @@
+# Maps Google Form question titles -> internal keys.
+#
+# TWO matching strategies, tried in order:
+#
+#   1. `exact:`    normalized exact match (case/punctuation/whitespace-insensitive)
+#   2. `patterns:` regex matched against the normalized title — this is what makes
+#                  the pipeline survive you rewording a question. Keep these loose.
+#
+# Run `python scripts/inspect_sheet.py` to see how YOUR actual sheet headers map.
+
+email:
+  exact: ["Email", "Email address", "Email Address", "Username"]
+  patterns: ['^e-?mail']
+
+consent:
+  exact: ["May we include your (anonymized) answers in the cohort snapshot?"]
+  patterns: ['consent', 'may we (include|use|share)', 'ok to (include|share)', 'anonymi[sz]ed']
+
+display_name:
+  exact: ["Display name for the credits page (optional)"]
+  patterns: ['display name', 'name for the credits', 'preferred name']
+
+program:
+  exact: ["What is your program (or role) at SDIS?", "Which program/track are you in?"]
+  patterns: ['which (program|track|role)', 'program or role', '(program|role).*(describe|best fits)',
+             'describes you', 'your (program|track|role)', 'concentration',
+             'program \(or role\)', 'program.*at (sdis|mads|unc)', 'role at']
+
+background:
+  exact: ["What is your undergraduate background?"]
+  patterns: ['undergrad', 'major', 'academic background', 'field of study', 'degree.*background']
+
+experience:
+  exact: ["Years of work experience"]
+  patterns: ['years of (work|professional)', 'work experience', 'how (long|many years).*(work|industry)']
+
+family_location:
+  exact: ["Which state or country does your family live in? (Use 2 letters for the state, e.g., NC, TX, FL)"]
+  patterns: ['(state|country).*(family|from)', 'family.*(live|from|located)',
+             'where.*family', 'home state']
+
+# NOTE: if the form has no family question, step 02 falls back to `hometown`
+# for the location word cloud. "Raleigh, NC" and "Bogota, Colombia" both parse.
+
+hometown:
+  exact: ["Where did you grow up? (city, state/country)"]
+  patterns: ['where did you grow up', 'hometown', 'grew up']
+
+python_comfort:
+  exact: ["Which best describes your current comfort with Python?"]
+  patterns: ['comfort.*python', 'python.*(comfort|experience|level)']
+
+stats_comfort:
+  exact: ["Which best describes your current comfort with statistics?"]
+  patterns: ['comfort.*statistic', 'statistic.*(comfort|experience|level)']
+
+goals:
+  exact: ["What do you most want to get out of the immersion?"]
+  patterns: ['want to get out of', 'hope to (get|gain|learn)', 'goals? for']
+
+artists:
+  exact: ["Name up to 3 artists you love"]
+  patterns: ['artists? you (love|like|listen)', 'favorite artists?', 'name up to \d+ artists?']
+
+song_title:
+  exact: ["What is the title of one song that has been on your mind recently?",
+          "One song that has to be on the cohort playlist"]
+  patterns: ['title of one song', 'song.*(playlist|title)', 'what song',
+             'name of the song', 'one song', 'song.*on your mind']
+
+song_artist:
+  exact: ["Who performs it?"]
+  patterns: ['who (performs|sings|plays)', 'artist of (the|that) song', 'performed by',
+             'song.*artist', 'artist.*name']
+
+genres:
+  exact: ["Which genres to you listen to the most?", "Which genres do you listen to most?"]
+  patterns: ['genres?']
+
+taste_text:
+  exact: ["Describe your music taste in a sentence",
+          "In a sentence, describe how this song makes you feel"]
+  patterns: ['describe your (music )?taste', 'music taste', 'taste in music',
+             'how (this|the) song makes you feel', 'makes you feel',
+             'in a sentence.*(song|feel)', 'why (this|that) song']
+
+work_music:
+  exact: ["What are you listening to while you work?"]
+  patterns: ['listening to while', 'while you (work|study)', 'background music']
+
+mood:
+  exact: ["Pick a mood word for your song"]
+  patterns: ['mood']
+
+timestamp:
+  exact: ["Timestamp"]
+  patterns: ['^timestamp$']

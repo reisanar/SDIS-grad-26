@@ -1,0 +1,21 @@
+# core pipeline
+pandas>=2.1
+numpy>=1.26
+scikit-learn>=1.4
+matplotlib>=3.8
+pyyaml>=6.0
+requests>=2.31
+python-dotenv>=1.0
+
+# interactive taste map (optional but recommended)
+plotly>=5.20
+
+# Google Sheets ingestion via service account (optional — not needed for published CSV)
+gspread>=6.0
+google-auth>=2.29
+
+# Apple Music developer token (optional)
+pyjwt[crypto]>=2.8
+
+# Quarto python cells
+jupyter>=1.0

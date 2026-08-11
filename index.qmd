@@ -1,0 +1,32 @@
+---
+title: "SDIS Grad Student Orientation: 2026 Snapshot"
+subtitle: "Welcome! Let's build something together to start the year"
+---
+
+Welcome. This site is a living picture of the SDIS graduate student cohort: who's here, what we
+listen to, and a playlist built from one song per person.
+
+<!-- Nothing here is typed by hand. A Google Form collects responses, a scheduled -->
+<!-- job pulls them in, the analysis re-runs, the taste map is recomputed, the -->
+<!-- playlist is rebuilt, and the site redeploys. If you submit a response tonight, -->
+<!-- you're on this page tomorrow morning — and you can play the whole playlist -->
+<!-- right in the browser without logging in to anything. -->
+
+::: {.callout-tip}
+## Haven't filled it out yet?
+[Take the survey](https://docs.google.com/forms/d/e/1FAIpQLSffnSoDFPcI8As6cheWlBfTLeVxLnasJ-hv0qt-5BleGPT4eQ/viewform){.btn .btn-primary} — it takes about 2
+minutes, and every response changes the map and adds a song.
+:::
+
+## The cohort, by the numbers
+
+{{< include _generated.md >}}
+
+## What's next
+
+- [Taste map](taste-map.qmd) — where everyone lands in music space, and why.
+  Color shows taste neighborhood; marker shape shows program or role.
+- [Playlist](playlist.qmd) — the cohort playlist on common services.
+- [Data](data.qmd) — the anonymized dataset, free to download and remix.
+<!-- - [How it works](workshop.qmd) — the tf-idf and PCA walkthrough from the session. -->
+

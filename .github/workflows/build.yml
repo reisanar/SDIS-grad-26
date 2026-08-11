@@ -1,0 +1,78 @@
+name: Refresh snapshot and publish
+
+on:
+  schedule:
+    - cron: "0 11 * * *"      # 07:00 America/New_York during EDT
+  workflow_dispatch:           # "Run workflow" button — use this during the event
+  push:
+    branches: [main]
+    paths-ignore:
+      - "docs/**"
+      - "docs_assets/**"
+      - "docs_data/**"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: snapshot
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "1.5.57"
+
+      - name: Write Apple private key (optional)
+        env:
+          P8: ${{ secrets.APPLE_PRIVATE_KEY_P8 }}
+        run: |
+          mkdir -p secrets
+          if [ -n "$P8" ]; then printf '%s' "$P8" > secrets/apple.p8; fi
+
+      - name: Run pipeline
+        env:
+          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+          GOOGLE_SHEET_GID: ${{ secrets.GOOGLE_SHEET_GID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_WORKSHEET: ${{ vars.GOOGLE_WORKSHEET }}
+          FORM_CSV_URL: ${{ secrets.FORM_CSV_URL }}
+          ANON_SALT: ${{ secrets.ANON_SALT }}
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+          APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+          APPLE_KEY_ID: ${{ secrets.APPLE_KEY_ID }}
+          APPLE_PRIVATE_KEY: secrets/apple.p8
+          APPLE_MUSIC_USER_TOKEN: ${{ secrets.APPLE_MUSIC_USER_TOKEN }}
+          APPLE_STOREFRONT: us
+          ITUNES_COUNTRY: US
+          PLAYLIST_NAME: ${{ vars.PLAYLIST_NAME }}
+        run: python scripts/run_all.py
+
+      - name: Render site
+        run: quarto render
+
+      - name: Commit refreshed snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs docs_assets docs_data _generated.md _playlist.md _tastemap.md
+          if git diff --staged --quiet; then
+            echo "Nothing changed."
+          else
+            git commit -m "Auto-refresh snapshot ($(date -u +%Y-%m-%d))"
+            git push
+          fi

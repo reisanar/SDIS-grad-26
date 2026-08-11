@@ -1,0 +1,13 @@
+.env
+secrets/
+data/raw_responses.csv
+data/clean.csv
+.quarto/
+_freeze/
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+
+/.quarto/
+**/*.quarto_ipynb

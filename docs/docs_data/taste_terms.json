@@ -1,0 +1,84 @@
+{
+  "PC1": {
+    "explained_variance": 0.22577567700153048,
+    "positive": [
+      "empowered",
+      "empowered empowered",
+      "singing chorus",
+      "nostalgic empowered",
+      "empowered gives",
+      "gives",
+      "gives power",
+      "singing",
+      "nostalgic",
+      "chorus"
+    ],
+    "negative": [
+      "excited",
+      "excited proud",
+      "proud",
+      "proud excited",
+      "dancing ignoring",
+      "days",
+      "dancing",
+      "ignoring",
+      "ignoring problems",
+      "problems"
+    ]
+  },
+  "PC2": {
+    "explained_variance": 0.20234324336377557,
+    "positive": [
+      "missing",
+      "old days",
+      "old",
+      "missing old",
+      "days",
+      "days missing",
+      "singing chorus",
+      "empowered gives",
+      "gives",
+      "gives power"
+    ],
+    "negative": [
+      "excited",
+      "proud",
+      "excited proud",
+      "proud excited",
+      "dancing ignoring",
+      "dancing",
+      "problems",
+      "ignoring",
+      "ignoring problems",
+      "seen"
+    ]
+  },
+  "PC3": {
+    "explained_variance": 0.20234324336377538,
+    "positive": [
+      "seen",
+      "happy",
+      "happy seen",
+      "hopeful",
+      "hopeful happy",
+      "seen hopeful",
+      "chorus",
+      "nostalgic",
+      "empowered gives",
+      "gives"
+    ],
+    "negative": [
+      "dancing",
+      "ignoring",
+      "ignoring problems",
+      "dancing ignoring",
+      "problems",
+      "problems dancing",
+      "proud",
+      "excited",
+      "excited proud",
+      "proud excited"
+    ]
+  },
+  "_source": "free-text answers to 'how this song makes you feel'"
+}

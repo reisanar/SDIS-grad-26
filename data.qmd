@@ -1,0 +1,52 @@
+---
+title: "Data"
+---
+
+Everything below is anonymized and published under the assumption you'll want
+to play with it.
+
+| File | What's in it |
+|---|---|
+| [`responses_anon.csv`](docs_data/responses_anon.csv) | One row per consenting participant, hashed ID, all survey answers |
+| [`taste_coords.csv`](docs_data/taste_coords.csv) | PC1/PC2 coordinates, cluster, neighborhood label |
+| [`taste_terms.json`](docs_data/taste_terms.json) | Top positive/negative tf-idf loadings per component |
+| [`neighbors.csv`](docs_data/neighbors.csv) | Each person's three nearest taste twins, by cosine similarity |
+| [`playlist_tracks.csv`](docs_data/playlist_tracks.csv) | Matched Spotify tracks with album, year, popularity |
+| [`apple_tracks.csv`](docs_data/apple_tracks.csv) | The same picks resolved in the Apple Music catalog |
+| [`summary.json`](docs_data/summary.json) | Headline counts used on the homepage |
+
+```{python}
+#| label: preview
+#| echo: true
+#| code-summary: "Load the published data"
+from pathlib import Path
+import pandas as pd
+
+p = Path("docs_data/responses_anon.csv")
+if p.exists():
+    df = pd.read_csv(p)
+    print(f"{len(df)} participants, {len(df.columns)} columns")
+    display(df.head())
+else:
+    print("No responses yet. Run: python scripts/make_sample_data.py --n 42 "
+          "&& python scripts/run_all.py --no-fetch")
+```
+
+```{python}
+#| label: coords
+#| code-summary: "Peek at the taste-map coordinates"
+from pathlib import Path
+import pandas as pd
+
+p = Path("docs_data/taste_coords.csv")
+if p.exists():
+    display(pd.read_csv(p).head(10))
+else:
+    print("Taste map has not been generated yet.")
+```
+
+<!-- ## Reuse -->
+
+<!-- Fork the repo, point `FORM_CSV_URL` at your own form, and you have your own -->
+<!-- version of this site. The analysis code makes no assumptions about cohort size -->
+<!-- beyond needing at least four responses for PCA to be meaningful. -->

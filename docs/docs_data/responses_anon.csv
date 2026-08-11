@@ -1,0 +1,7 @@
+timestamp,program,background,song_title,song_artist,taste_text,genres,participant_id,genres_list,background_list
+8/10/2026 22:22:19,MS in DS,Art,Oil and Water,Incubus,missing the old days,"Classical, Hip-hop, Latin",pd3cba91f,"['Classical', 'Hip-hop', 'Latin']",['Art']
+8/10/2026 22:23:34,Faculty,Math,Home,Myles Smith,"hopeful, happy, and seen","Indie Rock, R&B",p066d80a1,"['Indie Rock', 'R&B']",['Math']
+8/10/2026 22:24:28,CHIP PhD,Physics,Hark the Sound,UNC,excited and proud,Pop,pb34bd36f,['Pop'],['Physics']
+8/10/2026 22:44:40,Staff,Economics,Rolling in the Deep,Adele,"Nostalgic, empowered, it gives me power when singing the chorus","Pop, Indie Rock, R&B",p8454e16a,"['Pop', 'Indie Rock', 'R&B']",['Economics']
+8/10/2026 22:46:01,Faculty,Computer Science,Under Pressure,Queen and David Bowie,feel like dancing and ignoring problems,Indie Rock,p0c1c6965,['Indie Rock'],['Computer Science']
+8/10/2026 22:49:54,MS in LS,English,Gangsta'a Paradise,Coolio,empowered,Hip-hop,pb143aff5,['Hip-hop'],['English']
