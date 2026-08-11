@@ -1,5 +1,5 @@
 ::: {.callout-note}
-**6 people** have filled out the cohort survey. Last refreshed August 10, 2026 at 11:02 PM.
+**6 people** have filled out the cohort survey. Last refreshed August 11, 2026 at 04:01 AM.
 :::
 
 Families are spread across 6 states and countries, most often **FL** (1), **Colombia** (1), **NC** (1). The most common undergraduate backgrounds are **Music & Arts**, **Mathematics**, **Physics**. Most-listened genres: **Indie Rock** (3), **Hip-Hop** (2), **R&B** (2). 6 distinct songs were nominated for the playlist.

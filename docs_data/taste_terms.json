@@ -1,82 +1,82 @@
 {
   "PC1": {
-    "explained_variance": 0.22577567700153048,
+    "explained_variance": 0.22577567700153034,
     "positive": [
       "empowered",
       "empowered empowered",
-      "singing chorus",
-      "nostalgic empowered",
-      "empowered gives",
+      "chorus",
       "gives",
-      "gives power",
       "singing",
-      "nostalgic",
-      "chorus"
+      "singing chorus",
+      "power",
+      "gives power",
+      "power singing",
+      "nostalgic"
     ],
     "negative": [
-      "excited",
       "excited proud",
+      "excited",
       "proud",
       "proud excited",
-      "dancing ignoring",
       "days",
       "dancing",
-      "ignoring",
-      "ignoring problems",
-      "problems"
+      "missing old",
+      "missing",
+      "old days",
+      "old"
     ]
   },
   "PC2": {
-    "explained_variance": 0.20234324336377557,
+    "explained_variance": 0.20234324336377546,
     "positive": [
-      "missing",
-      "old days",
-      "old",
-      "missing old",
-      "days",
-      "days missing",
-      "singing chorus",
-      "empowered gives",
-      "gives",
-      "gives power"
-    ],
-    "negative": [
+      "excited proud",
       "excited",
       "proud",
-      "excited proud",
       "proud excited",
-      "dancing ignoring",
-      "dancing",
+      "empowered empowered",
+      "empowered",
+      "old days",
+      "missing old",
+      "missing",
+      "old"
+    ],
+    "negative": [
+      "ignoring problems",
       "problems",
       "ignoring",
-      "ignoring problems",
-      "seen"
+      "dancing ignoring",
+      "dancing",
+      "problems dancing",
+      "hopeful",
+      "happy seen",
+      "happy",
+      "hopeful happy"
     ]
   },
   "PC3": {
-    "explained_variance": 0.20234324336377538,
+    "explained_variance": 0.20234324336377546,
     "positive": [
+      "happy seen",
+      "hopeful happy",
       "seen",
       "happy",
-      "happy seen",
       "hopeful",
-      "hopeful happy",
       "seen hopeful",
-      "chorus",
-      "nostalgic",
-      "empowered gives",
-      "gives"
+      "singing chorus",
+      "singing",
+      "nostalgic empowered",
+      "power"
     ],
     "negative": [
-      "dancing",
-      "ignoring",
       "ignoring problems",
-      "dancing ignoring",
       "problems",
+      "ignoring",
+      "dancing ignoring",
+      "dancing",
       "problems dancing",
-      "proud",
-      "excited",
       "excited proud",
+      "excited",
+      "proud",
       "proud excited"
     ]
   },

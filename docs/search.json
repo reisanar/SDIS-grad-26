@@ -1,52 +1,80 @@
 [
   {
+    "objectID": "taste-map.html",
+    "href": "taste-map.html",
+    "title": "Musical taste map",
+    "section": "",
+    "text": "Every person becomes a short document: the sentence they wrote about how their song makes them feel. Not the genres they checked, not their program — just the writing. That single choice is the method, and it is why the map says something a bar chart of genres cannot. From there:\n\ntf-idf turns each sentence into a vector. Terms almost everyone uses (“feel”, “makes”, “song”) get pushed toward zero; terms that appear in a few answers and nowhere else carry the weight. This is what keeps the map from collapsing into “everyone has feelings about music.”\nPCA finds the directions along which those vectors vary the most, and we keep the top two. Distance on the resulting map is similarity of taste.\nk-means on the first few components labels loose neighborhoods, named automatically by the terms most distinctive to each group.\n\nThe map encodes two things at once: color is taste neighborhood (learned from the text) and marker shape is program or role (what you told us)."
+  },
+  {
+    "objectID": "taste-map.html#the-idea",
+    "href": "taste-map.html#the-idea",
+    "title": "Musical taste map",
+    "section": "",
+    "text": "Every person becomes a short document: the sentence they wrote about how their song makes them feel. Not the genres they checked, not their program — just the writing. That single choice is the method, and it is why the map says something a bar chart of genres cannot. From there:\n\ntf-idf turns each sentence into a vector. Terms almost everyone uses (“feel”, “makes”, “song”) get pushed toward zero; terms that appear in a few answers and nowhere else carry the weight. This is what keeps the map from collapsing into “everyone has feelings about music.”\nPCA finds the directions along which those vectors vary the most, and we keep the top two. Distance on the resulting map is similarity of taste.\nk-means on the first few components labels loose neighborhoods, named automatically by the terms most distinctive to each group.\n\nThe map encodes two things at once: color is taste neighborhood (learned from the text) and marker shape is program or role (what you told us)."
+  },
+  {
+    "objectID": "taste-map.html#the-map",
+    "href": "taste-map.html#the-map",
+    "title": "Musical taste map",
+    "section": "The map",
+    "text": "The map\n\nInteractiveStatic\n\n\n\nHover any point to see the anonymous ID, the neighborhood, and the song that person put on the playlist.\n\n\n\n\n\nMusical taste map of the cohort"
+  },
+  {
+    "objectID": "taste-map.html#reading-the-axes",
+    "href": "taste-map.html#reading-the-axes",
+    "title": "Musical taste map",
+    "section": "Reading the axes",
+    "text": "Reading the axes\nThe components are not “genre” and “decade” — they’re whatever directions the data actually spreads along. Here’s what came out this year:\nThe map is built from free-text answers to ‘how this song makes you feel’.\nPC1 (22.6% of the variance) separates empowered, empowered empowered, chorus, gives, singing, singing chorus on one side from excited proud, excited, proud, proud excited, days, dancing on the other.\nPC2 (20.2% of the variance) separates excited proud, excited, proud, proud excited, empowered empowered, empowered on one side from ignoring problems, problems, ignoring, dancing ignoring, dancing, problems dancing on the other.\nPC3 (20.2% of the variance) separates happy seen, hopeful happy, seen, happy, hopeful, seen hopeful on one side from ignoring problems, problems, ignoring, dancing ignoring, dancing, problems dancing on the other.\n\nNeighborhoods\n\nempowered, empowered empowered, seen — 3 people\nexcited proud, excited, proud — 3 people\n\n\n\n\nTerms with the strongest loadings on each component"
+  },
+  {
+    "objectID": "workshop.html",
+    "href": "workshop.html",
+    "title": "How it works",
+    "section": "",
+    "text": "This page is the teaching companion to the taste map. Everything here runs against the published, anonymized data, so students can re-derive the map without touching the private response sheet."
+  },
+  {
+    "objectID": "workshop.html#step-1-one-document-per-person",
+    "href": "workshop.html#step-1-one-document-per-person",
+    "title": "How it works",
+    "section": "Step 1 — one document per person",
+    "text": "Step 1 — one document per person\nEach person’s “document” is the sentence they wrote about how their song makes them feel. Not their genre checkboxes, not their program — the sentence. That choice is the whole methodology: we are mapping how people describe feeling, and everything interesting on the map follows from it.\n\n\nBuild the documents\nfrom pathlib import Path\nimport pandas as pd\n\nsrc = Path(\"docs_data/responses_anon.csv\")\nHAVE_DATA = src.exists()\n\nif HAVE_DATA:\n    df = pd.read_csv(src)\n    docs = df[\"taste_text\"].fillna(\"\").astype(str).str.lower()\n    docs = docs[docs.str.strip() != \"\"]\n    print(f\"{len(docs)} sentences, median length \"\n          f\"{int(docs.str.split().str.len().median())} words\")\n    display(docs.head(3).tolist())\nelse:\n    print(\"No data yet — this page becomes live once the pipeline has run.\")\n\n\n6 sentences, median length 4 words\n\n\n['missing the old days', 'hopeful, happy, and seen', 'excited and proud']\n\n\n\n\n\n\n\n\nNote\n\n\n\nThe cells below only produce output once there are enough responses — roughly 4 at an absolute minimum, and 15+ before the map means much. Generate sample data with python scripts/make_sample_data.py --n 42 to walk through this offline at full size."
+  },
+  {
+    "objectID": "workshop.html#step-2-tf-idf",
+    "href": "workshop.html#step-2-tf-idf",
+    "title": "How it works",
+    "section": "Step 2 — tf-idf",
+    "text": "Step 2 — tf-idf\nThe point to make out loud: term frequency rewards repetition, and inverse document frequency punishes ubiquity. A word earns weight only when it’s frequent here and rare elsewhere.\nmin_df=2 (“ignore terms appearing in only one response”) is the right default for a full cohort, but with a handful of one-sentence answers it can throw away the entire vocabulary. So we start strict and relax if too little survives — the same thing scripts/03_taste_map.py does.\n\n\nVectorize\nfrom sklearn.feature_extraction.text import TfidfVectorizer\n\nX, vec, HAVE_VECTORS = None, None, False\n\nif HAVE_DATA and len(docs) &gt;= 4:\n    for min_df in (2, 1):\n        vec = TfidfVectorizer(stop_words=\"english\", ngram_range=(1, 2),\n                              min_df=min_df, max_df=0.9, sublinear_tf=True)\n        try:\n            X = vec.fit_transform(docs)\n        except ValueError:\n            X = None\n            continue\n        if X.shape[1] &gt;= max(5, len(docs) // 4):\n            break\n    HAVE_VECTORS = X is not None and X.shape[1] &gt;= 2\n    if HAVE_VECTORS:\n        print(f\"{X.shape[0]} responses x {X.shape[1]} terms (min_df={vec.min_df})\")\n    else:\n        print(\"Not enough shared vocabulary yet — add more responses.\")\nelif HAVE_DATA:\n    print(f\"Only {len(docs)} responses so far; this page needs at least 4.\")\n\n\n6 responses x 33 terms (min_df=1)\n\n\n\n\nWhich terms carry the most weight overall?\nimport numpy as np\n\nif HAVE_VECTORS:\n    terms = np.array(vec.get_feature_names_out())\n    weights = np.asarray(X.sum(axis=0)).ravel()\n    k = min(15, len(terms))\n    display(pd.DataFrame({\"term\": terms[np.argsort(weights)[-k:][::-1]],\n                          \"total tf-idf\": np.sort(weights)[-k:][::-1].round(2)}))\n\n\n\n\n\n\n\n\n\nterm\ntotal tf-idf\n\n\n\n\n0\nempowered\n1.25\n\n\n1\nexcited proud\n0.58\n\n\n2\nproud\n0.58\n\n\n3\nexcited\n0.58\n\n\n4\nhappy\n0.45\n\n\n5\nmissing old\n0.45\n\n\n6\nseen\n0.45\n\n\n7\nold days\n0.45\n\n\n8\nold\n0.45\n\n\n9\nhopeful happy\n0.45\n\n\n10\nhappy seen\n0.45\n\n\n11\nhopeful\n0.45\n\n\n12\ndays\n0.45\n\n\n13\nmissing\n0.45\n\n\n14\ndancing\n0.33"
+  },
+  {
+    "objectID": "workshop.html#step-3-pca",
+    "href": "workshop.html#step-3-pca",
+    "title": "How it works",
+    "section": "Step 3 — PCA",
+    "text": "Step 3 — PCA\nPCA can only extract as many components as the data actually has — bounded by both the number of responses and the size of the vocabulary. Asking for more than min(n_samples, n_features) raises an error, so we clamp it.\n\n\nProject to two dimensions\nfrom sklearn.decomposition import PCA\n\ncoords, pca, HAVE_MAP = None, None, False\n\nif HAVE_VECTORS:\n    dense = X.toarray()\n    n_comp = min(10, dense.shape[0] - 1, dense.shape[1])\n    if n_comp &gt;= 2:\n        pca = PCA(n_components=n_comp, random_state=0)\n        coords = pca.fit_transform(dense)\n        HAVE_MAP = True\n        display(pd.DataFrame(\n            {\"component\": [f\"PC{i+1}\" for i in range(len(pca.explained_variance_ratio_))],\n             \"variance explained\": pca.explained_variance_ratio_.round(3)}).head(5))\n    else:\n        print(f\"Only {n_comp} component(s) available — need at least 2. \"\n              \"More responses will fix this.\")\n\n\n\n\n\n\n\n\n\ncomponent\nvariance explained\n\n\n\n\n0\nPC1\n0.237\n\n\n1\nPC2\n0.203\n\n\n2\nPC3\n0.203\n\n\n3\nPC4\n0.203\n\n\n4\nPC5\n0.152\n\n\n\n\n\n\n\nIf PC1 explains only 8–12% of the variance, that’s normal and worth dwelling on: text data in a few-hundred-dimensional vocabulary rarely concentrates. The map is a useful summary, not a faithful reproduction of the full space."
+  },
+  {
+    "objectID": "workshop.html#step-4-plot-it",
+    "href": "workshop.html#step-4-plot-it",
+    "title": "How it works",
+    "section": "Step 4 — plot it",
+    "text": "Step 4 — plot it\n\n\nThe scatter\nimport matplotlib.pyplot as plt\n\nif HAVE_MAP:\n    fig, ax = plt.subplots(figsize=(7, 5))\n    ax.scatter(coords[:, 0], coords[:, 1], s=60, alpha=0.8, color=\"#4B9CD3\")\n    ax.set_xlabel(f\"PC1 — {pca.explained_variance_ratio_[0]:.1%}\")\n    ax.set_ylabel(f\"PC2 — {pca.explained_variance_ratio_[1]:.1%}\")\n    ax.set_title(\"Rebuilt from the published data\")\n    plt.show()\nelse:\n    print(\"The scatter appears once there are enough responses.\")"
+  },
+  {
+    "objectID": "workshop.html#discussion-prompts",
+    "href": "workshop.html#discussion-prompts",
+    "title": "How it works",
+    "section": "Discussion prompts",
+    "text": "Discussion prompts\n\nSwap TfidfVectorizer for CountVectorizer. What happens to the map, and why does the common-word structure dominate?\nChange min_df from 2 to 1. Rare terms return — does the map get more informative or just noisier?\nTry TruncatedSVD instead of PCA (it works on the sparse matrix directly, without .toarray()). Where does that matter at real scale?\nCosine vs. Euclidean distance on tf-idf vectors: which one matches your intuition of “similar taste,” and what does document length have to do with it?\nEthics round: this map is built from things people volunteered about themselves. What would change if it were built from listening history scraped without asking?"
+  },
+  {
     "objectID": "data.html",
     "href": "data.html",
     "title": "Data",
     "section": "",
-    "text": "Everything below is anonymized and published under the assumption you’ll want to play with it.\n\n\n\nFile\nWhat’s in it\n\n\n\n\nresponses_anon.csv\nOne row per consenting participant, hashed ID, all survey answers\n\n\ntaste_coords.csv\nPC1/PC2 coordinates, cluster, neighborhood label\n\n\ntaste_terms.json\nTop positive/negative tf-idf loadings per component\n\n\nneighbors.csv\nEach person’s three nearest taste twins, by cosine similarity\n\n\nplaylist_tracks.csv\nMatched Spotify tracks with album, year, popularity\n\n\napple_tracks.csv\nThe same picks resolved in the Apple Music catalog\n\n\nsummary.json\nHeadline counts used on the homepage\n\n\n\n\n\nLoad the published data\nfrom pathlib import Path\nimport pandas as pd\n\np = Path(\"docs_data/responses_anon.csv\")\nif p.exists():\n    df = pd.read_csv(p)\n    print(f\"{len(df)} participants, {len(df.columns)} columns\")\n    display(df.head())\nelse:\n    print(\"No responses yet. Run: python scripts/make_sample_data.py --n 42 \"\n          \"&& python scripts/run_all.py --no-fetch\")\n\n\n6 participants, 10 columns\n\n\n\n\n\n\n\n\n\ntimestamp\nprogram\nbackground\nsong_title\nsong_artist\ntaste_text\ngenres\nparticipant_id\ngenres_list\nbackground_list\n\n\n\n\n0\n8/10/2026 22:22:19\nMS in DS\nArt\nOil and Water\nIncubus\nmissing the old days\nClassical, Hip-hop, Latin\npd3cba91f\n['Classical', 'Hip-hop', 'Latin']\n['Art']\n\n\n1\n8/10/2026 22:23:34\nFaculty\nMath\nHome\nMyles Smith\nhopeful, happy, and seen\nIndie Rock, R&B\np066d80a1\n['Indie Rock', 'R&B']\n['Math']\n\n\n2\n8/10/2026 22:24:28\nCHIP PhD\nPhysics\nHark the Sound\nUNC\nexcited and proud\nPop\npb34bd36f\n['Pop']\n['Physics']\n\n\n3\n8/10/2026 22:44:40\nStaff\nEconomics\nRolling in the Deep\nAdele\nNostalgic, empowered, it gives me power when s...\nPop, Indie Rock, R&B\np8454e16a\n['Pop', 'Indie Rock', 'R&B']\n['Economics']\n\n\n4\n8/10/2026 22:46:01\nFaculty\nComputer Science\nUnder Pressure\nQueen and David Bowie\nfeel like dancing and ignoring problems\nIndie Rock\np0c1c6965\n['Indie Rock']\n['Computer Science']\n\n\n\n\n\n\n\n\n\nPeek at the taste-map coordinates\nfrom pathlib import Path\nimport pandas as pd\n\np = Path(\"docs_data/taste_coords.csv\")\nif p.exists():\n    display(pd.read_csv(p).head(10))\nelse:\n    print(\"Taste map has not been generated yet.\")\n\n\n\n\n\n\n\n\n\nparticipant_id\npc1\npc2\ncluster\nneighborhood\nprogram\nmood\nsong\n\n\n\n\n0\npd3cba91f\n-0.304932\n8.660254e-01\n0\nempowered, empowered empowered, missing old\nMS in DS\nNaN\nOil and Water — Incubus\n\n\n1\np066d80a1\n-0.304932\n-2.886751e-01\n1\nproud, excited proud, excited\nFaculty\nNaN\nHome — Myles Smith\n\n\n2\npb34bd36f\n-0.304932\n-2.886751e-01\n1\nproud, excited proud, excited\nCHIP PhD\nNaN\nHark the Sound — UNC\n\n\n3\np8454e16a\n0.609865\n3.323328e-16\n0\nempowered, empowered empowered, missing old\nStaff\nNaN\nRolling in the Deep — Adele\n\n\n4\np0c1c6965\n-0.304932\n-2.886751e-01\n1\nproud, excited proud, excited\nFaculty\nNaN\nUnder Pressure — Queen and David Bowie\n\n\n5\npb143aff5\n0.609865\n-3.806654e-16\n0\nempowered, empowered empowered, missing old\nMS in LS\nNaN\nGangsta'a Paradise — Coolio"
-  },
-  {
-    "objectID": "data.html#reuse",
-    "href": "data.html#reuse",
-    "title": "Data",
-    "section": "Reuse",
-    "text": "Reuse\nFork the repo, point FORM_CSV_URL at your own form, and you have your own version of this site. The analysis code makes no assumptions about cohort size beyond needing at least four responses for PCA to be meaningful."
-  },
-  {
-    "objectID": "ACTIVITY.html",
-    "href": "ACTIVITY.html",
-    "title": "",
-    "section": "",
-    "text": "Code"
-  },
-  {
-    "objectID": "ACTIVITY.html#before-the-day",
-    "href": "ACTIVITY.html#before-the-day",
-    "title": "",
-    "section": "Before the day",
-    "text": "Before the day\n\n\n\n\n\n\n\nWhen\nDo this\n\n\n\n\n1 week out\nDeploy the site (DEPLOY.md), rehearse the pipeline on synthetic data\n\n\n1 week out\nSend the form link with the subject “3 minutes, and you’ll be on the map”\n\n\n2 days out\nReminder to non-responders. Aim for &gt;70% before the session\n\n\nMorning of\nRun the workflow once. Confirm the site is live and the playlist plays\n\n\nMorning of\nOpen these tabs: the live site, the Actions tab, the response sheet, this repo\n\n\n\nRehearsal command, no credentials and no real data needed:\npip install -r requirements.txt\npython scripts/make_sample_data.py --n 42\npython scripts/run_all.py --no-fetch\nquarto preview"
-  },
-  {
-    "objectID": "ACTIVITY.html#run-of-show",
-    "href": "ACTIVITY.html#run-of-show",
-    "title": "",
-    "section": "Run of show",
-    "text": "Run of show\n\n0:00 — Open with the room, not with slides (5 min)\nPut the live site on the screen. Play two or three preview clips from the playlist page and let people react to whose song is whose. You now have the room’s attention and you haven’t explained anything yet.\nAsk: “How would you turn 40 sentences about music into a picture of this room?” Take two answers. Don’t correct them.\n\n\n0:05 — The problem with counting words (10 min)\nLive in the browser or a notebook, using the published anonymized data:\nimport pandas as pd\ndf = pd.read_csv(\"https://YOURNAME.github.io/immersion27/docs_data/responses_anon.csv\")\ndf[\"taste_text\"].str.split().explode().str.lower().value_counts().head(10)\nThe top words will be junk — “music”, “love”, “the”, “listen”. That’s the lesson: raw frequency measures ubiquity, not distinctiveness. Let it land before you offer the fix.\n\n\n0:15 — tf-idf (15 min)\nWalk the workshop.qmd page. The one sentence students should leave with:\n\nA term earns weight when it’s frequent in this document and rare across all the others.\n\nRun the vectorizer live. Show the top-weighted terms and compare them to the junk list from the previous step. Ask what the ngram_range change does.\n\n\n0:30 — PCA and the map (15 min)\nProject to two dimensions and plot. Then do the three things that make it stick:\n\nRead the axes out loud from the loadings chart. “PC1 has Radiohead and Björk on one end, Bad Bunny and Taylor Swift on the other — what is that axis actually measuring?” Let them argue. There’s no right answer, which is the point.\nName the variance number. PC1 will explain something like 8–12%. Ask whether a picture that captures a tenth of the signal is useful. Defend both positions.\nBreak it. Add three fake responses to the sheet, re-run the workflow from the Actions tab, and reload. The axes rotate. Small-n instability stops being an abstraction the moment they watch it happen.\n\n\n\n0:45 — Taste twins (10 min)\nOpen docs_data/neighbors.csv and let people look up their own hashed ID. Ask the pairs with the highest similarity to say hello. This is the part people remember, and it’s also a clean way to raise the real question:\n\nThis map was built from things you volunteered. What would change — technically and ethically — if it were built from your actual listening history, collected without asking?\n\nLet that run. Don’t resolve it.\n\n\n0:55 — Hand them the deliverable (5 min)\nShow the import file on the playlist page and walk one person through getting the cohort playlist into their own library. Point at the repo and tell them it’s theirs to fork."
-  },
-  {
-    "objectID": "ACTIVITY.html#variations",
-    "href": "ACTIVITY.html#variations",
-    "title": "",
-    "section": "Variations",
-    "text": "Variations\n\nShort version (30 min): open with the playlist, do tf-idf, show the map, skip the live rebuild.\nLab version (2 hours): run the discussion prompts at the bottom of workshop.qmd in pairs — CountVectorizer vs tf-idf, min_df sweeps, TruncatedSVD, cosine vs Euclidean.\nOngoing: leave the form open all semester. The map on the wall display changes as people’s taste drifts."
-  },
-  {
-    "objectID": "ACTIVITY.html#facilitator-notes",
-    "href": "ACTIVITY.html#facilitator-notes",
-    "title": "",
-    "section": "Facilitator notes",
-    "text": "Facilitator notes\n\nThe instability is the lesson, not a flaw. If a student says “so the map isn’t real,” you’re winning. The honest answer is that it’s one low-dimensional view of a high-dimensional space, and reruns disagree because the data is thin.\nNeighborhood labels are mechanical. Some will be sharp, some nonsense. Say so before someone points it out.\nHave a fallback. If the network dies, quarto preview on the last build works offline, and the preview clips are the only thing that need connectivity.\nDon’t skip the ethics beat. Twenty minutes on method and zero on consent teaches something you didn’t intend.\nWatch the room during taste twins. That’s the moment the cohort actually becomes a cohort, which is the real deliverable of an immersion."
+    "text": "Everything below is anonymized and published under the assumption you’ll want to play with it.\n\n\n\nFile\nWhat’s in it\n\n\n\n\nresponses_anon.csv\nOne row per consenting participant, hashed ID, all survey answers\n\n\ntaste_coords.csv\nPC1/PC2 coordinates, cluster, neighborhood label\n\n\ntaste_terms.json\nTop positive/negative tf-idf loadings per component\n\n\nneighbors.csv\nEach person’s three nearest taste twins, by cosine similarity\n\n\nplaylist_tracks.csv\nMatched Spotify tracks with album, year, popularity\n\n\napple_tracks.csv\nThe same picks resolved in the Apple Music catalog\n\n\nsummary.json\nHeadline counts used on the homepage\n\n\n\n\n\nLoad the published data\nfrom pathlib import Path\nimport pandas as pd\n\np = Path(\"docs_data/responses_anon.csv\")\nif p.exists():\n    df = pd.read_csv(p)\n    print(f\"{len(df)} participants, {len(df.columns)} columns\")\n    display(df.head())\nelse:\n    print(\"No responses yet. Run: python scripts/make_sample_data.py --n 42 \"\n          \"&& python scripts/run_all.py --no-fetch\")\n\n\n6 participants, 10 columns\n\n\n\n\n\n\n\n\n\ntimestamp\nprogram\nbackground\nsong_title\nsong_artist\ntaste_text\ngenres\nparticipant_id\ngenres_list\nbackground_list\n\n\n\n\n0\n8/10/2026 22:22:19\nMS in DS\nArt\nOil and Water\nIncubus\nmissing the old days\nClassical, Hip-hop, Latin\npe579edf8\n['Classical', 'Hip-hop', 'Latin']\n['Art']\n\n\n1\n8/10/2026 22:23:34\nFaculty\nMath\nHome\nMyles Smith\nhopeful, happy, and seen\nIndie Rock, R&B\np5b871c05\n['Indie Rock', 'R&B']\n['Math']\n\n\n2\n8/10/2026 22:24:28\nCHIP PhD\nPhysics\nHark the Sound\nUNC\nexcited and proud\nPop\np84177e46\n['Pop']\n['Physics']\n\n\n3\n8/10/2026 22:44:40\nStaff\nEconomics\nRolling in the Deep\nAdele\nNostalgic, empowered, it gives me power when s...\nPop, Indie Rock, R&B\np0571e9e4\n['Pop', 'Indie Rock', 'R&B']\n['Economics']\n\n\n4\n8/10/2026 22:46:01\nFaculty\nComputer Science\nUnder Pressure\nQueen and David Bowie\nfeel like dancing and ignoring problems\nIndie Rock\np05c21256\n['Indie Rock']\n['Computer Science']\n\n\n\n\n\n\n\n\n\nPeek at the taste-map coordinates\nfrom pathlib import Path\nimport pandas as pd\n\np = Path(\"docs_data/taste_coords.csv\")\nif p.exists():\n    display(pd.read_csv(p).head(10))\nelse:\n    print(\"Taste map has not been generated yet.\")\n\n\n\n\n\n\n\n\n\nparticipant_id\npc1\npc2\ncluster\nneighborhood\nprogram\nmood\nsong\n\n\n\n\n0\npe579edf8\n-0.304932\n-0.000000e+00\n0\nexcited proud, excited, proud\nMS in DS\nNaN\nOil and Water — Incubus\n\n\n1\np5b871c05\n-0.304932\n-3.037962e-01\n1\nempowered, empowered empowered, seen\nFaculty\nNaN\nHome — Myles Smith\n\n\n2\np84177e46\n-0.304932\n8.082371e-01\n0\nexcited proud, excited, proud\nCHIP PhD\nNaN\nHark the Sound — UNC\n\n\n3\np0571e9e4\n0.609865\n-8.881784e-16\n1\nempowered, empowered empowered, seen\nStaff\nNaN\nRolling in the Deep — Adele\n\n\n4\np05c21256\n-0.304932\n-5.044409e-01\n0\nexcited proud, excited, proud\nFaculty\nNaN\nUnder Pressure — Queen and David Bowie\n\n\n5\np482b6811\n0.609865\n6.800116e-16\n1\nempowered, empowered empowered, seen\nMS in LS\nNaN\nGangsta'a Paradise — Coolio"
   },
   {
     "objectID": "schemas/google_form_schema.html",
@@ -91,151 +119,25 @@
     "text": "Live form reference (current SDIS form)\nThese are the questions and options the pipeline is tuned for today.\n\n\n\n\n\n\n\n\nQuestion\nType\nInternal key\n\n\n\n\nWhat is your program (or role) at SDIS?\nMultiple choice\nprogram\n\n\nWhat is your undergraduate background?\nShort answer (free text)\nbackground\n\n\nWhere did you grow up? (city, state/country)\nShort answer\nhometown\n\n\nWhich genres to you listen to the most?\nCheckboxes\ngenres\n\n\nWhat is the title of one song that has been on your mind recently?\nShort answer\nsong_title\n\n\nWho performs it?\nShort answer\nsong_artist\n\n\nIn a sentence, describe how this song makes you feel\nParagraph\ntaste_text\n\n\n\nProgram / role options (marker shape on the taste map):\nMS in DS · PhD in DS · CHIP PhD · CHIP MS · MS in LS · MS in IS · PhD in ILS · Faculty · Staff\nGenre options (checkboxes, multi-select):\nPop · Metal · Classical · Folk · Jazz · Electronic · Reggaeton · Indie Rock · R&B · Country · Hip-hop · Latin · Other\n\nNotes on this form\n\nNo consent question, so every response is included. Since no email is collected either, responses are already effectively anonymous — but free-text answers are published verbatim, so consider adding a line to the form description saying so.\nNo family-location question. The location word cloud falls back to hometown, parsing Raleigh, NC to NC and Bogota, Colombia to Colombia.\nParticipant IDs are hashed from the timestamp since there is no email."
   },
   {
-    "objectID": "TESTING.html",
-    "href": "TESTING.html",
-    "title": "",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "SDIS Grad Student Orientation: 2026 Snapshot",
     "section": "",
-    "text": "Code"
+    "text": "Welcome. This site is a living picture of the SDIS graduate student cohort: who’s here, what we listen to, and a playlist built from one song per person."
   },
   {
-    "objectID": "TESTING.html#part-1-test-with-synthetic-data",
-    "href": "TESTING.html#part-1-test-with-synthetic-data",
-    "title": "",
-    "section": "Part 1 — Test with synthetic data",
-    "text": "Part 1 — Test with synthetic data\ncd cohort-snapshot\npip install -r requirements.txt\n\npython scripts/make_sample_data.py --n 40     # fake responses in your form's format\npython scripts/run_all.py --no-fetch          # whole pipeline\nquarto preview                                # open the site\n--no-fetch skips the Google Sheet and uses the local file.\n\nWhat the synthetic data looks like\nIt reproduces your live export exactly — same eight columns, same order, including the trailing space in the “makes you feel” header. A generated file and a real export are interchangeable.\nIt is also deliberately messy, because real responses are:\n\nBackgrounds arrive in ~28 spellings (CS, comp sci, B.S. Computer Science) so you can watch them collapse into families.\nHometowns mix Raleigh, NC with Mumbai, India so you can watch the location parser produce NC and India.\nFeeling sentences are composed, not sampled — all 40 are unique, drawn from six emotional families (nostalgia, energy, calm, melancholy, joy, connection). That shared-within-family, distinct-across-family structure is what gives PCA something real to find.\nAnchor songs always appear: DtMf (odd capitalization), Tití Me Preguntó (accents), Texas Hold 'Em (apostrophe), Not Like Us.\n\n\n\nWhat you should see\n[immersion] mapped 8 columns: [...]\n[immersion] built 6 figures for 40 participants\n[immersion] taste map source: free-text answers to 'how this song makes you feel'\n[immersion] tf-idf matrix: 40 participants x 135 terms (min_df=2)\n[immersion] matched 40/40 picks, 40 playable previews\nCharts for questions your form doesn’t ask are skipped, not blank.\n\n\nVerify the cleanup worked\npython -c \"\nimport json; d=json.load(open('docs_data/summary.json'))\nprint('locations :', d['top_locations'][:5])\nprint('backgrounds:', d['top_backgrounds'][:5])\"\nEvery Raleigh, NC / Durham, NC / Chapel Hill, NC should be a single NC.\n\n\nUseful variations\npython scripts/check_pages.py                   # run every page's code, no Quarto needed\npython scripts/make_sample_data.py --n 5        # tiny cohort, like a first test batch\npython scripts/make_sample_data.py --n 8        # still small (PCA needs 4+)\npython scripts/make_sample_data.py --n 120      # large cohort\npython scripts/make_sample_data.py --schema classic   # fuller question set\npython scripts/run_all.py --only 03             # re-run just the taste map\npython scripts/doctor.py --fix                  # fix any render problem"
+    "objectID": "index.html#the-cohort-by-the-numbers",
+    "href": "index.html#the-cohort-by-the-numbers",
+    "title": "SDIS Grad Student Orientation: 2026 Snapshot",
+    "section": "The cohort, by the numbers",
+    "text": "The cohort, by the numbers\n\n\n\n\n\n\nNote\n\n\n\n6 people have filled out the cohort survey. Last refreshed August 11, 2026 at 04:01 AM.\n\n\nFamilies are spread across 6 states and countries, most often FL (1), Colombia (1), NC (1). The most common undergraduate backgrounds are Music & Arts, Mathematics, Physics. Most-listened genres: Indie Rock (3), Hip-Hop (2), R&B (2). 6 distinct songs were nominated for the playlist.\n\n\n\nWhere the cohort grew up\n\n\n\n\n\nWhere the cohort grew up, counted\n\n\n\n\n\nUndergraduate backgrounds, in respondents’ own words\n\n\n\n\n\nUndergraduate background, collapsed into families\n\n\n\n\n\nProgram / role\n\n\n\n\n\nGenres the cohort listens to most"
   },
   {
-    "objectID": "TESTING.html#part-2-run-with-live-google-form-responses",
-    "href": "TESTING.html#part-2-run-with-live-google-form-responses",
-    "title": "",
-    "section": "Part 2 — Run with live Google Form responses",
-    "text": "Part 2 — Run with live Google Form responses\n\nFor the current SDIS form, use GO-LIVE.md instead — it has your sheet ID, tab gid, and form link already filled in. The generic version follows.\n\n\n1. Share the response sheet\nOpen the sheet → Share → General access → Anyone with the link (Viewer). No service account, no credentials.\n\n\n2. Point the pipeline at it\nCopy .env.example to .env and set the sheet ID — the long string in the sheet URL between /d/ and /edit:\nGOOGLE_SHEET_ID=1ZVwPOVBZlzhgCc85GAGK_zJc83jfcN3xX2MbzIrDRRk\nANON_SALT=immersion-2027-pick-something-random\n\n\n3. Confirm your questions are recognized\npython scripts/inspect_sheet.py\nExpected output for your form:\nINTERNAL KEY       FORM QUESTION\nbackground         What is your undergraduate background?\ngenres             Which genres to you listen to the most?\nhometown           Where did you grow up? (city, state/country)\nprogram            What is your program (or role) at SDIS?\nsong_artist        Who performs it?\nsong_title         What is the title of one song that has been on your mind...\ntaste_text         In a sentence, describe how this song makes you feel\n0 rows simply means nobody has responded yet — the connection is fine.\nIf a question ever shows up as missing, paste its exact wording into schemas/columns.yml under that key’s exact: list. That is the only file to edit when you reword a question.\n\n\n4. Run it\npython scripts/run_all.py     # fetches from the sheet, then everything else\nquarto preview\n\n\n5. Publish\nquarto render\ngit add -A && git commit -m \"Refresh snapshot\" && git push\nOr let the GitHub Action do it — add GOOGLE_SHEET_ID and ANON_SALT as repository secrets and it refreshes daily. Full setup in DEPLOY.md."
-  },
-  {
-    "objectID": "TESTING.html#small-cohorts",
-    "href": "TESTING.html#small-cohorts",
-    "title": "",
-    "section": "Small cohorts",
-    "text": "Small cohorts\nThe site is built to render at any size, including zero responses:\n\n\n\n\n\n\n\nResponses\nWhat happens\n\n\n\n\n0\nEverything renders with placeholders. No crash\n\n\n1–3\nCharts skipped (“not enough data”), taste map skipped\n\n\n4–14\nMap builds but will look like a blob; vocabulary auto-relaxes to min_df=1\n\n\n15+\nNeighborhoods start separating meaningfully\n\n\n30+\nWhat you want for the session\n\n\n\nVerify your copy handles this before a session:\npython scripts/check_pages.py\nThat executes every page’s Python exactly as Quarto would, and fails loudly if any cell breaks — which is faster than a full render and catches the small-cohort bugs a 40-response test would miss."
-  },
-  {
-    "objectID": "TESTING.html#how-the-taste-map-is-built",
-    "href": "TESTING.html#how-the-taste-map-is-built",
-    "title": "",
-    "section": "How the taste map is built",
-    "text": "How the taste map is built\nThe map comes from one question: “In a sentence, describe how this song makes you feel.” Not the genre checkboxes, not the program — the writing. This matches the 2026 immersion site, and it is the reason the map is worth showing: it separates people by how they describe feeling, which no bar chart can.\n\nEach person’s sentence becomes a tf-idf vector (unigrams + bigrams).\nPCA projects to two dimensions; k-means labels neighborhoods, named automatically from each cluster’s most distinctive terms.\nColor = taste neighborhood (learned from the writing). Marker shape = program/role (what they told you). Nine shapes, one per program option.\n\nBecause sentences are short documents, the vectorizer starts at min_df=2 and automatically relaxes to min_df=1 if the vocabulary comes out too thin.\nTo blend genre checkboxes in as a weaker secondary signal:\nTASTE_MAP_INCLUDE_GENRES=1 python scripts/run_all.py --only 03\nOff by default — checkboxes pull the map toward a few category blobs and drown out the writing."
-  },
-  {
-    "objectID": "TESTING.html#troubleshooting",
-    "href": "TESTING.html#troubleshooting",
-    "title": "",
-    "section": "Troubleshooting",
-    "text": "Troubleshooting\n\n\n\n\n\n\n\nSymptom\nCause and fix\n\n\n\n\n0 rows, 8 columns\nConnected fine, no responses yet. Submit one and re-run\n\n\nCould not read the sheet without credentials\nSharing isn’t “Anyone with the link”\n\n\nA question shows as missing\nAdd its exact wording to schemas/columns.yml\n\n\nonly N participants — need at least 4\nPCA needs 4+ responses with a song\n\n\nA chart is missing\nThat question wasn’t asked, or fewer than 3 answered\n\n\nMany backgrounds land in Other\nAdd patterns to BACKGROUND_RULES in canonicalize.py; see docs_data/background_unmatched.json\n\n\nTaste map looks like one blob\nUsually too few responses; it separates around 15–20\n\n\nAny Quarto render error\npython scripts/doctor.py --fix\n\n\nn_components=N must be between 0 and min(n_samples, n_features)\nToo few responses for PCA on that page. Fixed in the current version — run python scripts/check_pages.py to confirm your copy is current\n\n\nSongs unmatched\nSee docs_data/playlist_unmatched.csv, fix spelling in the sheet, re-run"
-  },
-  {
-    "objectID": "workshop.html",
-    "href": "workshop.html",
-    "title": "How it works",
-    "section": "",
-    "text": "This page is the teaching companion to the taste map. Everything here runs against the published, anonymized data, so students can re-derive the map without touching the private response sheet."
-  },
-  {
-    "objectID": "workshop.html#step-1-one-document-per-person",
-    "href": "workshop.html#step-1-one-document-per-person",
-    "title": "How it works",
-    "section": "Step 1 — one document per person",
-    "text": "Step 1 — one document per person\nEach person’s “document” is the sentence they wrote about how their song makes them feel. Not their genre checkboxes, not their program — the sentence. That choice is the whole methodology: we are mapping how people describe feeling, and everything interesting on the map follows from it.\n\n\nBuild the documents\nfrom pathlib import Path\nimport pandas as pd\n\nsrc = Path(\"docs_data/responses_anon.csv\")\nHAVE_DATA = src.exists()\n\nif HAVE_DATA:\n    df = pd.read_csv(src)\n    docs = df[\"taste_text\"].fillna(\"\").astype(str).str.lower()\n    docs = docs[docs.str.strip() != \"\"]\n    print(f\"{len(docs)} sentences, median length \"\n          f\"{int(docs.str.split().str.len().median())} words\")\n    display(docs.head(3).tolist())\nelse:\n    print(\"No data yet — this page becomes live once the pipeline has run.\")\n\n\n6 sentences, median length 4 words\n\n\n['missing the old days', 'hopeful, happy, and seen', 'excited and proud']\n\n\n\n\n\n\n\n\nNote\n\n\n\nThe cells below only produce output once there are enough responses — roughly 4 at an absolute minimum, and 15+ before the map means much. Generate sample data with python scripts/make_sample_data.py --n 42 to walk through this offline at full size."
-  },
-  {
-    "objectID": "workshop.html#step-2-tf-idf",
-    "href": "workshop.html#step-2-tf-idf",
-    "title": "How it works",
-    "section": "Step 2 — tf-idf",
-    "text": "Step 2 — tf-idf\nThe point to make out loud: term frequency rewards repetition, and inverse document frequency punishes ubiquity. A word earns weight only when it’s frequent here and rare elsewhere.\nmin_df=2 (“ignore terms appearing in only one response”) is the right default for a full cohort, but with a handful of one-sentence answers it can throw away the entire vocabulary. So we start strict and relax if too little survives — the same thing scripts/03_taste_map.py does.\n\n\nVectorize\nfrom sklearn.feature_extraction.text import TfidfVectorizer\n\nX, vec, HAVE_VECTORS = None, None, False\n\nif HAVE_DATA and len(docs) &gt;= 4:\n    for min_df in (2, 1):\n        vec = TfidfVectorizer(stop_words=\"english\", ngram_range=(1, 2),\n                              min_df=min_df, max_df=0.9, sublinear_tf=True)\n        try:\n            X = vec.fit_transform(docs)\n        except ValueError:\n            X = None\n            continue\n        if X.shape[1] &gt;= max(5, len(docs) // 4):\n            break\n    HAVE_VECTORS = X is not None and X.shape[1] &gt;= 2\n    if HAVE_VECTORS:\n        print(f\"{X.shape[0]} responses x {X.shape[1]} terms (min_df={vec.min_df})\")\n    else:\n        print(\"Not enough shared vocabulary yet — add more responses.\")\nelif HAVE_DATA:\n    print(f\"Only {len(docs)} responses so far; this page needs at least 4.\")\n\n\n6 responses x 33 terms (min_df=1)\n\n\n\n\nWhich terms carry the most weight overall?\nimport numpy as np\n\nif HAVE_VECTORS:\n    terms = np.array(vec.get_feature_names_out())\n    weights = np.asarray(X.sum(axis=0)).ravel()\n    k = min(15, len(terms))\n    display(pd.DataFrame({\"term\": terms[np.argsort(weights)[-k:][::-1]],\n                          \"total tf-idf\": np.sort(weights)[-k:][::-1].round(2)}))\n\n\n\n\n\n\n\n\n\nterm\ntotal tf-idf\n\n\n\n\n0\nempowered\n1.25\n\n\n1\nproud\n0.58\n\n\n2\nexcited proud\n0.58\n\n\n3\nexcited\n0.58\n\n\n4\nmissing\n0.45\n\n\n5\nseen\n0.45\n\n\n6\nhappy\n0.45\n\n\n7\nold days\n0.45\n\n\n8\nold\n0.45\n\n\n9\ndays\n0.45\n\n\n10\nmissing old\n0.45\n\n\n11\nhappy seen\n0.45\n\n\n12\nhopeful\n0.45\n\n\n13\nhopeful happy\n0.45\n\n\n14\nignoring problems\n0.33"
-  },
-  {
-    "objectID": "workshop.html#step-3-pca",
-    "href": "workshop.html#step-3-pca",
-    "title": "How it works",
-    "section": "Step 3 — PCA",
-    "text": "Step 3 — PCA\nPCA can only extract as many components as the data actually has — bounded by both the number of responses and the size of the vocabulary. Asking for more than min(n_samples, n_features) raises an error, so we clamp it.\n\n\nProject to two dimensions\nfrom sklearn.decomposition import PCA\n\ncoords, pca, HAVE_MAP = None, None, False\n\nif HAVE_VECTORS:\n    dense = X.toarray()\n    n_comp = min(10, dense.shape[0] - 1, dense.shape[1])\n    if n_comp &gt;= 2:\n        pca = PCA(n_components=n_comp, random_state=0)\n        coords = pca.fit_transform(dense)\n        HAVE_MAP = True\n        display(pd.DataFrame(\n            {\"component\": [f\"PC{i+1}\" for i in range(len(pca.explained_variance_ratio_))],\n             \"variance explained\": pca.explained_variance_ratio_.round(3)}).head(5))\n    else:\n        print(f\"Only {n_comp} component(s) available — need at least 2. \"\n              \"More responses will fix this.\")\n\n\n\n\n\n\n\n\n\ncomponent\nvariance explained\n\n\n\n\n0\nPC1\n0.237\n\n\n1\nPC2\n0.203\n\n\n2\nPC3\n0.203\n\n\n3\nPC4\n0.203\n\n\n4\nPC5\n0.152\n\n\n\n\n\n\n\nIf PC1 explains only 8–12% of the variance, that’s normal and worth dwelling on: text data in a few-hundred-dimensional vocabulary rarely concentrates. The map is a useful summary, not a faithful reproduction of the full space."
-  },
-  {
-    "objectID": "workshop.html#step-4-plot-it",
-    "href": "workshop.html#step-4-plot-it",
-    "title": "How it works",
-    "section": "Step 4 — plot it",
-    "text": "Step 4 — plot it\n\n\nThe scatter\nimport matplotlib.pyplot as plt\n\nif HAVE_MAP:\n    fig, ax = plt.subplots(figsize=(7, 5))\n    ax.scatter(coords[:, 0], coords[:, 1], s=60, alpha=0.8, color=\"#4B9CD3\")\n    ax.set_xlabel(f\"PC1 — {pca.explained_variance_ratio_[0]:.1%}\")\n    ax.set_ylabel(f\"PC2 — {pca.explained_variance_ratio_[1]:.1%}\")\n    ax.set_title(\"Rebuilt from the published data\")\n    plt.show()\nelse:\n    print(\"The scatter appears once there are enough responses.\")"
-  },
-  {
-    "objectID": "workshop.html#discussion-prompts",
-    "href": "workshop.html#discussion-prompts",
-    "title": "How it works",
-    "section": "Discussion prompts",
-    "text": "Discussion prompts\n\nSwap TfidfVectorizer for CountVectorizer. What happens to the map, and why does the common-word structure dominate?\nChange min_df from 2 to 1. Rare terms return — does the map get more informative or just noisier?\nTry TruncatedSVD instead of PCA (it works on the sparse matrix directly, without .toarray()). Where does that matter at real scale?\nCosine vs. Euclidean distance on tf-idf vectors: which one matches your intuition of “similar taste,” and what does document length have to do with it?\nEthics round: this map is built from things people volunteered about themselves. What would change if it were built from listening history scraped without asking?"
-  },
-  {
-    "objectID": "GO-LIVE.html",
-    "href": "GO-LIVE.html",
-    "title": "",
-    "section": "",
-    "text": "Code"
-  },
-  {
-    "objectID": "GO-LIVE.html#step-1-share-the-response-sheet",
-    "href": "GO-LIVE.html#step-1-share-the-response-sheet",
-    "title": "",
-    "section": "Step 1 — Share the response sheet",
-    "text": "Step 1 — Share the response sheet\nThe pipeline reads the sheet over plain HTTPS with no credentials, which only works if the sheet is link-readable.\n\nOpen the sheet: https://docs.google.com/spreadsheets/d/1ZVwPOVBZlzhgCc85GAGK_zJc83jfcN3xX2MbzIrDRRk/edit\nClick Share (top right).\nUnder General access, change Restricted to Anyone with the link.\nLeave the role as Viewer.\nClick Done.\n\n\nIs this safe? Your form collects no email addresses and no names, so the responses are already effectively anonymous. The only fields are program, background, hometown, a song, and a sentence about how it feels — all of which you are publishing on the site anyway. If you later add an email or name question, switch to the service-account method in README.md instead, which keeps the sheet private.\n\nVerify it worked: open an incognito window and paste this. If you get a CSV download instead of a sign-in page, you’re set:\nhttps://docs.google.com/spreadsheets/d/1ZVwPOVBZlzhgCc85GAGK_zJc83jfcN3xX2MbzIrDRRk/export?format=csv&gid=1695451547"
-  },
-  {
-    "objectID": "GO-LIVE.html#step-2-create-your-.env",
-    "href": "GO-LIVE.html#step-2-create-your-.env",
-    "title": "",
-    "section": "Step 2 — Create your .env",
-    "text": "Step 2 — Create your .env\nFrom inside the project folder:\ncd cohort-snapshot\ncp .env.example .env\n.env.example already contains your sheet ID and gid, so the copy is nearly ready. Open .env and confirm these three lines:\nGOOGLE_SHEET_ID=1ZVwPOVBZlzhgCc85GAGK_zJc83jfcN3xX2MbzIrDRRk\nGOOGLE_SHEET_GID=1695451547\nANON_SALT=sdis-2026-change-this-to-anything\nANON_SALT is any random string. It seasons the hash that turns a response into an anonymous ID, so IDs can’t be compared across cohorts. Change it each year.\n.env is git-ignored and never committed.\n\nShortcut: you can paste the entire sheet URL into GOOGLE_SHEET_ID — including ?resourcekey=&gid=... — and both the ID and gid are extracted."
-  },
-  {
-    "objectID": "GO-LIVE.html#step-3-confirm-the-pipeline-sees-your-questions",
-    "href": "GO-LIVE.html#step-3-confirm-the-pipeline-sees-your-questions",
-    "title": "",
-    "section": "Step 3 — Confirm the pipeline sees your questions",
-    "text": "Step 3 — Confirm the pipeline sees your questions\npip install -r requirements.txt\npython scripts/inspect_sheet.py\nExpected output:\nN rows, 8 columns\n==============================================================================\nINTERNAL KEY       FORM QUESTION\n------------------------------------------------------------------------------\nbackground         What is your undergraduate background?\ngenres             Which genres to you listen to the most?\nhometown           Where did you grow up? (city, state/country)\nprogram            What is your program (or role) at SDIS?\nsong_artist        Who performs it?\nsong_title         What is the title of one song that has been on your mind r\ntaste_text         In a sentence, describe how this song makes you feel\ntimestamp          Timestamp\n\nFYI — handled automatically, no action needed:\n  - family_location: the location word cloud uses `hometown` instead\n  - consent: no consent question — ALL responses will be included\n  - artists: no artists question — the taste map leans on genres and free text\n  - email: no email collected — IDs are hashed from the timestamp instead\nRead the row count. 0 rows means the connection works but nobody has answered yet — not an error. Everything downstream stays empty until responses arrive, and the site still builds.\n\nIf this step fails\n\n\n\n\n\n\n\nMessage\nFix\n\n\n\n\nCould not read the sheet without credentials\nStep 1 didn’t take. Re-check General access = Anyone with the link\n\n\nparsed only 1 column\nWrong tab. Confirm GOOGLE_SHEET_GID=1695451547\n\n\nA question listed as missing\nPaste its exact wording into schemas/columns.yml under that key’s exact: list\n\n\nModuleNotFoundError\npip install -r requirements.txt"
-  },
-  {
-    "objectID": "GO-LIVE.html#step-4-do-a-dry-run-before-the-cohort-responds",
-    "href": "GO-LIVE.html#step-4-do-a-dry-run-before-the-cohort-responds",
-    "title": "",
-    "section": "Step 4 — Do a dry run before the cohort responds",
-    "text": "Step 4 — Do a dry run before the cohort responds\nDon’t wait for real data to find problems. Submit one test response through the form yourself, then:\npython scripts/inspect_sheet.py\nYou should now see 1 rows, and the sample-value column should show your own answers in the right places. That confirms the whole chain end to end: form → sheet → pipeline.\nDelete that test row from the sheet afterward, or leave it — one row won’t build a taste map anyway (PCA needs at least 4)."
-  },
-  {
-    "objectID": "GO-LIVE.html#step-5-run-the-full-pipeline",
-    "href": "GO-LIVE.html#step-5-run-the-full-pipeline",
-    "title": "",
-    "section": "Step 5 — Run the full pipeline",
-    "text": "Step 5 — Run the full pipeline\npython scripts/run_all.py\nThis fetches from your sheet and runs everything. Expected output with real responses:\n[immersion] fetched 37 rows from the link-shared sheet\n[immersion] mapped 8 columns: [...]\n[immersion] wrote .../clean.csv and .../responses_anon.csv (37 participants)\n[immersion] chart -&gt; program.png\n[immersion] chart -&gt; family_location_cloud.png (from hometown)\n[immersion] chart -&gt; background_cloud.png\n[immersion] chart -&gt; background.png\n[immersion] chart -&gt; genres.png\n[immersion] taste map source: free-text answers to 'how this song makes you feel'\n[immersion] tf-idf matrix: 37 participants x 214 terms (min_df=2)\n[immersion] PC1 9.4% / PC2 7.8% of variance\n[immersion] matched 36/37 picks, 36 playable previews — no credentials used\n[immersion] wrote _generated.md, _tastemap.md, _playlist.md\nThen look at it:\nquarto preview\n\nIf quarto preview errors\npython scripts/doctor.py --fix\nIt now also executes every page’s Python cells, which is where small-cohort failures show up (too few responses for PCA, empty vocabulary). With 5 responses the pages render — they just say “not enough responses yet” where a chart will eventually go.\n\n\nChecks worth doing on the first real run\n\ndocs_data/playlist_unmatched.csv — songs the catalog couldn’t find, usually a typo. Fix the spelling directly in the sheet and re-run.\ndocs_data/background_unmatched.json — backgrounds that fell into Other. Add a keyword to BACKGROUND_RULES in scripts/canonicalize.py.\nThe location word cloud — confirm hometowns collapsed sensibly (Raleigh, NC → NC, Mumbai, India → India).\nThe taste map — with fewer than ~15 responses it will look like one blob. That’s expected; it separates as answers arrive."
-  },
-  {
-    "objectID": "GO-LIVE.html#step-6-publish-to-github-pages",
-    "href": "GO-LIVE.html#step-6-publish-to-github-pages",
-    "title": "",
-    "section": "Step 6 — Publish to GitHub Pages",
-    "text": "Step 6 — Publish to GitHub Pages\nOnce locally it looks right:\nquarto render\ngit add -A\ngit commit -m \"First real snapshot\"\ngit push\nIf you haven’t set up the repo and Pages yet, do that once — DEPLOY.md has the walkthrough (create repo → push → Settings ▸ Pages ▸ branch main, folder /docs).\n\nAutomate the refresh\nIn your repo: Settings ▸ Secrets and variables ▸ Actions ▸ New repository secret, add:\n\n\n\nSecret name\nValue\n\n\n\n\nGOOGLE_SHEET_ID\n1ZVwPOVBZlzhgCc85GAGK_zJc83jfcN3xX2MbzIrDRRk\n\n\nGOOGLE_SHEET_GID\n1695451547\n\n\nANON_SALT\nthe same random string from your .env\n\n\n\nThe workflow then refreshes daily at 7:00 AM Eastern, and you can trigger it any time from Actions ▸ Refresh snapshot and publish ▸ Run workflow — which is the button to press live during the session."
-  },
-  {
-    "objectID": "GO-LIVE.html#day-of-checklist",
-    "href": "GO-LIVE.html#day-of-checklist",
-    "title": "",
-    "section": "Day-of checklist",
-    "text": "Day-of checklist\n\n\n\n\n\n\n\nWhen\nDo\n\n\n\n\n1 week out\nSend the form link; aim for &gt;70% before the session\n\n\n2 days out\nReminder to non-responders\n\n\nMorning of\nActions ▸ Run workflow, confirm the site looks right\n\n\nMorning of\nOpen tabs: live site, Actions, the response sheet\n\n\nDuring\nRe-run the workflow live after a few new responses — the map visibly shifts\n\n\n\nYour form link to share:\nhttps://docs.google.com/forms/d/e/1FAIpQLSffnSoDFPcI8As6cheWlBfTLeVxLnasJ-hv0qt-5BleGPT4eQ/viewform\nPut that same link in index.qmd where it says FORM_LINK_HERE, so the site itself recruits stragglers."
-  },
-  {
-    "objectID": "GO-LIVE.html#quick-reference",
-    "href": "GO-LIVE.html#quick-reference",
-    "title": "",
-    "section": "Quick reference",
-    "text": "Quick reference\npython scripts/inspect_sheet.py      # what does the pipeline see?\npython scripts/run_all.py            # fetch + full rebuild\npython scripts/run_all.py --no-fetch # rebuild from the last download\npython scripts/run_all.py --only 03  # just the taste map\npython scripts/doctor.py --fix       # fix any render error\nquarto preview                       # look at it\nquarto render && git push            # publish"
+    "objectID": "index.html#whats-next",
+    "href": "index.html#whats-next",
+    "title": "SDIS Grad Student Orientation: 2026 Snapshot",
+    "section": "What’s next",
+    "text": "What’s next\n\nTaste map — where everyone lands in music space, and why. Color shows taste neighborhood; marker shape shows program or role.\nPlaylist — the cohort playlist on common services.\nData — the anonymized dataset, free to download and remix."
   },
   {
     "objectID": "playlist.html",
@@ -249,14 +151,14 @@
     "href": "playlist.html#play-it-right-here",
     "title": "The cohort playlist",
     "section": "Play it right here",
-    "text": "Play it right here\nEvery one of these 6 clips streams straight from this page — no account, no login, nothing to install.\n\n\n\n\nOil and WaterIncubus\n\n\n\n\n\n\nGangsta's Paradise (feat. L.V.) [2023 Remaster]Coolio\n\n\n\n\n\n\nRolling in the DeepAdele\n\n\n\n\n\n\nUnder PressureQueen & David Bowie\n\n\n\n\n\n\nHark the SoundThe Clef Hangers\n\n\n\n\n\n\nSoloMyles Smith"
+    "text": "Play it right here\nEvery one of these 6 clips streams straight from this page — no account, no login, nothing to install.\n\n\n\n\nSoloMyles Smith\n\n\n\n\n\n\nRolling in the DeepAdele\n\n\n\n\n\n\nGangsta's Paradise (feat. L.V.) [2023 Remaster]Coolio\n\n\n\n\n\n\nOil and WaterIncubus\n\n\n\n\n\n\nUnder PressureQueen & David Bowie\n\n\n\n\n\n\nHark the SoundThe Clef Hangers"
   },
   {
     "objectID": "playlist.html#every-track",
     "href": "playlist.html#every-track",
     "title": "The cohort playlist",
     "section": "Every track",
-    "text": "Every track\n\n\n\n#\nTrack\nArtist\nYear\nNeighborhood\nListen on\n\n\n\n\n1\nOil and Water\nIncubus\n2006\nempowered, empowered empowered, missing old\nSpotify · Apple · YouTube\n\n\n2\nGangsta’s Paradise (feat. L.V.) [2023 Remaster]\nCoolio\n1995\nempowered, empowered empowered, missing old\nSpotify · Apple · YouTube\n\n\n3\nRolling in the Deep\nAdele\n2010\nempowered, empowered empowered, missing old\nSpotify · Apple · YouTube\n\n\n4\nUnder Pressure\nQueen & David Bowie\n1981\nproud, excited proud, excited\nSpotify · Apple · YouTube\n\n\n5\nHark the Sound\nThe Clef Hangers\n2018\nproud, excited proud, excited\nSpotify · Apple · YouTube\n\n\n6\nSolo\nMyles Smith\n2023\nproud, excited proud, excited\nSpotify · Apple · YouTube\n\n\n\n6 of 6 picks were matched automatically against the public music catalog — no API keys involved."
+    "text": "Every track\n\n\n\n#\nTrack\nArtist\nYear\nNeighborhood\nListen on\n\n\n\n\n1\nSolo\nMyles Smith\n2023\nempowered, empowered empowered, seen\nSpotify · Apple · YouTube\n\n\n2\nRolling in the Deep\nAdele\n2010\nempowered, empowered empowered, seen\nSpotify · Apple · YouTube\n\n\n3\nGangsta’s Paradise (feat. L.V.) [2023 Remaster]\nCoolio\n1995\nempowered, empowered empowered, seen\nSpotify · Apple · YouTube\n\n\n4\nOil and Water\nIncubus\n2006\nexcited proud, excited, proud\nSpotify · Apple · YouTube\n\n\n5\nUnder Pressure\nQueen & David Bowie\n1981\nexcited proud, excited, proud\nSpotify · Apple · YouTube\n\n\n6\nHark the Sound\nThe Clef Hangers\n2018\nexcited proud, excited, proud\nSpotify · Apple · YouTube\n\n\n\n6 of 6 picks were matched automatically against the public music catalog — no API keys involved."
   },
   {
     "objectID": "playlist.html#get-this-into-your-own-spotify-or-apple-library",
@@ -264,103 +166,5 @@
     "title": "The cohort playlist",
     "section": "Get this into your own Spotify or Apple library",
     "text": "Get this into your own Spotify or Apple library\nPlaylists live inside an account, so this last hop is yours to make — it takes about a minute:\n\nDownload the import file above.\nGo to a free transfer tool (Soundiiz, TuneMyMusic, or Spotlistr).\nChoose import from file / text, upload the CSV (or paste the plain text list), and pick Spotify or Apple Music as the destination.\nLog in when prompted, name it, done — the whole cohort playlist lands in your library.\n\nYou can also click any Spotify link in the table above to open that song directly, and add it with the ⋯ menu."
-  },
-  {
-    "objectID": "playlist.html#how-the-matching-works",
-    "href": "playlist.html#how-the-matching-works",
-    "title": "The cohort playlist",
-    "section": "How the matching works",
-    "text": "How the matching works\nEvery pick is resolved against the public iTunes Search catalog, which needs no API key, no account, and no registration. A strict “title + artist” query runs first; if that misses, a looser title-only query runs and the result whose artist best resembles what was typed wins. That single free lookup gives us the canonical title and artist, the album and year, cover art, a 30-second preview clip, and a direct Apple Music link — which is why this page can play music for you without asking anyone to log in.\nSpotify links in the table are deep links into Spotify’s own search, so they open the right song for any visitor, subscriber or not.\nAnything the catalog couldn’t find lands in playlist_unmatched.csv — usually a typo or an unusually-named cover. Fixing it is a one-line edit in the response sheet followed by a rebuild."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "SDIS Grad Student Orientation: 2026 Snapshot",
-    "section": "",
-    "text": "Welcome. This site is a living picture of the SDIS graduate student cohort: who’s here, what we listen to, and a playlist built from one song per person."
-  },
-  {
-    "objectID": "index.html#the-cohort-by-the-numbers",
-    "href": "index.html#the-cohort-by-the-numbers",
-    "title": "SDIS Grad Student Orientation: 2026 Snapshot",
-    "section": "The cohort, by the numbers",
-    "text": "The cohort, by the numbers\n\n\n\n\n\n\nNote\n\n\n\n6 people have filled out the cohort survey. Last refreshed August 10, 2026 at 11:02 PM.\n\n\nFamilies are spread across 6 states and countries, most often FL (1), Colombia (1), NC (1). The most common undergraduate backgrounds are Music & Arts, Mathematics, Physics. Most-listened genres: Indie Rock (3), Hip-Hop (2), R&B (2). 6 distinct songs were nominated for the playlist.\n\n\n\nWhere the cohort grew up\n\n\n\n\n\nWhere the cohort grew up, counted\n\n\n\n\n\nUndergraduate backgrounds, in respondents’ own words\n\n\n\n\n\nUndergraduate background, collapsed into families\n\n\n\n\n\nProgram / role\n\n\n\n\n\nGenres the cohort listens to most"
-  },
-  {
-    "objectID": "index.html#whats-next",
-    "href": "index.html#whats-next",
-    "title": "SDIS Grad Student Orientation: 2026 Snapshot",
-    "section": "What’s next",
-    "text": "What’s next\n\nTaste map — where everyone lands in music space, and why. Color shows taste neighborhood; marker shape shows program or role.\nPlaylist — the cohort playlist on common services.\nData — the anonymized dataset, free to download and remix."
-  },
-  {
-    "objectID": "index.html#privacy",
-    "href": "index.html#privacy",
-    "title": "SDIS Grad Student Orientation: 2026 Snapshot",
-    "section": "Privacy",
-    "text": "Privacy\nEmail addresses are used only to build a one-way hashed ID (p3f9a2c1) so we can de-duplicate resubmissions; they are never published and never leave the private response sheet. Anyone who answered “no” to the consent question is dropped before any analysis runs. Free-text answers are published verbatim, so the form warns people not to include anything they wouldn’t say out loud."
-  },
-  {
-    "objectID": "DEPLOY.html",
-    "href": "DEPLOY.html",
-    "title": "",
-    "section": "",
-    "text": "Code"
-  },
-  {
-    "objectID": "DEPLOY.html#path-a-zero-credential-deployment",
-    "href": "DEPLOY.html#path-a-zero-credential-deployment",
-    "title": "",
-    "section": "Path A — zero-credential deployment",
-    "text": "Path A — zero-credential deployment\n\n1. Create the repository\n\nUnzip this project into a folder, e.g. cohort-snapshot.\nOn GitHub, click New repository. Name it (say immersion27), make it Public (required for free GitHub Pages), and do not add a README — this project already has one.\nIn a terminal, from inside the project folder:\n\ngit init\ngit add .\ngit commit -m \"Cohort snapshot site\"\ngit branch -M main\ngit remote add origin https://github.com/YOURNAME/immersion27.git\ngit push -u origin main\n\n\n2. Build the Google Form\n\nOpen forms.google.com and create a blank form.\nAdd the questions exactly as listed in schemas/google_form_schema.md. Copy the titles verbatim — the pipeline matches on them.\nSettings ▸ Responses ▸ Collect email addresses = Responder input.\nResponses tab ▸ Link to Sheets ▸ Create new spreadsheet.\nCopy the form’s share link (Send ▸ link icon). You’ll need it in step 4.\n\n\n\n3. Publish the response sheet as CSV\nIn the response spreadsheet:\n\nFile ▸ Share ▸ Publish to web.\nIn the first dropdown pick the responses sheet (not “Entire document”).\nIn the second dropdown pick Comma-separated values (.csv).\nClick Publish, confirm, and copy the URL it gives you.\n\n\nPrivacy check. A published sheet is readable by anyone with the URL, and your sheet contains email addresses. Two ways to handle this properly: (a) turn off email collection in the form and let the pipeline hash the timestamp instead, or (b) use the service-account route in README.md, which keeps the sheet fully private. Option (b) is the right call if you collect emails. Don’t publish a sheet with student emails in it.\n\n\n\n4. Point the project at your form\nEdit three placeholders and push:\n\n\n\n\n\n\n\n\nFile\nFind\nReplace with\n\n\n\n\n_quarto.yml\nUSERNAME/REPO (2 places)\nyour GitHub user and repo\n\n\nindex.qmd\nFORM_LINK_HERE\nyour Google Form share link\n\n\n—\n—\n—\n\n\n\ngit add . && git commit -m \"Point at my form\" && git push\n\n\n5. Add the CSV URL as a repository secret\nRepo ▸ Settings ▸ Secrets and variables ▸ Actions ▸ New repository secret\n\n\n\n\n\n\n\nName\nValue\n\n\n\n\nGOOGLE_SHEET_ID\nthe sheet ID (or FORM_CSV_URL if you published a CSV)\n\n\nGOOGLE_SHEET_GID\nthe responses tab id, if it isn’t the first tab\n\n\nANON_SALT\nany random string, e.g. immersion-2027-x7f2\n\n\n\nThat’s the entire credential list for Path A. Two secrets, neither of which is a music service account.\n\n\n6. Turn on GitHub Pages\nRepo ▸ Settings ▸ Pages ▸ Build and deployment\n\nSource: Deploy from a branch\nBranch: main, folder: /docs\nSave.\n\n\n\n7. Run the build\nRepo ▸ Actions ▸ “Refresh snapshot and publish” ▸ Run workflow.\nFirst run takes 3–5 minutes (installing Quarto and Python packages). When it goes green, your site is at:\nhttps://YOURNAME.github.io/immersion27/\nIf Actions shows a permissions error on the commit step, go to Settings ▸ Actions ▸ General ▸ Workflow permissions and select Read and write permissions.\n\n\n8. Confirm it works\nSubmit one test response through the form, re-run the workflow, and check that your answer moved the numbers. Then delete the test row from the sheet.\nYou are done. The site rebuilds itself daily at 7:00 AM Eastern, and you can force a rebuild any time from the Actions tab."
-  },
-  {
-    "objectID": "DEPLOY.html#path-b-optional-hosted-playlists",
-    "href": "DEPLOY.html#path-b-optional-hosted-playlists",
-    "title": "",
-    "section": "Path B — optional hosted playlists",
-    "text": "Path B — optional hosted playlists\nOnly needed if you want a real Spotify or Apple playlist URL rather than the built-in preview player plus one-click import file.\n\nSpotify\n\ndeveloper.spotify.com/dashboard ▸ Create app. Any name. Redirect URI: http://127.0.0.1:8080/callback.\nCopy the Client ID and Client Secret.\nLocally:\n\npip install -r requirements.txt\nexport SPOTIFY_CLIENT_ID=xxx SPOTIFY_CLIENT_SECRET=yyy\npython scripts/get_spotify_refresh_token.py\nA browser opens, you approve, and the terminal prints a refresh token.\n\nAdd three secrets to the repo: SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REFRESH_TOKEN.\n\n\n\nApple Music\n\nIn your paid Apple Developer account: Certificates, IDs & Profiles ▸ Keys ▸ +, enable MusicKit, download the .p8 (one download only, keep it).\nNote your Team ID and the Key ID.\nSecrets: APPLE_TEAM_ID, APPLE_KEY_ID, APPLE_PRIVATE_KEY_P8 (paste the whole file contents including the BEGIN/END lines).\nFor playlist creation you also need APPLE_MUSIC_USER_TOKEN, minted in a browser with MusicKit JS by a signed-in Apple Music subscriber. It expires roughly every six months. Without it you still get every Apple track link.\n\nRe-run the workflow. The playlist page will now show the embedded Spotify player and direct links."
-  },
-  {
-    "objectID": "DEPLOY.html#troubleshooting",
-    "href": "DEPLOY.html#troubleshooting",
-    "title": "",
-    "section": "Troubleshooting",
-    "text": "Troubleshooting\nStart here for any render error:\npython scripts/doctor.py --fix\nIt finds stale files, a _quarto.yml pointing at the wrong stylesheet, missing SCSS layer boundaries, missing include targets, and stale build caches — and repairs what it safely can.\n\n\n\n\n\n\n\nSymptom\nFix\n\n\n\n\nAction fails at “Run pipeline” with no response source configured\nFORM_CSV_URL secret is missing or misspelled\n\n\nSite builds but shows 0 participants\nThe consent question wording in the form doesn’t match schemas/columns.yml\n\n\nCharts missing, no taste map\nFewer than 4 responses — PCA needs at least 4\n\n\nPage loads without styling\nPages is pointed at /root instead of /docs\n\n\nstyles.css doesn't contain at least one layer boundary\nA stale styles.css is still in the folder. Run python scripts/doctor.py --fix, then rm -rf .quarto _freeze\n\n\nquarto preview fails on a fresh clone with a missing include\nRun python scripts/bootstrap_placeholders.py first (or just python scripts/run_all.py)\n\n\n404 on the site\nWait 2 minutes after the first green build; Pages is slow the first time\n\n\nUnmatched songs\nCheck docs_data/playlist_unmatched.csv, fix the spelling in the sheet, re-run\n\n\nEverything works locally but not in Actions\nCheck the Secrets tab — secrets don’t transfer from your .env"
-  },
-  {
-    "objectID": "taste-map.html",
-    "href": "taste-map.html",
-    "title": "Musical taste map",
-    "section": "",
-    "text": "Every person becomes a short document: the sentence they wrote about how their song makes them feel. Not the genres they checked, not their program — just the writing. That single choice is the method, and it is why the map says something a bar chart of genres cannot. From there:\n\ntf-idf turns each sentence into a vector. Terms almost everyone uses (“feel”, “makes”, “song”) get pushed toward zero; terms that appear in a few answers and nowhere else carry the weight. This is what keeps the map from collapsing into “everyone has feelings about music.”\nPCA finds the directions along which those vectors vary the most, and we keep the top two. Distance on the resulting map is similarity of taste.\nk-means on the first few components labels loose neighborhoods, named automatically by the terms most distinctive to each group.\n\nThe map encodes two things at once: color is taste neighborhood (learned from the text) and marker shape is program or role (what you told us)."
-  },
-  {
-    "objectID": "taste-map.html#the-idea",
-    "href": "taste-map.html#the-idea",
-    "title": "Musical taste map",
-    "section": "",
-    "text": "Every person becomes a short document: the sentence they wrote about how their song makes them feel. Not the genres they checked, not their program — just the writing. That single choice is the method, and it is why the map says something a bar chart of genres cannot. From there:\n\ntf-idf turns each sentence into a vector. Terms almost everyone uses (“feel”, “makes”, “song”) get pushed toward zero; terms that appear in a few answers and nowhere else carry the weight. This is what keeps the map from collapsing into “everyone has feelings about music.”\nPCA finds the directions along which those vectors vary the most, and we keep the top two. Distance on the resulting map is similarity of taste.\nk-means on the first few components labels loose neighborhoods, named automatically by the terms most distinctive to each group.\n\nThe map encodes two things at once: color is taste neighborhood (learned from the text) and marker shape is program or role (what you told us)."
-  },
-  {
-    "objectID": "taste-map.html#the-map",
-    "href": "taste-map.html#the-map",
-    "title": "Musical taste map",
-    "section": "The map",
-    "text": "The map\n\nInteractiveStatic\n\n\n\nHover any point to see the anonymous ID, the neighborhood, and the song that person put on the playlist.\n\n\n\n\n\nMusical taste map of the cohort"
-  },
-  {
-    "objectID": "taste-map.html#reading-the-axes",
-    "href": "taste-map.html#reading-the-axes",
-    "title": "Musical taste map",
-    "section": "Reading the axes",
-    "text": "Reading the axes\nThe components are not “genre” and “decade” — they’re whatever directions the data actually spreads along. Here’s what came out this year:\nThe map is built from free-text answers to ‘how this song makes you feel’.\nPC1 (22.6% of the variance) separates empowered, empowered empowered, singing chorus, nostalgic empowered, empowered gives, gives on one side from excited, excited proud, proud, proud excited, dancing ignoring, days on the other.\nPC2 (20.2% of the variance) separates missing, old days, old, missing old, days, days missing on one side from excited, proud, excited proud, proud excited, dancing ignoring, dancing on the other.\nPC3 (20.2% of the variance) separates seen, happy, happy seen, hopeful, hopeful happy, seen hopeful on one side from dancing, ignoring, ignoring problems, dancing ignoring, problems, problems dancing on the other.\n\nNeighborhoods\n\nempowered, empowered empowered, missing old — 3 people\nproud, excited proud, excited — 3 people\n\n\n\n\nTerms with the strongest loadings on each component"
-  },
-  {
-    "objectID": "taste-map.html#caveats-worth-saying-out-loud",
-    "href": "taste-map.html#caveats-worth-saying-out-loud",
-    "title": "Musical taste map",
-    "section": "Caveats worth saying out loud",
-    "text": "Caveats worth saying out loud\n\nWith a cohort of a few dozen people, the components are unstable — one person writing a long, unusual answer can rotate the map. Re-run it after the next batch of responses and the axes may swap or flip sign. That’s not a bug; it’s what small-n PCA does, and it’s a good thing to see happen live.\ntf-idf sees strings, not sound. Two people who picked the same song but described it differently land far apart, and two people with nothing musically in common can land together because they both wrote about their grandmother. The map measures how people write about feeling, not what they listen to. That is a feature here, but say it out loud — it is the most common misreading of a plot like this.\nNeighborhood names are the most distinctive terms per cluster, chosen mechanically. Some are sharp; some are nonsense. Both are informative."
   }
 ]
