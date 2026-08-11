@@ -1,17 +1,17 @@
 {
   "PC1": {
-    "explained_variance": 0.1954476372070845,
+    "explained_variance": 0.1954476372070846,
     "positive": [
       "empowered",
       "empowered empowered",
+      "chorus",
       "singing",
+      "power",
       "singing chorus",
       "power singing",
-      "power",
       "gives power",
       "gives",
-      "empowered gives",
-      "nostalgic empowered"
+      "empowered gives"
     ],
     "negative": [
       "hopeful",
@@ -27,7 +27,7 @@
     ]
   },
   "PC2": {
-    "explained_variance": 0.1797540424424187,
+    "explained_variance": 0.17975404244241877,
     "positive": [
       "hopeful",
       "empowered",
@@ -49,35 +49,35 @@
       "ignoring problems",
       "ignoring",
       "problems",
-      "days",
-      "dancing"
+      "dancing",
+      "days"
     ]
   },
   "PC3": {
-    "explained_variance": 0.1691295105676179,
+    "explained_variance": 0.16912951056761777,
     "positive": [
-      "missing",
-      "missing old",
-      "old",
-      "days",
-      "old days",
-      "days missing",
-      "empowered empowered",
-      "empowered",
-      "relaxed",
-      "relaxed thoughtful"
-    ],
-    "negative": [
-      "excited proud",
       "excited",
+      "excited proud",
       "proud",
       "proud excited",
+      "hopeful",
+      "thoughtful hopeful",
+      "relaxed thoughtful",
+      "thoughtful",
+      "relaxed",
+      "happy seen"
+    ],
+    "negative": [
       "dancing ignoring",
-      "ignoring problems",
-      "ignoring",
       "problems",
+      "ignoring",
+      "ignoring problems",
       "dancing",
-      "problems dancing"
+      "problems dancing",
+      "empowered",
+      "empowered empowered",
+      "days missing",
+      "missing old"
     ]
   },
   "_source": "free-text answers to 'how this song makes you feel'"
