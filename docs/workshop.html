@@ -199,7 +199,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="step-1-one-document-per-person" class="level2">
 <h2 class="anchored" data-anchor-id="step-1-one-document-per-person">Step 1 — one document per person</h2>
 <p>Each person’s “document” is the sentence they wrote about how their song makes them feel. Not their genre checkboxes, not their program — the sentence. That choice is the whole methodology: we are mapping <em>how people describe feeling</em>, and everything interesting on the map follows from it.</p>
-<div id="8d46ecff" class="cell" data-execution_count="1">
+<div id="90b317f8" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Build the documents</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
@@ -219,7 +219,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"No data yet — this page becomes live once the pipeline has run."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>79 sentences, median length 3 words</code></pre>
+<pre><code>80 sentences, median length 3 words</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <pre><code>['missing the old days', 'hopeful, happy, and seen', 'excited and proud']</code></pre>
@@ -243,7 +243,7 @@ Note
 <h2 class="anchored" data-anchor-id="step-2-tf-idf">Step 2 — tf-idf</h2>
 <p>The point to make out loud: <strong>term frequency</strong> rewards repetition, and <strong>inverse document frequency</strong> punishes ubiquity. A word earns weight only when it’s frequent <em>here</em> and rare <em>elsewhere</em>.</p>
 <p><code>min_df=2</code> (“ignore terms appearing in only one response”) is the right default for a full cohort, but with a handful of one-sentence answers it can throw away the entire vocabulary. So we start strict and relax if too little survives — the same thing <code>scripts/03_taste_map.py</code> does.</p>
-<div id="b9816206" class="cell" data-execution_count="2">
+<div id="1999b5e8" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Vectorize</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.feature_extraction.text <span class="im">import</span> TfidfVectorizer</span>
@@ -270,10 +270,10 @@ Note
 <span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Only </span><span class="sc">{</span><span class="bu">len</span>(docs)<span class="sc">}</span><span class="ss"> responses so far; this page needs at least 4."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>79 responses x 39 terms (min_df=2)</code></pre>
+<pre><code>80 responses x 40 terms (min_df=2)</code></pre>
 </div>
 </div>
-<div id="df9a221e" class="cell" data-execution_count="3">
+<div id="a86835e5" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Which terms carry the most weight overall?</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -301,7 +301,7 @@ Note
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0</td>
 <td>happy</td>
-<td>5.31</td>
+<td>5.32</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">1</td>
@@ -335,18 +335,18 @@ Note
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">7</td>
-<td>energized</td>
-<td>3.13</td>
+<td>good</td>
+<td>3.14</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">8</td>
-<td>relaxed</td>
-<td>3.09</td>
+<td>energized</td>
+<td>3.13</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">9</td>
-<td>song</td>
-<td>2.76</td>
+<td>relaxed</td>
+<td>3.09</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">10</td>
@@ -355,12 +355,12 @@ Note
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">11</td>
-<td>home</td>
-<td>2.59</td>
+<td>song</td>
+<td>2.69</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">12</td>
-<td>good</td>
+<td>home</td>
 <td>2.50</td>
 </tr>
 <tr class="even">
@@ -370,7 +370,7 @@ Note
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">14</td>
-<td>calm</td>
+<td>fun</td>
 <td>2.00</td>
 </tr>
 </tbody>
@@ -383,7 +383,7 @@ Note
 <section id="step-3-pca" class="level2">
 <h2 class="anchored" data-anchor-id="step-3-pca">Step 3 — PCA</h2>
 <p>PCA can only extract as many components as the data actually has — bounded by both the number of responses and the size of the vocabulary. Asking for more than <code>min(n_samples, n_features)</code> raises an error, so we clamp it.</p>
-<div id="d5db266b" class="cell" data-execution_count="4">
+<div id="7687acd2" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Project to two dimensions</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.decomposition <span class="im">import</span> PCA</span>
@@ -420,22 +420,22 @@ Note
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0</td>
 <td>PC1</td>
-<td>0.097</td>
+<td>0.096</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">1</td>
 <td>PC2</td>
-<td>0.073</td>
+<td>0.072</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2</td>
 <td>PC3</td>
-<td>0.069</td>
+<td>0.068</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">3</td>
 <td>PC4</td>
-<td>0.060</td>
+<td>0.059</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">4</td>
@@ -452,7 +452,7 @@ Note
 </section>
 <section id="step-4-plot-it" class="level2">
 <h2 class="anchored" data-anchor-id="step-4-plot-it">Step 4 — plot it</h2>
-<div id="cf79139c" class="cell" data-execution_count="5">
+<div id="929f8808" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>The scatter</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>

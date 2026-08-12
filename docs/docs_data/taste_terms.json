@@ -1,6 +1,6 @@
 {
   "PC1": {
-    "explained_variance": 0.08187757595995929,
+    "explained_variance": 0.08092988621878981,
     "positive": [
       "energetic",
       "happy",
@@ -16,45 +16,45 @@
     "negative": [
       "energized",
       "nostalgic",
+      "good",
       "empowered",
       "nostalgic nostalgic",
       "pumped",
       "excited",
-      "good",
+      "driving",
       "home",
-      "want",
-      "days"
+      "want"
     ]
   },
   "PC2": {
-    "explained_variance": 0.0769551381066752,
+    "explained_variance": 0.07579446889877652,
     "positive": [
       "happy",
       "happy happy",
+      "nostalgic",
       "relaxed",
       "hopeful",
-      "nostalgic",
       "light",
       "seen",
       "moved",
       "silly",
-      "relaxed relaxed"
+      "nostalgic nostalgic"
     ],
     "negative": [
       "energetic",
-      "energized",
       "energetic energetic",
+      "energized",
       "ready",
-      "pumped",
       "good",
+      "pumped",
+      "driving",
+      "hypes",
       "want",
-      "calm",
-      "days",
-      "driving"
+      "calm"
     ]
   },
   "PC3": {
-    "explained_variance": 0.06968790545417786,
+    "explained_variance": 0.06866073782486838,
     "positive": [
       "nostalgic",
       "empowered",
@@ -69,15 +69,15 @@
     ],
     "negative": [
       "energized",
+      "good",
+      "happy",
       "pumped",
       "relaxed",
-      "happy",
       "happy happy",
       "hopeful",
       "relaxed relaxed",
-      "good",
-      "light",
-      "silly"
+      "driving",
+      "light"
     ]
   },
   "_source": "free-text answers to 'how this song makes you feel'"

@@ -1,5 +1,5 @@
 {
-  "n_participants": 79,
+  "n_participants": 80,
   "programs": [
     [
       "MS in LS",
@@ -18,12 +18,12 @@
       8
     ],
     [
-      "MS in IS",
+      "PhD in DS",
       5
     ],
     [
-      "PhD in DS",
-      4
+      "MS in IS",
+      5
     ],
     [
       "PhD in ILS",
@@ -44,11 +44,11 @@
       23
     ],
     [
-      "VA",
-      5
+      "China",
+      6
     ],
     [
-      "China",
+      "VA",
       5
     ],
     [
@@ -91,35 +91,13 @@
       7
     ],
     [
-      "Other",
+      "Statistics",
       5
     ],
     [
-      "Mathematics",
-      4
+      "Other",
+      5
     ]
   ],
-  "top_genres": [
-    [
-      "Pop",
-      53
-    ],
-    [
-      "Indie Rock",
-      36
-    ],
-    [
-      "Rock",
-      30
-    ],
-    [
-      "Folk",
-      25
-    ],
-    [
-      "R&B",
-      20
-    ]
-  ],
-  "n_unique_songs": 78
+  "n_unique_songs": 79
 }
