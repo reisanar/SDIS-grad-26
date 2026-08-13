@@ -11,24 +11,24 @@ Every one of these 80 clips streams straight from this page — no account, no l
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4b/a7/02/4ba702ac-51be-c305-7e53-9d77140a28c4/mzaf_6853509847168773396.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/cf/f5/19/cff5191f-a668-2c7f-f73a-fe51f519b577/dj.yrzoirxd.jpg/300x300bb.jpg" alt="Album art for Fantasy" loading="lazy">
-  <div class="preview-meta"><strong>Fantasy</strong><br><span>Mariah Carey</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b5/77/53/b577533b-e59c-dca4-d1a1-0a6c2c2a171c/mzaf_323513037460823421.plus.aac.p.m4a"></audio>
-</div>
-<div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/13/55/fb/1355fbb0-60f1-d15e-12cb-ad0008b99524/mzi.zqdpvvdq.jpg/300x300bb.jpg" alt="Album art for Through the Fire" loading="lazy">
   <div class="preview-meta"><strong>Through the Fire</strong><br><span>Chaka Khan</span></div>
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/28/88/68/288868e6-8feb-da36-377e-8f92e97e7703/mzaf_4576085777135473198.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music/v4/73/c8/8e/73c88eef-6b9b-70ba-60f1-a8fb91c687cf/886443976870.jpg/300x300bb.jpg" alt="Album art for Piano Concerto No. 3 in C Major, Op. 26: I. Andante - Allegro" loading="lazy">
-  <div class="preview-meta"><strong>Piano Concerto No. 3 in C Major, Op. 26: I. Andante - Allegro</strong><br><span>Lang Lang, Sir Simon Rattle &amp; Berlin Philharmonic</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1f/02/7c/1f027c77-e317-50b0-1002-134f64bd2150/mzaf_644464468270240172.plus.aac.p.m4a"></audio>
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/cf/f5/19/cff5191f-a668-2c7f-f73a-fe51f519b577/dj.yrzoirxd.jpg/300x300bb.jpg" alt="Album art for Fantasy" loading="lazy">
+  <div class="preview-meta"><strong>Fantasy</strong><br><span>Mariah Carey</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b5/77/53/b577533b-e59c-dca4-d1a1-0a6c2c2a171c/mzaf_323513037460823421.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/80/03/27/800327cf-1563-c72e-d20e-0281ae33defa/25UMGIM60342.rgb.jpg/300x300bb.jpg" alt="Album art for Nice To Each Other" loading="lazy">
   <div class="preview-meta"><strong>Nice To Each Other</strong><br><span>Olivia Dean</span></div>
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/49/99/e6/4999e60f-e2c7-b9f9-f1b7-aad74b787f21/mzaf_12717219127350994233.plus.aac.p.m4a"></audio>
+</div>
+<div class="preview-card">
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music/v4/73/c8/8e/73c88eef-6b9b-70ba-60f1-a8fb91c687cf/886443976870.jpg/300x300bb.jpg" alt="Album art for Piano Concerto No. 3 in C Major, Op. 26: I. Andante - Allegro" loading="lazy">
+  <div class="preview-meta"><strong>Piano Concerto No. 3 in C Major, Op. 26: I. Andante - Allegro</strong><br><span>Lang Lang, Sir Simon Rattle &amp; Berlin Philharmonic</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1f/02/7c/1f027c77-e317-50b0-1002-134f64bd2150/mzaf_644464468270240172.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music/c6/df/9d/mzi.ngbmjcuk.jpg/300x300bb.jpg" alt="Album art for Sarà Perché Ti Amo" loading="lazy">
@@ -56,6 +56,11 @@ Every one of these 80 clips streams straight from this page — no account, no l
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/60/5c/28/605c28a0-df61-624e-4022-9805ad85d5d7/mzaf_16401280977557331615.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/6e/b9/a2/6eb9a297-89af-f85e-49d0-ef1d62b8d259/mzi.ifagooar.jpg/300x300bb.jpg" alt="Album art for Warm Safe Place" loading="lazy">
+  <div class="preview-meta"><strong>Warm Safe Place</strong><br><span>Staind</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e8/e8/c3/e8e8c31e-17bf-bfdc-0c7d-7d3d40a92ec7/mzaf_5464290433522581954.plus.aac.p.m4a"></audio>
+</div>
+<div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/29/a7/c4/29a7c478-351d-25eb-a116-3e68118cdab8/24UMGIM31246.rgb.jpg/300x300bb.jpg" alt="Album art for Good Luck, Babe!" loading="lazy">
   <div class="preview-meta"><strong>Good Luck, Babe!</strong><br><span>Chappell Roan</span></div>
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c3/6d/4f/c36d4f23-b87f-046d-7a0e-e3e05d180b2a/mzaf_17235999651335214399.plus.aac.p.m4a"></audio>
@@ -64,11 +69,6 @@ Every one of these 80 clips streams straight from this page — no account, no l
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/6f/ff/826fff60-5786-29b5-5389-0810bdfe7a6e/5021732634719.jpg/300x300bb.jpg" alt="Album art for Strategy" loading="lazy">
   <div class="preview-meta"><strong>Strategy</strong><br><span>Olivia Marsh</span></div>
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7c/53/24/7c5324b4-a304-0cdd-cbb2-c198a0eaeec3/mzaf_7087309644366841371.plus.aac.p.m4a"></audio>
-</div>
-<div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/6e/b9/a2/6eb9a297-89af-f85e-49d0-ef1d62b8d259/mzi.ifagooar.jpg/300x300bb.jpg" alt="Album art for Warm Safe Place" loading="lazy">
-  <div class="preview-meta"><strong>Warm Safe Place</strong><br><span>Staind</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e8/e8/c3/e8e8c31e-17bf-bfdc-0c7d-7d3d40a92ec7/mzaf_5464290433522581954.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6e/91/10/6e9110c5-c914-f215-ad28-4e5de562f191/26UMGIM17314.rgb.jpg/300x300bb.jpg" alt="Album art for The Let Out" loading="lazy">
@@ -81,9 +81,9 @@ Every one of these 80 clips streams straight from this page — no account, no l
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b4/30/40/b430403c-a563-50d2-2110-37eaf8d073af/mzaf_3514747294235909250.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2a/65/27/2a652740-14a8-4799-2ab0-39c981246b2e/26UMGIM46751.rgb.jpg/300x300bb.jpg" alt="Album art for Notting Hill" loading="lazy">
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/01/49/16/0149169d-79a4-7d82-ff8e-41bb761a10b6/26UMGIM93204.rgb.jpg/300x300bb.jpg" alt="Album art for Notting Hill" loading="lazy">
   <div class="preview-meta"><strong>Notting Hill</strong><br><span>Suki Waterhouse</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f2/4a/f9/f24af99d-996f-2cd1-a5f4-600e83a6bc07/mzaf_8373393464000527948.plus.aac.p.m4a"></audio>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e3/94/6a/e3946a72-1dbe-aa66-735d-4b635d8b9501/mzaf_16273610952979824764.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ad/fb/08/adfb08dd-7ed4-9867-6600-5dd86cb743b4/337786.jpg/300x300bb.jpg" alt="Album art for Conquer The World" loading="lazy">
@@ -96,6 +96,11 @@ Every one of these 80 clips streams straight from this page — no account, no l
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7c/28/b3/7c28b3ed-9aa9-6454-92c6-e46d20849bed/mzaf_518591709818271733.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b8/88/44/b888443e-0bc9-5024-224c-793ad7fbe04f/mzi.cglpasri.jpg/300x300bb.jpg" alt="Album art for Take My Hand" loading="lazy">
+  <div class="preview-meta"><strong>Take My Hand</strong><br><span>Simple Plan</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d9/76/85/d9768560-1c94-802f-f9f0-78b677c1f15c/mzaf_16526728040865577170.plus.aac.p.m4a"></audio>
+</div>
+<div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/08/e2/21/08e22164-7c0b-1522-818f-e0e74f62dc49/25UMGIM69703.rgb.jpg/300x300bb.jpg" alt="Album art for A Couple Minutes" loading="lazy">
   <div class="preview-meta"><strong>A Couple Minutes</strong><br><span>Olivia Dean</span></div>
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c3/86/aa/c386aa57-9cd9-42d5-8406-7e805c33119e/mzaf_15443155590438636047.plus.aac.p.m4a"></audio>
@@ -106,14 +111,9 @@ Every one of these 80 clips streams straight from this page — no account, no l
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8b/f3/20/8bf3209b-c5ce-55fa-1320-b915e1cc9d7b/mzaf_17498709224846484637.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b8/88/44/b888443e-0bc9-5024-224c-793ad7fbe04f/mzi.cglpasri.jpg/300x300bb.jpg" alt="Album art for Take My Hand" loading="lazy">
-  <div class="preview-meta"><strong>Take My Hand</strong><br><span>Simple Plan</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d9/76/85/d9768560-1c94-802f-f9f0-78b677c1f15c/mzaf_16526728040865577170.plus.aac.p.m4a"></audio>
-</div>
-<div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c2/23/0b/c2230b5f-e753-e9b0-c032-b9ea0713450f/016998513262.png/300x300bb.jpg" alt="Album art for Gangsta&#x27;s Paradise (feat. L.V.) [2023 Remaster]" loading="lazy">
-  <div class="preview-meta"><strong>Gangsta&#x27;s Paradise (feat. L.V.) [2023 Remaster]</strong><br><span>Coolio</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/56/58/f7/5658f7ec-2bb5-0ef0-0f9f-5adcd1a96363/mzaf_7433975646947882823.plus.aac.p.m4a"></audio>
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/92/f7/88/92f7884b-d115-5d5f-1eb5-85128af2d58f/081227882365.png/300x300bb.jpg" alt="Album art for Gangsta&#x27;s Paradise (feat. L.V.)" loading="lazy">
+  <div class="preview-meta"><strong>Gangsta&#x27;s Paradise (feat. L.V.)</strong><br><span>Coolio</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/91/8f/60/918f605a-f8a9-e976-f43a-1bb5f0a8199d/mzaf_11718273018999451377.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/be/b1/63/beb16362-169d-b53f-7186-eccf028d7830/196872959222.jpg/300x300bb.jpg" alt="Album art for Walk of Fame (feat. Brittany Howard)" loading="lazy">
@@ -136,9 +136,9 @@ Every one of these 80 clips streams straight from this page — no account, no l
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8b/df/c0/8bdfc0e9-1f7b-8437-0f6a-1523c87e8d4a/mzaf_5536706325659515473.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a1/1b/11/a11b112e-bab9-e5f6-790e-e71bba83d47d/192641495410_cover.jpg/300x300bb.jpg" alt="Album art for Heya" loading="lazy">
-  <div class="preview-meta"><strong>Heya</strong><br><span>CloZee</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/4f/55/a9/4f55a9bf-cbed-0331-1f54-7ebe724cd6ec/mzaf_13027913136135011480.plus.aac.p.m4a"></audio>
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/b2/70/7c/b2707cc6-e2bf-88a3-aba9-3442d7e68a3e/192641581489_cover.jpg/300x300bb.jpg" alt="Album art for Heya (Opiuo Remix)" loading="lazy">
+  <div class="preview-meta"><strong>Heya (Opiuo Remix)</strong><br><span>CloZee</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/92/b4/1a/92b41ad2-f8e3-e329-5f65-bc14fd9aff8f/mzaf_11305754598321132164.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/aa/73/37/aa73377a-a27e-2b6f-4328-406d58181512/15418.jpg/300x300bb.jpg" alt="Album art for Virgen de La Candelaria (with Los Cumbiamberos del Pueblo)" loading="lazy">
@@ -181,6 +181,16 @@ Every one of these 80 clips streams straight from this page — no account, no l
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c9/2c/e7/c92ce766-cadf-201b-d919-dedb42f73799/mzaf_16666051376822558727.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7b/1b/1b/7b1b1b0b-7ce2-b223-f9e0-8e36abe51877/19UMGIM78325.rgb.jpg/300x300bb.jpg" alt="Album art for Sunflower (Spider-Man: Into the Spider-Verse)" loading="lazy">
+  <div class="preview-meta"><strong>Sunflower (Spider-Man: Into the Spider-Verse)</strong><br><span>Post Malone &amp; Swae Lee</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/89/dd/38/89dd38a1-9e5d-f924-41a1-585f67870ca7/mzaf_17506666060631337235.plus.aac.p.m4a"></audio>
+</div>
+<div class="preview-card">
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/39/d6/b9/39d6b928-3782-0463-3108-5ba555039995/828768385227.jpg/300x300bb.jpg" alt="Album art for Oil and Water" loading="lazy">
+  <div class="preview-meta"><strong>Oil and Water</strong><br><span>Incubus</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/42/72/bf/4272bf5f-6845-a12b-891d-500d8e9c4d57/mzaf_1522925787048003930.plus.aac.p.m4a"></audio>
+</div>
+<div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/3b/85/97/3b8597d5-064c-de93-30f2-ca3e5ef58718/4099964200072.jpg/300x300bb.jpg" alt="Album art for GWEN STEFANI" loading="lazy">
   <div class="preview-meta"><strong>GWEN STEFANI</strong><br><span>Waterparks</span></div>
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d7/e7/da/d7e7da6c-5f6f-bb5c-99fd-b8337f738f80/mzaf_1464293712453975781.plus.aac.p.m4a"></audio>
@@ -189,16 +199,6 @@ Every one of these 80 clips streams straight from this page — no account, no l
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/eb/1f/12/eb1f12ec-474c-63aa-43af-09282f423b9d/00602537004737.rgb.jpg/300x300bb.jpg" alt="Album art for As" loading="lazy">
   <div class="preview-meta"><strong>As</strong><br><span>Stevie Wonder</span></div>
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/a4/0c/75/a40c75d6-a913-901e-868a-15070b0e1c8e/mzaf_1391235120460059177.plus.aac.p.m4a"></audio>
-</div>
-<div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/39/d6/b9/39d6b928-3782-0463-3108-5ba555039995/828768385227.jpg/300x300bb.jpg" alt="Album art for Oil and Water" loading="lazy">
-  <div class="preview-meta"><strong>Oil and Water</strong><br><span>Incubus</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/42/72/bf/4272bf5f-6845-a12b-891d-500d8e9c4d57/mzaf_1522925787048003930.plus.aac.p.m4a"></audio>
-</div>
-<div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7b/1b/1b/7b1b1b0b-7ce2-b223-f9e0-8e36abe51877/19UMGIM78325.rgb.jpg/300x300bb.jpg" alt="Album art for Sunflower (Spider-Man: Into the Spider-Verse)" loading="lazy">
-  <div class="preview-meta"><strong>Sunflower (Spider-Man: Into the Spider-Verse)</strong><br><span>Post Malone &amp; Swae Lee</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/89/dd/38/89dd38a1-9e5d-f924-41a1-585f67870ca7/mzaf_17506666060631337235.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/6a/63/9b/6a639b03-d373-e1bd-aa35-10aa3404ef2e/06UMGIM11963.rgb.jpg/300x300bb.jpg" alt="Album art for It&#x27;s My House" loading="lazy">
@@ -216,19 +216,9 @@ Every one of these 80 clips streams straight from this page — no account, no l
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f3/fa/a1/f3faa1ff-ac92-a2a0-c73c-39b3082f059c/mzaf_3380522221332250744.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Features115/v4/fc/65/98/fc6598f9-706b-48a2-dc37-9854f703b21e/dj.xnockfyi.jpg/300x300bb.jpg" alt="Album art for Under Pressure" loading="lazy">
-  <div class="preview-meta"><strong>Under Pressure</strong><br><span>Queen &amp; David Bowie</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/88/ed/d2/88edd28f-7aa9-fc46-4ddb-0c4e9a5fd7b2/mzaf_7010235254143732396.plus.aac.p.m4a"></audio>
-</div>
-<div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ee/c7/54/eec75427-7653-029c-2b1a-5a19f167bb52/23UM1IM04601.rgb.jpg/300x300bb.jpg" alt="Album art for Conceited" loading="lazy">
-  <div class="preview-meta"><strong>Conceited</strong><br><span>Lola Young</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7b/eb/c2/7bebc2a6-1c18-5c3a-fb03-dddafe2fc2fb/mzaf_8245311487773720491.plus.aac.p.m4a"></audio>
-</div>
-<div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/5b/b4/90/5bb490f9-4db6-44be-7183-b6e844ec75db/EXO_2_EXODUS_KORver.jpg/300x300bb.jpg" alt="Album art for CALL ME BABY" loading="lazy">
-  <div class="preview-meta"><strong>CALL ME BABY</strong><br><span>EXO</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/8d/97/43/8d9743bb-53cb-ed50-a60b-9b2149c4f1e3/mzaf_13524117932247674480.plus.aac.p.m4a"></audio>
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/25/0d/7e/250d7e42-3a2f-19ac-f865-f1e04a4a1f97/12UMDIM01007.rgb.jpg/300x300bb.jpg" alt="Album art for Red" loading="lazy">
+  <div class="preview-meta"><strong>Red</strong><br><span>Taylor Swift</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/75/ef/46/75ef46c9-343a-bc96-eb3a-8b1e3f3a6c6a/mzaf_16182092304388650096.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/a4/67/ba/a467ba62-87df-9d10-98d2-c517f68ac870/16UMGIM60882.rgb.jpg/300x300bb.jpg" alt="Album art for Synchronicity I (Remastered 2003)" loading="lazy">
@@ -244,6 +234,16 @@ Every one of these 80 clips streams straight from this page — no account, no l
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7e/d5/09/7ed50926-eadd-40a8-cf87-85c17f212bb4/075679634283.jpg/300x300bb.jpg" alt="Album art for 360" loading="lazy">
   <div class="preview-meta"><strong>360</strong><br><span>Charli xcx</span></div>
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ee/24/4c/ee244cd0-a68a-64f1-c41a-fe08318d0b41/mzaf_16963438138883503449.plus.aac.p.m4a"></audio>
+</div>
+<div class="preview-card">
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Features115/v4/fc/65/98/fc6598f9-706b-48a2-dc37-9854f703b21e/dj.xnockfyi.jpg/300x300bb.jpg" alt="Album art for Under Pressure" loading="lazy">
+  <div class="preview-meta"><strong>Under Pressure</strong><br><span>Queen &amp; David Bowie</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/88/ed/d2/88edd28f-7aa9-fc46-4ddb-0c4e9a5fd7b2/mzaf_7010235254143732396.plus.aac.p.m4a"></audio>
+</div>
+<div class="preview-card">
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e0/e6/45/e0e6457b-98c2-e86a-158f-63f234e62ed7/EXO_04_THE_WAR_DC_KOREAN_Ver.jpg/300x300bb.jpg" alt="Album art for Forever" loading="lazy">
+  <div class="preview-meta"><strong>Forever</strong><br><span>EXO</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d9/51/97/d95197f3-bad1-74e2-75b1-110960fe675e/mzaf_7171833275070656464.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/a6/1a/40/a61a408a-c4e1-fb7c-849c-fe3281d234e1/15UMGIM04863.rgb.jpg/300x300bb.jpg" alt="Album art for El Chico del Apartamento 512" loading="lazy">
@@ -296,9 +296,9 @@ Every one of these 80 clips streams straight from this page — no account, no l
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/48/89/4d/48894def-36b6-0085-9184-b28a200cf47a/mzaf_6109765307626823795.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/6c/fb/e06cfbf3-2177-92e2-0c82-f9936dba54b1/artwork.jpg/300x300bb.jpg" alt="Album art for happens" loading="lazy">
-  <div class="preview-meta"><strong>happens</strong><br><span>Elbi Lewes</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/46/84/70/46847015-3d74-e86f-232a-6f0d699f69fc/mzaf_6071879187712767527.plus.aac.p.m4a"></audio>
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/13/d9/ff/13d9ffdb-ebb6-8c31-857a-4ea6a90c16e6/889030010964.png/300x300bb.jpg" alt="Album art for Happens" loading="lazy">
+  <div class="preview-meta"><strong>Happens</strong><br><span>Sampha</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/dd/0b/a6/dd0ba64d-1c76-f5bb-2fdf-2cfe027eeaf3/mzaf_2999646467330250213.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/04/8e/6a/048e6ae8-8777-a19a-e743-792680a3e7d6/886446283968.jpg/300x300bb.jpg" alt="Album art for I Follow You" loading="lazy">
@@ -311,9 +311,9 @@ Every one of these 80 clips streams straight from this page — no account, no l
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/4e/37/50/4e375009-696b-b435-ec15-2f8043e92fe3/mzaf_13244431307274795740.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/de/eb/63/deeb63c1-7bc0-9153-cfa3-fd9e4929aacf/4050538826562.jpg/300x300bb.jpg" alt="Album art for Never Gonna Give You Up (2022 Remaster)" loading="lazy">
-  <div class="preview-meta"><strong>Never Gonna Give You Up (2022 Remaster)</strong><br><span>Rick Astley</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/b0/d8/aa/b0d8aa8e-1a38-6287-508d-27693174249e/mzaf_12819981103726582013.plus.aac.p.m4a"></audio>
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/db/9e/2a/db9e2ae0-cb9f-f2a9-2774-de399dff2580/4099964133639.jpg/300x300bb.jpg" alt="Album art for Never Gonna Give You Up (Pianoforte)" loading="lazy">
+  <div class="preview-meta"><strong>Never Gonna Give You Up (Pianoforte)</strong><br><span>Rick Astley</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8b/77/73/8b77731b-3c69-ca29-a8ad-b65f0d9d0937/mzaf_5046656274138690281.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/58/7c/e1/587ce150-44d9-e1fa-966c-18b72cd666ac/00602547876706.rgb.jpg/300x300bb.jpg" alt="Album art for Come What May" loading="lazy">
@@ -326,14 +326,14 @@ Every one of these 80 clips streams straight from this page — no account, no l
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d4/e2/cf/d4e2cfd1-d9be-d006-251c-97623e5a4729/mzaf_8831692341553483146.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f7/90/e0/f790e0ba-3540-486c-0e3b-1f69a5a4e70a/886448111863.jpg/300x300bb.jpg" alt="Album art for Hips Don&#x27;t Lie (El Dorado World Tour Live)" loading="lazy">
-  <div class="preview-meta"><strong>Hips Don&#x27;t Lie (El Dorado World Tour Live)</strong><br><span>Shakira</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/63/cd/e7/63cde767-b9de-3ef0-7f92-4cfc7ce8d5e4/mzaf_8966630194926171184.plus.aac.p.m4a"></audio>
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/14/54/f1/1454f160-c956-7727-46dc-5101bb109494/197187714988.jpg/300x300bb.jpg" alt="Album art for Shakira: Bzrp Music Sessions, Vol. 53/66" loading="lazy">
+  <div class="preview-meta"><strong>Shakira: Bzrp Music Sessions, Vol. 53/66</strong><br><span>Bizarrap &amp; Shakira</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/01/0a/ad/010aad31-e4e8-0e0b-ff0c-a60fb1e88a2e/mzaf_7160223173554222430.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/25/0d/7e/250d7e42-3a2f-19ac-f865-f1e04a4a1f97/12UMDIM01007.rgb.jpg/300x300bb.jpg" alt="Album art for Red" loading="lazy">
-  <div class="preview-meta"><strong>Red</strong><br><span>Taylor Swift</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/75/ef/46/75ef46c9-343a-bc96-eb3a-8b1e3f3a6c6a/mzaf_16182092304388650096.plus.aac.p.m4a"></audio>
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ee/c7/54/eec75427-7653-029c-2b1a-5a19f167bb52/23UM1IM04601.rgb.jpg/300x300bb.jpg" alt="Album art for Conceited" loading="lazy">
+  <div class="preview-meta"><strong>Conceited</strong><br><span>Lola Young</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7b/eb/c2/7bebc2a6-1c18-5c3a-fb03-dddafe2fc2fb/mzaf_8245311487773720491.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d5/41/c5/d541c574-506c-5422-d06b-3bea410c824e/193436468848_DetoxUnitDetonatorSingleArtFinal.jpg/300x300bb.jpg" alt="Album art for Detonator" loading="lazy">
@@ -381,19 +381,19 @@ Every one of these 80 clips streams straight from this page — no account, no l
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/9f/07/1d/9f071dc7-791c-c869-dfa2-06b25936a287/mzaf_11077490630806345321.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d0/77/ed/d077ed0d-51ea-76b6-ba24-8aa7d4e248ad/25UM1IM19552.rgb.jpg/300x300bb.jpg" alt="Album art for The Old Religion" loading="lazy">
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2e/5b/79/2e5b79a5-c166-da6b-3545-abc762f3beb2/25UM1IM19575.rgb.jpg/300x300bb.jpg" alt="Album art for The Old Religion" loading="lazy">
   <div class="preview-meta"><strong>The Old Religion</strong><br><span>Florence + the Machine</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/96/67/3e/96673e6b-d1fd-3533-0a45-a939411e4520/mzaf_6617862490047015725.plus.aac.p.m4a"></audio>
-</div>
-<div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/22/3e/b5/223eb5dd-bb8a-379c-15ec-9c650332bbb9/06UMGIM73032.rgb.jpg/300x300bb.jpg" alt="Album art for Tiny Dancer" loading="lazy">
-  <div class="preview-meta"><strong>Tiny Dancer</strong><br><span>Elton John</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/87/c7/4b/87c74b44-17ff-023a-2984-19a0cc6ef56d/mzaf_4130028763967500566.plus.aac.p.m4a"></audio>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fe/a7/a1/fea7a18b-4249-c6e6-4961-6875dc8efba0/mzaf_5632708940545643342.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/19/f9/f7/19f9f75e-6d5f-15f5-6caa-c532acec9f47/19UMGIM27494.rgb.jpg/300x300bb.jpg" alt="Album art for Patience" loading="lazy">
   <div class="preview-meta"><strong>Patience</strong><br><span>Tame Impala</span></div>
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/7e/17/b9/7e17b95f-0f4c-61e5-1ddd-9f8755dbd68e/mzaf_5044348040280627798.plus.aac.p.m4a"></audio>
+</div>
+<div class="preview-card">
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/22/3e/b5/223eb5dd-bb8a-379c-15ec-9c650332bbb9/06UMGIM73032.rgb.jpg/300x300bb.jpg" alt="Album art for Tiny Dancer" loading="lazy">
+  <div class="preview-meta"><strong>Tiny Dancer</strong><br><span>Elton John</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/87/c7/4b/87c74b44-17ff-023a-2984-19a0cc6ef56d/mzaf_4130028763967500566.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/56/67/8a/56678a40-5360-96b9-72a7-1998c7523bea/199800365263.jpg/300x300bb.jpg" alt="Album art for Want Want Want" loading="lazy">
@@ -412,32 +412,32 @@ Every one of these 80 clips streams straight from this page — no account, no l
 | # | Track | Artist | Year | Neighborhood | Listen on |
 |---:|---|---|---:|---|---|
 | 1 | DON'T BELIEVE IT | John Summit & Absolutely | 2026 | energetic, energetic energetic, ready | [Spotify](https://open.spotify.com/search/Don%E2%80%99t%20Believe%20It%20John%20Summit) · [Apple](https://music.apple.com/us/album/dont-believe-it/1874015470?i=1874015494&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Don%E2%80%99t%20Believe%20It%20John%20Summit) |
-| 2 | Fantasy | Mariah Carey | 1995 | energetic, energetic energetic, ready | [Spotify](https://open.spotify.com/search/Fantasy%20Mariah%20Carey) · [Apple](https://music.apple.com/us/album/fantasy/190173909?i=190175231&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Fantasy%20Mariah%20Carey) |
-| 3 | Through the Fire | Chaka Khan | 1984 | energetic, energetic energetic, ready | [Spotify](https://open.spotify.com/search/Through%20the%20Fire%20Chaka%20Khan) · [Apple](https://music.apple.com/us/album/through-the-fire/266611641?i=266613256&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Through%20the%20Fire%20Chaka%20Khan) |
-| 4 | Piano Concerto No. 3 in C Major, Op. 26: I. Andante - Allegro | Lang Lang, Sir Simon Rattle & Berlin Philharmonic | 2013 | energetic, energetic energetic, ready | [Spotify](https://open.spotify.com/search/Prokofiev%20Piano%20Concerto%20No.3%20Lang%20lang) · [Apple](https://music.apple.com/us/album/piano-concerto-no-3-in-c-major-op-26-i-andante-allegro/692811520?i=692811560&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Prokofiev%20Piano%20Concerto%20No.3%20Lang%20lang) |
-| 5 | Nice To Each Other | Olivia Dean | 2025 | energetic, energetic energetic, ready | [Spotify](https://open.spotify.com/search/Nice%20to%20Each%20Other%20Olivia%20Dean) · [Apple](https://music.apple.com/us/album/nice-to-each-other/1814620245?i=1814620247&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Nice%20to%20Each%20Other%20Olivia%20Dean) |
+| 2 | Through the Fire | Chaka Khan | 1984 | energetic, energetic energetic, ready | [Spotify](https://open.spotify.com/search/Through%20the%20Fire%20Chaka%20Khan) · [Apple](https://music.apple.com/us/album/through-the-fire/266611641?i=266613256&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Through%20the%20Fire%20Chaka%20Khan) |
+| 3 | Fantasy | Mariah Carey | 1995 | energetic, energetic energetic, ready | [Spotify](https://open.spotify.com/search/Fantasy%20Mariah%20Carey) · [Apple](https://music.apple.com/us/album/fantasy/190173909?i=190175231&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Fantasy%20Mariah%20Carey) |
+| 4 | Nice To Each Other | Olivia Dean | 2025 | energetic, energetic energetic, ready | [Spotify](https://open.spotify.com/search/Nice%20to%20Each%20Other%20Olivia%20Dean) · [Apple](https://music.apple.com/us/album/nice-to-each-other/1814620245?i=1814620247&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Nice%20to%20Each%20Other%20Olivia%20Dean) |
+| 5 | Piano Concerto No. 3 in C Major, Op. 26: I. Andante - Allegro | Lang Lang, Sir Simon Rattle & Berlin Philharmonic | 2013 | energetic, energetic energetic, ready | [Spotify](https://open.spotify.com/search/Prokofiev%20Piano%20Concerto%20No.3%20Lang%20lang) · [Apple](https://music.apple.com/us/album/piano-concerto-no-3-in-c-major-op-26-i-andante-allegro/692811520?i=692811560&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Prokofiev%20Piano%20Concerto%20No.3%20Lang%20lang) |
 | 6 | Sarà Perché Ti Amo | Ricchi & Poveri | 1981 | energetic, energetic energetic, ready | [Spotify](https://open.spotify.com/search/Sara%20perche%20ti%20amo%20Ricchi%20E%20Poveri) · [Apple](https://music.apple.com/us/album/sar%C3%A0-perch%C3%A9-ti-amo/252058348?i=252058375&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Sara%20perche%20ti%20amo%20Ricchi%20E%20Poveri) |
 | 7 | Santa Monica | Everclear | 1995 | energized, pumped, dance want | [Spotify](https://open.spotify.com/search/Santa%20Monica%20Everclear) · [Apple](https://music.apple.com/us/album/santa-monica/724932312?i=724932681&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Santa%20Monica%20Everclear) |
 | 8 | Hanging Out To Dry | Florence Road | 2025 | energized, pumped, dance want | [Spotify](https://open.spotify.com/search/Hanging%20Out%20to%20Dry%20Florence%20Road) · [Apple](https://music.apple.com/us/album/hanging-out-to-dry/1884602016?i=1884602113&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Hanging%20Out%20to%20Dry%20Florence%20Road) |
 | 9 | London Song | Ninajirachi | 2025 | energized, pumped, dance want | [Spotify](https://open.spotify.com/search/London%20Song%20Ninajirachi) · [Apple](https://music.apple.com/us/album/london-song/1824602984?i=1824602985&uo=4) · [YouTube](https://www.youtube.com/results?search_query=London%20Song%20Ninajirachi) |
 | 10 | JOYRIDE (Radio Edit) | Kesha | 2024 | energized, pumped, dance want | [Spotify](https://open.spotify.com/search/Joyride%20Kesha) · [Apple](https://music.apple.com/us/album/joyride-radio-edit/1770183605?i=1770183609&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Joyride%20Kesha) |
-| 11 | Good Luck, Babe! | Chappell Roan | 2024 | good, hypes, driving | [Spotify](https://open.spotify.com/search/Good%20Luck%20Babe%21%20Chappell%20Roan) · [Apple](https://music.apple.com/us/album/good-luck-babe/1737497078?i=1737497080&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Good%20Luck%20Babe%21%20Chappell%20Roan) |
-| 12 | Strategy | Olivia Marsh | 2025 | good, hypes, driving | [Spotify](https://open.spotify.com/search/Strategy%20Olivia%20Marsh) · [Apple](https://music.apple.com/us/album/strategy/1794259995?i=1794259997&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Strategy%20Olivia%20Marsh) |
-| 13 | Warm Safe Place | Staind | 2001 | good, hypes, driving | [Spotify](https://open.spotify.com/search/Warm%20safe%20place%20Staind) · [Apple](https://music.apple.com/us/album/warm-safe-place/263058360?i=263058971&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Warm%20safe%20place%20Staind) |
+| 11 | Warm Safe Place | Staind | 2001 | good, hypes, driving | [Spotify](https://open.spotify.com/search/Warm%20safe%20place%20Staind) · [Apple](https://music.apple.com/us/album/warm-safe-place/263058360?i=263058971&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Warm%20safe%20place%20Staind) |
+| 12 | Good Luck, Babe! | Chappell Roan | 2024 | good, hypes, driving | [Spotify](https://open.spotify.com/search/Good%20Luck%20Babe%21%20Chappell%20Roan) · [Apple](https://music.apple.com/us/album/good-luck-babe/1737497078?i=1737497080&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Good%20Luck%20Babe%21%20Chappell%20Roan) |
+| 13 | Strategy | Olivia Marsh | 2025 | good, hypes, driving | [Spotify](https://open.spotify.com/search/Strategy%20Olivia%20Marsh) · [Apple](https://music.apple.com/us/album/strategy/1794259995?i=1794259997&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Strategy%20Olivia%20Marsh) |
 | 14 | The Let Out | J. Cole | 2026 | good, hypes, driving | [Spotify](https://open.spotify.com/search/The%20Let%20Out%20J.%20Cole) · [Apple](https://music.apple.com/us/album/the-let-out/1876341626?i=1876341637&uo=4) · [YouTube](https://www.youtube.com/results?search_query=The%20Let%20Out%20J.%20Cole) |
 | 15 | Solo | Myles Smith | 2023 | happy, happy happy, hopeful | [Spotify](https://open.spotify.com/search/Home%20Myles%20Smith) · [Apple](https://music.apple.com/us/album/solo/1729366468?i=1729366472&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Home%20Myles%20Smith) |
-| 16 | Notting Hill | Suki Waterhouse | 2026 | happy, happy happy, hopeful | [Spotify](https://open.spotify.com/search/Notting%20Hill%20Suki%20Waterhouse) · [Apple](https://music.apple.com/us/album/notting-hill/6786874350?i=6786874550&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Notting%20Hill%20Suki%20Waterhouse) |
+| 16 | Notting Hill | Suki Waterhouse | 2026 | happy, happy happy, hopeful | [Spotify](https://open.spotify.com/search/Notting%20Hill%20Suki%20Waterhouse) · [Apple](https://music.apple.com/us/album/notting-hill/6790628833?i=6790628840&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Notting%20Hill%20Suki%20Waterhouse) |
 | 17 | Conquer The World | The Dreggs | 2025 | happy, happy happy, hopeful | [Spotify](https://open.spotify.com/search/Conquer%20the%20World%20The%20Dreggs) · [Apple](https://music.apple.com/us/album/conquer-the-world/1807705554?i=1807705566&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Conquer%20the%20World%20The%20Dreggs) |
 | 18 | Saturn | SZA | 2024 | happy, happy happy, hopeful | [Spotify](https://open.spotify.com/search/Saturn%20SZA) · [Apple](https://music.apple.com/us/album/saturn/1732348411?i=1732348414&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Saturn%20SZA) |
-| 19 | A Couple Minutes | Olivia Dean | 2025 | happy, happy happy, hopeful | [Spotify](https://open.spotify.com/search/A%20Couple%20Minutes%20Olivia%20Dean) · [Apple](https://music.apple.com/us/album/a-couple-minutes/1817609404?i=1817609514&uo=4) · [YouTube](https://www.youtube.com/results?search_query=A%20Couple%20Minutes%20Olivia%20Dean) |
-| 20 | Free Bird | Lynyrd Skynyrd | 1973 | happy, happy happy, hopeful | [Spotify](https://open.spotify.com/search/Free%20Bird%20Lynard%21) · [Apple](https://music.apple.com/us/album/free-bird/1423285451?i=1423285462&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Free%20Bird%20Lynard%21) |
-| 21 | Take My Hand | Simple Plan | 2008 | happy, happy happy, hopeful | [Spotify](https://open.spotify.com/search/Take%20My%20Hand%20Simple%20Plan) · [Apple](https://music.apple.com/us/album/take-my-hand/272026729?i=272026740&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Take%20My%20Hand%20Simple%20Plan) |
-| 22 | Gangsta's Paradise (feat. L.V.) [2023 Remaster] | Coolio | 1995 | home, calm, days | [Spotify](https://open.spotify.com/search/Gangsta%27a%20Paradise%20Coolio) · [Apple](https://music.apple.com/us/album/gangstas-paradise-feat-l-v-2023-remaster/1605189366?i=1605189373&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Gangsta%27a%20Paradise%20Coolio) |
+| 19 | Take My Hand | Simple Plan | 2008 | happy, happy happy, hopeful | [Spotify](https://open.spotify.com/search/Take%20My%20Hand%20Simple%20Plan) · [Apple](https://music.apple.com/us/album/take-my-hand/272026729?i=272026740&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Take%20My%20Hand%20Simple%20Plan) |
+| 20 | A Couple Minutes | Olivia Dean | 2025 | happy, happy happy, hopeful | [Spotify](https://open.spotify.com/search/A%20Couple%20Minutes%20Olivia%20Dean) · [Apple](https://music.apple.com/us/album/a-couple-minutes/1817609404?i=1817609514&uo=4) · [YouTube](https://www.youtube.com/results?search_query=A%20Couple%20Minutes%20Olivia%20Dean) |
+| 21 | Free Bird | Lynyrd Skynyrd | 1973 | happy, happy happy, hopeful | [Spotify](https://open.spotify.com/search/Free%20Bird%20Lynard%21) · [Apple](https://music.apple.com/us/album/free-bird/1423285451?i=1423285462&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Free%20Bird%20Lynard%21) |
+| 22 | Gangsta's Paradise (feat. L.V.) | Coolio | 1995 | home, calm, days | [Spotify](https://open.spotify.com/search/Gangsta%27a%20Paradise%20Coolio) · [Apple](https://music.apple.com/us/album/gangstas-paradise-feat-l-v/1604645496?i=1604645502&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Gangsta%27a%20Paradise%20Coolio) |
 | 23 | Walk of Fame (feat. Brittany Howard) | Miley Cyrus | 2025 | home, calm, days | [Spotify](https://open.spotify.com/search/Walk%20of%20Fame%20Miley%20Cyrus) · [Apple](https://music.apple.com/us/album/walk-of-fame-feat-brittany-howard/1804974240?i=1804974873&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Walk%20of%20Fame%20Miley%20Cyrus) |
 | 24 | Own Little World | Celldweller | 2003 | home, calm, days | [Spotify](https://open.spotify.com/search/Own%20Little%20World%20Celldweller) · [Apple](https://music.apple.com/us/album/own-little-world/5945130?i=5945118&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Own%20Little%20World%20Celldweller) |
 | 25 | Hark the Sound | The Clef Hangers | 2018 | home, calm, days | [Spotify](https://open.spotify.com/search/Hark%20the%20Sound%20UNC) · [Apple](https://music.apple.com/us/album/hark-the-sound/1445924277?i=1445924290&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Hark%20the%20Sound%20UNC) |
 | 26 | expectations | Olivia Rodrigo | 2026 | home, calm, days | [Spotify](https://open.spotify.com/search/Expectations%20Olivia%20Rodrigo) · [Apple](https://music.apple.com/us/album/expectations/1889992111?i=1889992129&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Expectations%20Olivia%20Rodrigo) |
-| 27 | Heya | CloZee | 2020 | home, calm, days | [Spotify](https://open.spotify.com/search/Heya%20Clozee) · [Apple](https://music.apple.com/us/album/heya/1683581375?i=1683581383&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Heya%20Clozee) |
+| 27 | Heya (Opiuo Remix) | CloZee | 2020 | home, calm, days | [Spotify](https://open.spotify.com/search/Heya%20Clozee) · [Apple](https://music.apple.com/us/album/heya-opiuo-remix/1683591698?i=1683591703&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Heya%20Clozee) |
 | 28 | Virgen de La Candelaria (with Los Cumbiamberos del Pueblo) | Andrés Landero | 1982 | home, calm, days | [Spotify](https://open.spotify.com/search/Virgen%20de%20La%20Candelaria%20Andr%C3%A9s%20Landero) · [Apple](https://music.apple.com/us/album/virgen-de-la-candelaria-with-los-cumbiamberos-del-pueblo/1740382879?i=1740382884&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Virgen%20de%20La%20Candelaria%20Andr%C3%A9s%20Landero) |
 | 29 | Don’t Tell On Me | Jason Aldean | 2026 | home, calm, days | [Spotify](https://open.spotify.com/search/Don%27t%20Tell%20on%20Me%20Jason%20Aldean) · [Apple](https://music.apple.com/us/album/dont-tell-on-me/1847440777?i=1847440784&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Don%27t%20Tell%20on%20Me%20Jason%20Aldean) |
 | 30 | Mist (Instrumental) | Dev1lHawk & xaviorthemachine | 2026 | home, calm, days | [Spotify](https://open.spotify.com/search/Mist%20Esdeekid%20Rico%20Ace) · [Apple](https://music.apple.com/us/album/mist-instrumental/1867591317?i=1867591320&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Mist%20Esdeekid%20Rico%20Ace) |
@@ -446,19 +446,19 @@ Every one of these 80 clips streams straight from this page — no account, no l
 | 33 | sense (is) | hemlocke springs | 2026 | home, calm, days | [Spotify](https://open.spotify.com/search/Sense%20%28is%29%20Hemlock%20Springs) · [Apple](https://music.apple.com/us/album/sense-is/1877161526?i=1877161725&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Sense%20%28is%29%20Hemlock%20Springs) |
 | 34 | Midnight in Harlem | Tedeschi Trucks Band | 2011 | home, calm, days | [Spotify](https://open.spotify.com/search/Midnight%20in%20Harlem%20Tedeschi%20Trucks%20Band) · [Apple](https://music.apple.com/us/album/midnight-in-harlem/434753148?i=434753214&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Midnight%20in%20Harlem%20Tedeschi%20Trucks%20Band) |
 | 35 | White Horse (Taylor’s Version) | Taylor Swift | 2021 | home, calm, days | [Spotify](https://open.spotify.com/search/White%20Horse%20Taylor%20Swift) · [Apple](https://music.apple.com/us/album/white-horse-taylors-version/1552791073?i=1552791552&uo=4) · [YouTube](https://www.youtube.com/results?search_query=White%20Horse%20Taylor%20Swift) |
-| 36 | GWEN STEFANI | Waterparks | 2026 | home, calm, days | [Spotify](https://open.spotify.com/search/gwen%20stefani%20waterparks) · [Apple](https://music.apple.com/us/album/gwen-stefani/1894346508?i=1894346792&uo=4) · [YouTube](https://www.youtube.com/results?search_query=gwen%20stefani%20waterparks) |
-| 37 | As | Stevie Wonder | 1976 | home, calm, days | [Spotify](https://open.spotify.com/search/As%20Stevie%20Wonder) · [Apple](https://music.apple.com/us/album/as/1440788438?i=1440788744&uo=4) · [YouTube](https://www.youtube.com/results?search_query=As%20Stevie%20Wonder) |
-| 38 | Oil and Water | Incubus | 2006 | home, calm, days | [Spotify](https://open.spotify.com/search/Oil%20and%20Water%20Incubus) · [Apple](https://music.apple.com/us/album/oil-and-water/204285054?i=204285428&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Oil%20and%20Water%20Incubus) |
-| 39 | Sunflower (Spider-Man: Into the Spider-Verse) | Post Malone & Swae Lee | 2018 | home, calm, days | [Spotify](https://open.spotify.com/search/Loser%20I%20am%20not%20sure%20who%20the%20singer%20is%20but%20I%20just%20watched%20the%20Spider-Man%3A%20Brand%20New%20Day%20movie%20and%20it%20was%20as%20a%20song%20that%20stuck%20out%20from%20there.) · [Apple](https://music.apple.com/us/album/sunflower-spider-man-into-the-spider-verse/1477880265?i=1477880764&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Loser%20I%20am%20not%20sure%20who%20the%20singer%20is%20but%20I%20just%20watched%20the%20Spider-Man%3A%20Brand%20New%20Day%20movie%20and%20it%20was%20as%20a%20song%20that%20stuck%20out%20from%20there.) |
+| 36 | Sunflower (Spider-Man: Into the Spider-Verse) | Post Malone & Swae Lee | 2018 | home, calm, days | [Spotify](https://open.spotify.com/search/Loser%20I%20am%20not%20sure%20who%20the%20singer%20is%20but%20I%20just%20watched%20the%20Spider-Man%3A%20Brand%20New%20Day%20movie%20and%20it%20was%20as%20a%20song%20that%20stuck%20out%20from%20there.) · [Apple](https://music.apple.com/us/album/sunflower-spider-man-into-the-spider-verse/1477880265?i=1477880764&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Loser%20I%20am%20not%20sure%20who%20the%20singer%20is%20but%20I%20just%20watched%20the%20Spider-Man%3A%20Brand%20New%20Day%20movie%20and%20it%20was%20as%20a%20song%20that%20stuck%20out%20from%20there.) |
+| 37 | Oil and Water | Incubus | 2006 | home, calm, days | [Spotify](https://open.spotify.com/search/Oil%20and%20Water%20Incubus) · [Apple](https://music.apple.com/us/album/oil-and-water/204285054?i=204285428&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Oil%20and%20Water%20Incubus) |
+| 38 | GWEN STEFANI | Waterparks | 2026 | home, calm, days | [Spotify](https://open.spotify.com/search/gwen%20stefani%20waterparks) · [Apple](https://music.apple.com/us/album/gwen-stefani/1894346508?i=1894346792&uo=4) · [YouTube](https://www.youtube.com/results?search_query=gwen%20stefani%20waterparks) |
+| 39 | As | Stevie Wonder | 1976 | home, calm, days | [Spotify](https://open.spotify.com/search/As%20Stevie%20Wonder) · [Apple](https://music.apple.com/us/album/as/1440788438?i=1440788744&uo=4) · [YouTube](https://www.youtube.com/results?search_query=As%20Stevie%20Wonder) |
 | 40 | It's My House | Diana Ross | 1979 | home, calm, days | [Spotify](https://open.spotify.com/search/It%E2%80%99s%20My%20House%20Diana%20Ross) · [Apple](https://music.apple.com/us/album/its-my-house/1445748288?i=1445749375&uo=4) · [YouTube](https://www.youtube.com/results?search_query=It%E2%80%99s%20My%20House%20Diana%20Ross) |
 | 41 | Saltwater | Geowulf | 2016 | home, calm, days | [Spotify](https://open.spotify.com/search/Saltwater%20Geowulf) · [Apple](https://music.apple.com/us/album/saltwater/1316527015?i=1316530113&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Saltwater%20Geowulf) |
 | 42 | O-o-h Child (Remastered) | The Five Stairsteps | 1970 | home, calm, days | [Spotify](https://open.spotify.com/search/Ooh%20child%20%28things%20are%20going%20to%20go%20easier%29%20The%20Five%20Stairsteps) · [Apple](https://music.apple.com/us/album/o-o-h-child-remastered/1124197821?i=1124198582&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Ooh%20child%20%28things%20are%20going%20to%20go%20easier%29%20The%20Five%20Stairsteps) |
-| 43 | Under Pressure | Queen & David Bowie | 1981 | home, calm, days | [Spotify](https://open.spotify.com/search/Under%20Pressure%20Queen%20and%20David%20Bowie) · [Apple](https://music.apple.com/us/album/under-pressure/697650603?i=697651445&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Under%20Pressure%20Queen%20and%20David%20Bowie) |
-| 44 | Conceited | Lola Young | 2023 | home, calm, days | [Spotify](https://open.spotify.com/search/Conceited%20Lola%20Young) · [Apple](https://music.apple.com/us/album/conceited/1708632323?i=1708632329&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Conceited%20Lola%20Young) |
-| 45 | CALL ME BABY | EXO | 2015 | home, calm, days | [Spotify](https://open.spotify.com/search/Butterfly%20David%20Tao) · [Apple](https://music.apple.com/us/album/call-me-baby/979878364?i=979878876&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Butterfly%20David%20Tao) |
-| 46 | Synchronicity I (Remastered 2003) | The Police | 1983 | home, calm, days | [Spotify](https://open.spotify.com/search/Synchronicity%20I%20The%20Police) · [Apple](https://music.apple.com/us/album/synchronicity-i-remastered-2003/1440673959?i=1440673960&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Synchronicity%20I%20The%20Police) |
-| 47 | Peaches (feat. Daniel Caesar & GIVĒON) | Justin Bieber | 2021 | home, calm, days | [Spotify](https://open.spotify.com/search/Peaches%20Justin%20Bieber) · [Apple](https://music.apple.com/us/album/peaches-feat-daniel-caesar-giv%C4%93on/1556169567?i=1556170101&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Peaches%20Justin%20Bieber) |
-| 48 | 360 | Charli xcx | 2024 | home, calm, days | [Spotify](https://open.spotify.com/search/360%20Charli%20xcx) · [Apple](https://music.apple.com/us/album/360/1762679425?i=1762679426&uo=4) · [YouTube](https://www.youtube.com/results?search_query=360%20Charli%20xcx) |
+| 43 | Red | Taylor Swift | 2012 | home, calm, days | [Spotify](https://open.spotify.com/search/Red%20Taylor%20swift) · [Apple](https://music.apple.com/us/album/red/1440935340?i=1440935346&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Red%20Taylor%20swift) |
+| 44 | Synchronicity I (Remastered 2003) | The Police | 1983 | home, calm, days | [Spotify](https://open.spotify.com/search/Synchronicity%20I%20The%20Police) · [Apple](https://music.apple.com/us/album/synchronicity-i-remastered-2003/1440673959?i=1440673960&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Synchronicity%20I%20The%20Police) |
+| 45 | Peaches (feat. Daniel Caesar & GIVĒON) | Justin Bieber | 2021 | home, calm, days | [Spotify](https://open.spotify.com/search/Peaches%20Justin%20Bieber) · [Apple](https://music.apple.com/us/album/peaches-feat-daniel-caesar-giv%C4%93on/1556169567?i=1556170101&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Peaches%20Justin%20Bieber) |
+| 46 | 360 | Charli xcx | 2024 | home, calm, days | [Spotify](https://open.spotify.com/search/360%20Charli%20xcx) · [Apple](https://music.apple.com/us/album/360/1762679425?i=1762679426&uo=4) · [YouTube](https://www.youtube.com/results?search_query=360%20Charli%20xcx) |
+| 47 | Under Pressure | Queen & David Bowie | 1981 | home, calm, days | [Spotify](https://open.spotify.com/search/Under%20Pressure%20Queen%20and%20David%20Bowie) · [Apple](https://music.apple.com/us/album/under-pressure/697650603?i=697651445&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Under%20Pressure%20Queen%20and%20David%20Bowie) |
+| 48 | Forever | EXO | 2017 | home, calm, days | [Spotify](https://open.spotify.com/search/Butterfly%20David%20Tao) · [Apple](https://music.apple.com/us/album/forever/1260294767?i=1260294774&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Butterfly%20David%20Tao) |
 | 49 | El Chico del Apartamento 512 | Selena | 1994 | home, calm, days | [Spotify](https://open.spotify.com/search/El%20Chico%20Del%20Apartamento%20512%20Selena) · [Apple](https://music.apple.com/us/album/el-chico-del-apartamento-512/1703307720?i=1703308131&uo=4) · [YouTube](https://www.youtube.com/results?search_query=El%20Chico%20Del%20Apartamento%20512%20Selena) |
 | 50 | Tommy's Party (Audiotree Live) | Peach Pit | 2017 | home, calm, days | [Spotify](https://open.spotify.com/search/Tommy%E2%80%99s%20Party%20Peach%20Pit) · [Apple](https://music.apple.com/us/album/tommys-party-audiotree-live/1780668474?i=1780668479&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Tommy%E2%80%99s%20Party%20Peach%20Pit) |
 | 51 | CIEL | GIMS | 2024 | home, calm, days | [Spotify](https://open.spotify.com/search/CIEL%20GIMS) · [Apple](https://music.apple.com/us/album/ciel/1780985303?i=1780985307&uo=4) · [YouTube](https://www.youtube.com/results?search_query=CIEL%20GIMS) |
@@ -469,14 +469,14 @@ Every one of these 80 clips streams straight from this page — no account, no l
 | 56 | Old Technology | Anthony Child | 2016 | home, calm, days | [Spotify](https://open.spotify.com/search/OLD%20TECHNOLOGY%20Slayyyter) · [Apple](https://music.apple.com/us/album/old-technology/1799307554?i=1799307557&uo=4) · [YouTube](https://www.youtube.com/results?search_query=OLD%20TECHNOLOGY%20Slayyyter) |
 | 57 | Losing You | Solange | 2012 | home, calm, days | [Spotify](https://open.spotify.com/search/Losing%20You%20Solange) · [Apple](https://music.apple.com/us/album/losing-you/1647451002?i=1647451003&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Losing%20You%20Solange) |
 | 58 | Self Aware | Temper City | 2026 | home, calm, days | [Spotify](https://open.spotify.com/search/Self%20Aware%20Temper%20City) · [Apple](https://music.apple.com/us/album/self-aware/1877803357?i=1877803360&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Self%20Aware%20Temper%20City) |
-| 59 | happens | Elbi Lewes | 2026 | home, calm, days | [Spotify](https://open.spotify.com/search/happens%20Elbi%20Lewes) · [Apple](https://music.apple.com/us/album/happens/6771519244?i=6771519245&uo=4) · [YouTube](https://www.youtube.com/results?search_query=happens%20Elbi%20Lewes) |
+| 59 | Happens | Sampha | 2013 | home, calm, days | [Spotify](https://open.spotify.com/search/happens%20Elbi%20Lewes) · [Apple](https://music.apple.com/us/album/happens/921598856?i=921602930&uo=4) · [YouTube](https://www.youtube.com/results?search_query=happens%20Elbi%20Lewes) |
 | 60 | I Follow You | Melody's Echo Chamber | 2012 | home, calm, days | [Spotify](https://open.spotify.com/search/I%20Follow%20You%20Melody%20Echo%20Chamber) · [Apple](https://music.apple.com/us/album/i-follow-you/1194793478?i=1194793822&uo=4) · [YouTube](https://www.youtube.com/results?search_query=I%20Follow%20You%20Melody%20Echo%20Chamber) |
 | 61 | Andromeda | Weyes Blood | 2019 | home, calm, days | [Spotify](https://open.spotify.com/search/Andromeda%20Weyes%20Blood) · [Apple](https://music.apple.com/us/album/andromeda/1450550344?i=1450550346&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Andromeda%20Weyes%20Blood) |
-| 62 | Never Gonna Give You Up (2022 Remaster) | Rick Astley | 1987 | home, calm, days | [Spotify](https://open.spotify.com/search/Never%20gonna%20give%20you%20up%20Rick%20Ashley) · [Apple](https://music.apple.com/us/album/never-gonna-give-you-up-2022-remaster/1624945511?i=1624945512&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Never%20gonna%20give%20you%20up%20Rick%20Ashley) |
+| 62 | Never Gonna Give You Up (Pianoforte) | Rick Astley | 1987 | home, calm, days | [Spotify](https://open.spotify.com/search/Never%20gonna%20give%20you%20up%20Rick%20Ashley) · [Apple](https://music.apple.com/us/album/never-gonna-give-you-up-pianoforte/1773292758?i=1773293593&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Never%20gonna%20give%20you%20up%20Rick%20Ashley) |
 | 63 | Come What May | Nicole Kidman & Ewan McGregor | 2001 | home, calm, days | [Spotify](https://open.spotify.com/search/Come%20what%20may%20Nicole) · [Apple](https://music.apple.com/us/album/come-what-may/1440845640?i=1440845923&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Come%20what%20may%20Nicole) |
 | 64 | Lost In Paradise | Rihanna | 2012 | home, calm, days | [Spotify](https://open.spotify.com/search/Lost%20in%20Paradise%20Rihanna) · [Apple](https://music.apple.com/us/album/lost-in-paradise/1446744832?i=1446745876&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Lost%20in%20Paradise%20Rihanna) |
-| 65 | Hips Don't Lie (El Dorado World Tour Live) | Shakira | 2019 | home, calm, days | [Spotify](https://open.spotify.com/search/FIFA%202026%20song%20Shakira) · [Apple](https://music.apple.com/us/album/hips-dont-lie-el-dorado-world-tour-live/1487071531?i=1487073130&uo=4) · [YouTube](https://www.youtube.com/results?search_query=FIFA%202026%20song%20Shakira) |
-| 66 | Red | Taylor Swift | 2012 | home, calm, days | [Spotify](https://open.spotify.com/search/Red%20Taylor%20swift) · [Apple](https://music.apple.com/us/album/red/1440935340?i=1440935346&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Red%20Taylor%20swift) |
+| 65 | Shakira: Bzrp Music Sessions, Vol. 53/66 | Bizarrap & Shakira | 2023 | home, calm, days | [Spotify](https://open.spotify.com/search/FIFA%202026%20song%20Shakira) · [Apple](https://music.apple.com/us/album/shakira-bzrp-music-sessions-vol-53-66/1660098816?i=1660098823&uo=4) · [YouTube](https://www.youtube.com/results?search_query=FIFA%202026%20song%20Shakira) |
+| 66 | Conceited | Lola Young | 2023 | home, calm, days | [Spotify](https://open.spotify.com/search/Conceited%20Lola%20Young) · [Apple](https://music.apple.com/us/album/conceited/1708632323?i=1708632329&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Conceited%20Lola%20Young) |
 | 67 | Detonator | Detox Unit | 2026 | home, calm, days | [Spotify](https://open.spotify.com/search/Detonator%20Detox%20Unit) · [Apple](https://music.apple.com/us/album/detonator/1894852771?i=1894852772&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Detonator%20Detox%20Unit) |
 | 68 | Human Being | Anna Vaus | 2026 | home, calm, days | [Spotify](https://open.spotify.com/search/Human%20Being%20Anna%20Vaus) · [Apple](https://music.apple.com/us/album/human-being/6778341599?i=6778341602&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Human%20Being%20Anna%20Vaus) |
 | 69 | Sweet Baby James | James Taylor | 1970 | home, calm, days | [Spotify](https://open.spotify.com/search/Sweet%20Baby%20James%20James%20Taylor) · [Apple](https://music.apple.com/us/album/sweet-baby-james/1480026454?i=1480026455&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Sweet%20Baby%20James%20James%20Taylor) |
@@ -486,9 +486,9 @@ Every one of these 80 clips streams straight from this page — no account, no l
 | 73 | Disco Snails | Vulfmon & Zachary Barker | 2024 | home, calm, days | [Spotify](https://open.spotify.com/search/Disco%20Snails%20Vulfmon) · [Apple](https://music.apple.com/us/album/disco-snails/1891827618?i=1891828193&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Disco%20Snails%20Vulfmon) |
 | 74 | Carry On Wayward Son | Kansas | 1976 | home, calm, days | [Spotify](https://open.spotify.com/search/Carry%20on%20Wayward%20Son%20Kansas) · [Apple](https://music.apple.com/us/album/carry-on-wayward-son/190655957?i=190655992&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Carry%20on%20Wayward%20Son%20Kansas) |
 | 75 | Rolling in the Deep | Adele | 2010 | nostalgic, nostalgic nostalgic, excited | [Spotify](https://open.spotify.com/search/Rolling%20in%20the%20Deep%20Adele) · [Apple](https://music.apple.com/us/album/rolling-in-the-deep/1544491232?i=1544491233&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Rolling%20in%20the%20Deep%20Adele) |
-| 76 | The Old Religion | Florence + the Machine | 2025 | nostalgic, nostalgic nostalgic, excited | [Spotify](https://open.spotify.com/search/Old%20Religion%20Florence%20and%20the%20Machine) · [Apple](https://music.apple.com/us/album/the-old-religion/1833585853?i=1833586121&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Old%20Religion%20Florence%20and%20the%20Machine) |
-| 77 | Tiny Dancer | Elton John | 1971 | nostalgic, nostalgic nostalgic, excited | [Spotify](https://open.spotify.com/search/Little%20Dancer%20Elton%20John) · [Apple](https://music.apple.com/us/album/tiny-dancer/1434905226?i=1434905339&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Little%20Dancer%20Elton%20John) |
-| 78 | Patience | Tame Impala | 2019 | nostalgic, nostalgic nostalgic, excited | [Spotify](https://open.spotify.com/search/Patience%20Tame%20Impala) · [Apple](https://music.apple.com/us/album/patience/1457154570?i=1457154574&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Patience%20Tame%20Impala) |
+| 76 | The Old Religion | Florence + the Machine | 2025 | nostalgic, nostalgic nostalgic, excited | [Spotify](https://open.spotify.com/search/Old%20Religion%20Florence%20and%20the%20Machine) · [Apple](https://music.apple.com/us/album/the-old-religion/1833586446?i=1833586462&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Old%20Religion%20Florence%20and%20the%20Machine) |
+| 77 | Patience | Tame Impala | 2019 | nostalgic, nostalgic nostalgic, excited | [Spotify](https://open.spotify.com/search/Patience%20Tame%20Impala) · [Apple](https://music.apple.com/us/album/patience/1457154570?i=1457154574&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Patience%20Tame%20Impala) |
+| 78 | Tiny Dancer | Elton John | 1971 | nostalgic, nostalgic nostalgic, excited | [Spotify](https://open.spotify.com/search/Little%20Dancer%20Elton%20John) · [Apple](https://music.apple.com/us/album/tiny-dancer/1434905226?i=1434905339&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Little%20Dancer%20Elton%20John) |
 | 79 | Want Want Want | Annabelle Dinda | 2025 | nostalgic, nostalgic nostalgic, excited | [Spotify](https://open.spotify.com/search/Whatever%20You%20Wanna%20Annabelle%20Dinda) · [Apple](https://music.apple.com/us/album/want-want-want/1832528840?i=1832528841&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Whatever%20You%20Wanna%20Annabelle%20Dinda) |
 | 80 | Heat Waves | Glass Animals | 2020 | nostalgic, nostalgic nostalgic, excited | [Spotify](https://open.spotify.com/search/Heat%20Waves%20Glass%20Animals) · [Apple](https://music.apple.com/us/album/heat-waves/1508562310?i=1508562516&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Heat%20Waves%20Glass%20Animals) |
 
