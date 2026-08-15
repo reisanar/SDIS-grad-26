@@ -336,9 +336,9 @@ Every one of these 80 clips streams straight from this page — no account, no l
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7b/eb/c2/7bebc2a6-1c18-5c3a-fb03-dddafe2fc2fb/mzaf_8245311487773720491.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/30/3e/d7/303ed7e7-392e-6c61-8087-5ed4e349f9e3/0.jpg/300x300bb.jpg" alt="Album art for Detonator" loading="lazy">
-  <div class="preview-meta"><strong>Detonator</strong><br><span>Jauz</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dc/e8/00/dce80078-362e-a014-520c-44c2d6cef93d/mzaf_2557813901079390820.plus.aac.p.m4a"></audio>
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d5/41/c5/d541c574-506c-5422-d06b-3bea410c824e/193436468848_DetoxUnitDetonatorSingleArtFinal.jpg/300x300bb.jpg" alt="Album art for Detonator" loading="lazy">
+  <div class="preview-meta"><strong>Detonator</strong><br><span>Detox Unit</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/35/a1/d935a107-ebf5-4190-1a42-749b710ab5b1/mzaf_15011483346296095197.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ab/7a/1a/ab7a1a63-08d9-e7e5-c747-c58bb1d7887f/859740024551_cover.jpg/300x300bb.jpg" alt="Album art for Human Being" loading="lazy">
@@ -477,7 +477,7 @@ Every one of these 80 clips streams straight from this page — no account, no l
 | 64 | Lost In Paradise | Rihanna | 2012 | home, calm, days | [Spotify](https://open.spotify.com/search/Lost%20in%20Paradise%20Rihanna) · [Apple](https://music.apple.com/us/album/lost-in-paradise/1446744832?i=1446745876&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Lost%20in%20Paradise%20Rihanna) |
 | 65 | Waka Waka (Esto es Africa) [feat. Freshlyground] | Shakira | 2010 | home, calm, days | [Spotify](https://open.spotify.com/search/FIFA%202026%20song%20Shakira) · [Apple](https://music.apple.com/us/album/waka-waka-esto-es-africa-feat-freshlyground/370711726?i=370711731&uo=4) · [YouTube](https://www.youtube.com/results?search_query=FIFA%202026%20song%20Shakira) |
 | 66 | Conceited | Lola Young | 2023 | home, calm, days | [Spotify](https://open.spotify.com/search/Conceited%20Lola%20Young) · [Apple](https://music.apple.com/us/album/conceited/1708632323?i=1708632329&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Conceited%20Lola%20Young) |
-| 67 | Detonator | Jauz | 2025 | home, calm, days | [Spotify](https://open.spotify.com/search/Detonator%20Detox%20Unit) · [Apple](https://music.apple.com/us/album/detonator/1807167107?i=1807167108&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Detonator%20Detox%20Unit) |
+| 67 | Detonator | Detox Unit | 2026 | home, calm, days | [Spotify](https://open.spotify.com/search/Detonator%20Detox%20Unit) · [Apple](https://music.apple.com/us/album/detonator/1894852771?i=1894852772&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Detonator%20Detox%20Unit) |
 | 68 | Human Being | Anna Vaus | 2026 | home, calm, days | [Spotify](https://open.spotify.com/search/Human%20Being%20Anna%20Vaus) · [Apple](https://music.apple.com/us/album/human-being/6778341599?i=6778341602&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Human%20Being%20Anna%20Vaus) |
 | 69 | Sweet Baby James | James Taylor | 1970 | home, calm, days | [Spotify](https://open.spotify.com/search/Sweet%20Baby%20James%20James%20Taylor) · [Apple](https://music.apple.com/us/album/sweet-baby-james/1480026454?i=1480026455&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Sweet%20Baby%20James%20James%20Taylor) |
 | 70 | Mirror | Jeff Tweedy | 2025 | home, calm, days | [Spotify](https://open.spotify.com/search/Mirror%20Jeff%20Tweedy) · [Apple](https://music.apple.com/us/album/mirror/1825239073?i=1825239080&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Mirror%20Jeff%20Tweedy) |
