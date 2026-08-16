@@ -136,9 +136,9 @@ Every one of these 80 clips streams straight from this page — no account, no l
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8b/df/c0/8bdfc0e9-1f7b-8437-0f6a-1523c87e8d4a/mzaf_5536706325659515473.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a1/1b/11/a11b112e-bab9-e5f6-790e-e71bba83d47d/192641495410_cover.jpg/300x300bb.jpg" alt="Album art for Heya" loading="lazy">
-  <div class="preview-meta"><strong>Heya</strong><br><span>CloZee</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/4f/55/a9/4f55a9bf-cbed-0331-1f54-7ebe724cd6ec/mzaf_13027913136135011480.plus.aac.p.m4a"></audio>
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/b2/70/7c/b2707cc6-e2bf-88a3-aba9-3442d7e68a3e/192641581489_cover.jpg/300x300bb.jpg" alt="Album art for Heya (Opiuo Remix)" loading="lazy">
+  <div class="preview-meta"><strong>Heya (Opiuo Remix)</strong><br><span>CloZee</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/92/b4/1a/92b41ad2-f8e3-e329-5f65-bc14fd9aff8f/mzaf_11305754598321132164.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/aa/73/37/aa73377a-a27e-2b6f-4328-406d58181512/15418.jpg/300x300bb.jpg" alt="Album art for Virgen de La Candelaria (with Los Cumbiamberos del Pueblo)" loading="lazy">
@@ -311,9 +311,9 @@ Every one of these 80 clips streams straight from this page — no account, no l
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/4e/37/50/4e375009-696b-b435-ec15-2f8043e92fe3/mzaf_13244431307274795740.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/de/eb/63/deeb63c1-7bc0-9153-cfa3-fd9e4929aacf/4050538826562.jpg/300x300bb.jpg" alt="Album art for Never Gonna Give You Up (2022 Remaster)" loading="lazy">
-  <div class="preview-meta"><strong>Never Gonna Give You Up (2022 Remaster)</strong><br><span>Rick Astley</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/b0/d8/aa/b0d8aa8e-1a38-6287-508d-27693174249e/mzaf_12819981103726582013.plus.aac.p.m4a"></audio>
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/db/9e/2a/db9e2ae0-cb9f-f2a9-2774-de399dff2580/4099964133639.jpg/300x300bb.jpg" alt="Album art for Never Gonna Give You Up (Pianoforte)" loading="lazy">
+  <div class="preview-meta"><strong>Never Gonna Give You Up (Pianoforte)</strong><br><span>Rick Astley</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8b/77/73/8b77731b-3c69-ca29-a8ad-b65f0d9d0937/mzaf_5046656274138690281.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/58/7c/e1/587ce150-44d9-e1fa-966c-18b72cd666ac/00602547876706.rgb.jpg/300x300bb.jpg" alt="Album art for Come What May" loading="lazy">
@@ -326,9 +326,9 @@ Every one of these 80 clips streams straight from this page — no account, no l
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d4/e2/cf/d4e2cfd1-d9be-d006-251c-97623e5a4729/mzaf_8831692341553483146.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/c4/6e/63/c46e6321-2a8a-dfaa-2c0f-21d4b62450b3/884977620108.jpg/300x300bb.jpg" alt="Album art for Waka Waka (Esto es Africa) [feat. Freshlyground]" loading="lazy">
-  <div class="preview-meta"><strong>Waka Waka (Esto es Africa) [feat. Freshlyground]</strong><br><span>Shakira</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c1/72/b5/c172b57b-0476-aeed-94d2-32d1a83562d1/mzaf_841448688891614243.plus.aac.p.m4a"></audio>
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f7/90/e0/f790e0ba-3540-486c-0e3b-1f69a5a4e70a/886448111863.jpg/300x300bb.jpg" alt="Album art for Hips Don&#x27;t Lie (El Dorado World Tour Live)" loading="lazy">
+  <div class="preview-meta"><strong>Hips Don&#x27;t Lie (El Dorado World Tour Live)</strong><br><span>Shakira</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/63/cd/e7/63cde767-b9de-3ef0-7f92-4cfc7ce8d5e4/mzaf_8966630194926171184.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ee/c7/54/eec75427-7653-029c-2b1a-5a19f167bb52/23UM1IM04601.rgb.jpg/300x300bb.jpg" alt="Album art for Conceited" loading="lazy">
@@ -437,7 +437,7 @@ Every one of these 80 clips streams straight from this page — no account, no l
 | 24 | Own Little World | Celldweller | 2003 | home, calm, days | [Spotify](https://open.spotify.com/search/Own%20Little%20World%20Celldweller) · [Apple](https://music.apple.com/us/album/own-little-world/5945130?i=5945118&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Own%20Little%20World%20Celldweller) |
 | 25 | Hark the Sound | The Clef Hangers | 2018 | home, calm, days | [Spotify](https://open.spotify.com/search/Hark%20the%20Sound%20UNC) · [Apple](https://music.apple.com/us/album/hark-the-sound/1445924277?i=1445924290&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Hark%20the%20Sound%20UNC) |
 | 26 | expectations | Olivia Rodrigo | 2026 | home, calm, days | [Spotify](https://open.spotify.com/search/Expectations%20Olivia%20Rodrigo) · [Apple](https://music.apple.com/us/album/expectations/1889992111?i=1889992129&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Expectations%20Olivia%20Rodrigo) |
-| 27 | Heya | CloZee | 2020 | home, calm, days | [Spotify](https://open.spotify.com/search/Heya%20Clozee) · [Apple](https://music.apple.com/us/album/heya/1683581375?i=1683581383&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Heya%20Clozee) |
+| 27 | Heya (Opiuo Remix) | CloZee | 2020 | home, calm, days | [Spotify](https://open.spotify.com/search/Heya%20Clozee) · [Apple](https://music.apple.com/us/album/heya-opiuo-remix/1683591698?i=1683591703&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Heya%20Clozee) |
 | 28 | Virgen de La Candelaria (with Los Cumbiamberos del Pueblo) | Andrés Landero | 1982 | home, calm, days | [Spotify](https://open.spotify.com/search/Virgen%20de%20La%20Candelaria%20Andr%C3%A9s%20Landero) · [Apple](https://music.apple.com/us/album/virgen-de-la-candelaria-with-los-cumbiamberos-del-pueblo/1740382879?i=1740382884&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Virgen%20de%20La%20Candelaria%20Andr%C3%A9s%20Landero) |
 | 29 | Don’t Tell On Me | Jason Aldean | 2026 | home, calm, days | [Spotify](https://open.spotify.com/search/Don%27t%20Tell%20on%20Me%20Jason%20Aldean) · [Apple](https://music.apple.com/us/album/dont-tell-on-me/1847440777?i=1847440784&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Don%27t%20Tell%20on%20Me%20Jason%20Aldean) |
 | 30 | Mist (Instrumental) | Dev1lHawk & xaviorthemachine | 2026 | home, calm, days | [Spotify](https://open.spotify.com/search/Mist%20Esdeekid%20Rico%20Ace) · [Apple](https://music.apple.com/us/album/mist-instrumental/1867591317?i=1867591320&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Mist%20Esdeekid%20Rico%20Ace) |
@@ -472,10 +472,10 @@ Every one of these 80 clips streams straight from this page — no account, no l
 | 59 | happens | Elbi Lewes | 2026 | home, calm, days | [Spotify](https://open.spotify.com/search/happens%20Elbi%20Lewes) · [Apple](https://music.apple.com/us/album/happens/6771519244?i=6771519245&uo=4) · [YouTube](https://www.youtube.com/results?search_query=happens%20Elbi%20Lewes) |
 | 60 | I Follow You | Melody's Echo Chamber | 2012 | home, calm, days | [Spotify](https://open.spotify.com/search/I%20Follow%20You%20Melody%20Echo%20Chamber) · [Apple](https://music.apple.com/us/album/i-follow-you/1194793478?i=1194793822&uo=4) · [YouTube](https://www.youtube.com/results?search_query=I%20Follow%20You%20Melody%20Echo%20Chamber) |
 | 61 | Andromeda | Weyes Blood | 2019 | home, calm, days | [Spotify](https://open.spotify.com/search/Andromeda%20Weyes%20Blood) · [Apple](https://music.apple.com/us/album/andromeda/1450550344?i=1450550346&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Andromeda%20Weyes%20Blood) |
-| 62 | Never Gonna Give You Up (2022 Remaster) | Rick Astley | 1987 | home, calm, days | [Spotify](https://open.spotify.com/search/Never%20gonna%20give%20you%20up%20Rick%20Ashley) · [Apple](https://music.apple.com/us/album/never-gonna-give-you-up-2022-remaster/1624945511?i=1624945512&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Never%20gonna%20give%20you%20up%20Rick%20Ashley) |
+| 62 | Never Gonna Give You Up (Pianoforte) | Rick Astley | 1987 | home, calm, days | [Spotify](https://open.spotify.com/search/Never%20gonna%20give%20you%20up%20Rick%20Ashley) · [Apple](https://music.apple.com/us/album/never-gonna-give-you-up-pianoforte/1773292758?i=1773293593&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Never%20gonna%20give%20you%20up%20Rick%20Ashley) |
 | 63 | Come What May | Nicole Kidman & Ewan McGregor | 2001 | home, calm, days | [Spotify](https://open.spotify.com/search/Come%20what%20may%20Nicole) · [Apple](https://music.apple.com/us/album/come-what-may/1440845640?i=1440845923&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Come%20what%20may%20Nicole) |
 | 64 | Lost In Paradise | Rihanna | 2012 | home, calm, days | [Spotify](https://open.spotify.com/search/Lost%20in%20Paradise%20Rihanna) · [Apple](https://music.apple.com/us/album/lost-in-paradise/1446744832?i=1446745876&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Lost%20in%20Paradise%20Rihanna) |
-| 65 | Waka Waka (Esto es Africa) [feat. Freshlyground] | Shakira | 2010 | home, calm, days | [Spotify](https://open.spotify.com/search/FIFA%202026%20song%20Shakira) · [Apple](https://music.apple.com/us/album/waka-waka-esto-es-africa-feat-freshlyground/370711726?i=370711731&uo=4) · [YouTube](https://www.youtube.com/results?search_query=FIFA%202026%20song%20Shakira) |
+| 65 | Hips Don't Lie (El Dorado World Tour Live) | Shakira | 2019 | home, calm, days | [Spotify](https://open.spotify.com/search/FIFA%202026%20song%20Shakira) · [Apple](https://music.apple.com/us/album/hips-dont-lie-el-dorado-world-tour-live/1487071531?i=1487073130&uo=4) · [YouTube](https://www.youtube.com/results?search_query=FIFA%202026%20song%20Shakira) |
 | 66 | Conceited | Lola Young | 2023 | home, calm, days | [Spotify](https://open.spotify.com/search/Conceited%20Lola%20Young) · [Apple](https://music.apple.com/us/album/conceited/1708632323?i=1708632329&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Conceited%20Lola%20Young) |
 | 67 | Detonator | Detox Unit | 2026 | home, calm, days | [Spotify](https://open.spotify.com/search/Detonator%20Detox%20Unit) · [Apple](https://music.apple.com/us/album/detonator/1894852771?i=1894852772&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Detonator%20Detox%20Unit) |
 | 68 | Human Being | Anna Vaus | 2026 | home, calm, days | [Spotify](https://open.spotify.com/search/Human%20Being%20Anna%20Vaus) · [Apple](https://music.apple.com/us/album/human-being/6778341599?i=6778341602&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Human%20Being%20Anna%20Vaus) |
@@ -498,8 +498,7 @@ Every one of these 80 clips streams straight from this page — no account, no l
 
 ## Get this into your own Spotify or Apple library
 
-Playlists live inside an account, so this last hop is yours to make — it takes
-about a minute:
+Playlists live inside an account, so this last hop is yours to make:
 
 1. Download the [import file](docs_data/playlist_import.csv) above.
 2. Go to a free transfer tool ([Soundiiz](https://soundiiz.com),
