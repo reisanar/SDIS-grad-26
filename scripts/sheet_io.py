@@ -1,6 +1,6 @@
 """Read a Google Sheet that's shared with 'Anyone with the link'.
 
-No credentials, no service account, no 'Publish to web' step — just the sheet ID
+No credentials, no service account, no 'Publish to web' step. Just the sheet ID
 from the URL (and optionally the tab's gid):
 
     https://docs.google.com/spreadsheets/d/<SHEET_ID>/edit?gid=<GID>
@@ -8,9 +8,7 @@ from the URL (and optionally the tab's gid):
 
 You can paste the whole URL into GOOGLE_SHEET_ID and both values are extracted.
 
-Google exposes two credential-free endpoints for link-shared sheets. We try the
-CSV export first (respects gid exactly) and fall back to the gviz endpoint,
-which tolerates some sharing configurations the first one rejects.
+Google exposes two credential-free endpoints for link-shared sheets. 
 """
 from __future__ import annotations
 
