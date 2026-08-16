@@ -13,8 +13,7 @@ From that it writes everything needed to have a playlist on both services:
   docs_data/playlist.m3u           local player / archival copy
   docs_data/playlist_unmatched.csv anything the API couldn't find
 
-The site can play all 30-second previews with zero credentials. Steps 05 and 06
-are optional upgrades that turn this into a real hosted playlist on each service.
+The site can play all 30-second previews with zero credentials. 
 """
 from __future__ import annotations
 
