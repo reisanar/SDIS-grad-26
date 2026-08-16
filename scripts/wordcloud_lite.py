@@ -1,8 +1,7 @@
 """A dependency-free word cloud.
 
 The `wordcloud` package needs a C extension that fails to build on plenty of
-machines (and in some CI images), which is exactly the kind of fragility you do
-not want ten minutes before a session. This renders a comparable layout with
+machines (and in some CI images). This renders a comparable layout with
 matplotlib alone: size scales with frequency, and a spiral placement search with
 bounding-box collision tests keeps words from overlapping.
 
