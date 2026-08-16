@@ -17,7 +17,7 @@ HERE = Path(__file__).resolve().parent
 STEPS = ["bootstrap_placeholders", "00_fetch_responses", "01_preprocess", "02_demographics",
          "03_taste_map", "04_match_tracks", "05_spotify_playlist", "06_apple_music",
          "07_render_snippets"]
-REQUIRED = {"01_preprocess"}  # only this one is fatal; every other step degrades
+REQUIRED = {"01_preprocess"}  # only this one is fatal
 
 
 def run(step: str) -> int:
