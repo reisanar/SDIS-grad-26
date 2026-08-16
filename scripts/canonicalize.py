@@ -1,4 +1,4 @@
-"""Collapse messy free-text answers into groups you can actually plot.
+"""Collapse messy free-text answers into groups one can actually plot.
 
 Undergraduate background is the hard case: 40 people produce 35 spellings of
 about 12 real fields ("CS", "comp sci", "Computer Science ", "B.S. Computer
