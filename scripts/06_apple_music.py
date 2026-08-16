@@ -6,7 +6,7 @@ Apple ties to a signed-in subscriber account:
 
 * APPLE_TEAM_ID + APPLE_KEY_ID + APPLE_PRIVATE_KEY (.p8) -> developer token,
   used to resolve catalog IDs
-* plus APPLE_MUSIC_USER_TOKEN (minted once in a browser via MusicKit JS)
+* plus APPLE_MUSIC_USER_TOKEN 
   -> creates the playlist
 
 Skipped silently when unconfigured.
