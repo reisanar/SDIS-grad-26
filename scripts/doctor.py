@@ -1,4 +1,4 @@
-"""Diagnose common `quarto preview` / `quarto render` failures before they bite.
+"""Diagnose common `quarto preview` / `quarto render` failures 
 
     python scripts/doctor.py
 
