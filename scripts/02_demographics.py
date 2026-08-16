@@ -2,8 +2,8 @@
 
 Every chart is conditional: if a question wasn't asked, or nobody answered it,
 that chart is skipped and never referenced by the site. Nothing renders an empty
-axis. What gets built is recorded in docs_data/charts.json so the snippet
-renderer only links to figures that actually exist.
+axis. What gets built is recorded in docs_data/charts.json 
+
 
 Outputs: docs_assets/*.png, docs_data/summary.json, docs_data/charts.json
 """
@@ -26,7 +26,7 @@ from wordcloud_lite import render_wordcloud
 CLEAN = DATA / "clean.csv"
 ACCENT = "#4B9CD3"
 NAVY = "#13294B"
-MIN_ANSWERS = 3  # below this a chart is noise, not information
+MIN_ANSWERS = 3  # 
 
 plt.rcParams.update({"figure.dpi": 160, "font.size": 10,
                      "axes.spines.top": False, "axes.spines.right": False})
