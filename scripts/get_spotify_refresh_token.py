@@ -4,8 +4,7 @@
 
 Requires SPOTIFY_CLIENT_ID / SPOTIFY_CLIENT_SECRET and a redirect URI of
 http://127.0.0.1:8080/callback registered in your Spotify app settings.
-Paste the printed refresh token into your .env and into the repo's Actions
-secrets. It does not expire unless you revoke it.
+
 """
 from __future__ import annotations
 
