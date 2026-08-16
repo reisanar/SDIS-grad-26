@@ -4,9 +4,7 @@
 
 Deliberately messy, because real responses are: mixed-case state answers, full
 state names where 2 letters were requested, a few international families, and
-undergraduate backgrounds written 30 different ways. That mess is what exercises
-the canonicalizer — if the pipeline survives this file, it will survive your
-cohort.
+undergraduate backgrounds written 30 different ways. 
 """
 from __future__ import annotations
 
@@ -18,12 +16,10 @@ import pandas as pd
 from common import DATA, log
 
 # Column titles mirror the live form. The pipeline also pattern-matches, so
-# small wording differences on your side are fine.
-# Column titles mirror the LIVE SDIS form exactly, so sample runs reproduce
-# what you will see with real responses. --schema classic uses the older wording.
+# small wording differences are fine.
+# Column titles mirror the LIVE SDIS form exactly
 # EXACT headers and column ORDER from the live SDIS export. Note the trailing
-# space in the "makes you feel" question — reproduced deliberately so sample
-# files are byte-comparable with a real export.
+# space in the "makes you feel" question 
 LIVE_COLUMNS = [
     "Timestamp",
     "What is your program (or role) at SDIS?",
@@ -60,8 +56,7 @@ Q_CLASSIC = {
     "mood": "Pick a mood word for your song",
 }
 
-# Exact options from the live SDIS form. Weighted so master's students dominate,
-# which is what a real immersion cohort looks like.
+# Exact options from the live SDIS form
 PROGRAMS = (["MS in DS"] * 14 + ["PhD in DS"] * 5 + ["CHIP PhD"] * 2 + ["CHIP MS"] * 2
             + ["MS in LS"] * 3 + ["MS in IS"] * 3 + ["PhD in ILS"] * 2
             + ["Faculty"] * 3 + ["Staff"] * 2)
@@ -81,7 +76,7 @@ CITIES = ["Raleigh, NC", "Durham, NC", "Charlotte, NC", "Chapel Hill, NC", "Cary
           "Lagos, Nigeria", "Seoul, South Korea", "Mexico City, Mexico",
           "Berlin, Germany", "Bogota, Colombia", "Hanoi, Vietnam"]
 
-# These sentences ARE the taste map — the tf-idf vocabulary comes from here, so
+# These sentences ARE the taste map: the tf-idf vocabulary comes from here, so
 # they are written with deliberately varied emotional registers and imagery.
 # Loose thematic families (nostalgia, energy, calm, melancholy, joy, motion)
 # give PCA real structure to find, the way a real cohort's answers would.
@@ -89,8 +84,7 @@ CITIES = ["Raleigh, NC", "Durham, NC", "Charlotte, NC", "Chapel Hill, NC", "Cary
 # than drawn from a fixed list: each respondent gets a unique sentence built from
 # an emotional family (nostalgia, energy, calm, melancholy, joy, connection).
 # Shared vocabulary within a family and distinct vocabulary across families is
-# exactly the structure PCA should find — and it means no two people submit the
-# identical string, which is what would happen with a small fixed list.
+# exactly the structure PCA should find 
 FEELING_FAMILIES = {
     "nostalgia": {
         "openers": ["nostalgic for", "homesick for", "wistful about", "reminded of",
