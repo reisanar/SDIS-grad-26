@@ -1,16 +1,7 @@
 """Step 0 — pull Google Form responses into data/raw_responses.csv.
 
-Four ingestion modes, tried in this order. Nothing downstream cares which ran.
+Four ingestion modes. Nothing downstream cares which ran.
 
-1. GOOGLE_SHEET_ID + GOOGLE_SERVICE_ACCOUNT_JSON  private sheet, service account
-2. GOOGLE_SHEET_ID alone                          sheet shared "Anyone with the
-                                                  link" — no credentials at all
-3. FORM_CSV_URL                                   published-to-web CSV
-4. LOCAL_CSV / data/raw_responses.csv             offline rehearsal
-
-Mode 2 is the easy one: paste the sheet ID (or its whole URL) into .env as
-GOOGLE_SHEET_ID, set the sheet's sharing to "Anyone with the link — Viewer",
-and you are done.
 """
 from __future__ import annotations
 
