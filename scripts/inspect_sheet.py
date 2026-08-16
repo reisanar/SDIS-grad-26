@@ -3,10 +3,6 @@
     python scripts/inspect_sheet.py                      # uses .env / env vars
     python scripts/inspect_sheet.py --sheet-id 1ZVwPO... # or pass the ID directly
     python scripts/inspect_sheet.py --csv data/raw_responses.csv
-
-Run this FIRST when connecting a real form. It tells you which questions were
-recognized, which were ignored, and which expected fields are missing — before
-you spend time debugging an empty chart.
 """
 from __future__ import annotations
 
