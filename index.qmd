@@ -30,3 +30,4 @@ minutes, and every response changes the map and adds a song.
 - [Data](data.qmd) — the anonymized dataset, free to download and remix.
 <!-- - [How it works](workshop.qmd) — the tf-idf and PCA walkthrough from the session. -->
 
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0b9cePm2VFBLMH1HEgCkx0?utm_source=generator&si=b4dc8a5e68224e42" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
