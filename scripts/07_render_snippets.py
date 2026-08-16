@@ -180,8 +180,7 @@ loading="lazy"></iframe>\n''')
         p.append("""
 ## Get this into your own Spotify or Apple library
 
-Playlists live inside an account, so this last hop is yours to make — it takes
-about a minute:
+Playlists live inside an account, so this last hop is yours to make:
 
 1. Download the [import file](docs_data/playlist_import.csv) above.
 2. Go to a free transfer tool ([Soundiiz](https://soundiiz.com),
