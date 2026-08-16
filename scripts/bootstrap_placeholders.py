@@ -4,8 +4,7 @@ fresh clone BEFORE any data exists.
 Quarto's `{{< include >}}` is a hard error when the target is missing, and a
 referenced image that doesn't exist renders as a broken box. This writes
 harmless placeholders for all of them. Every real pipeline step overwrites its
-own placeholder, so this is safe to run any time — it never clobbers real output.
-
+own placeholder, so this is safe to run any time 
 Run automatically at the start of run_all.py, or by hand:
 
     python scripts/bootstrap_placeholders.py
