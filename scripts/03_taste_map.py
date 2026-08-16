@@ -12,8 +12,7 @@ words that actually distinguish people. PCA then finds the two directions of
 largest variance, so distance on the map is similarity of expressed feeling.
 
 Set TASTE_MAP_INCLUDE_GENRES=1 to blend the checkbox genres in as a weaker
-secondary signal. Off by default — checkboxes flatten the map toward a handful
-of category clusters and drown out the writing.
+secondary signal. Off by default 
 
 Outputs: docs_assets/taste_map.png
          docs_assets/taste_map.html        (interactive, hover = anonymous id)
@@ -118,7 +117,7 @@ def main() -> int:
     stop = list(TfidfVectorizer(stop_words="english").get_stop_words() | EXTRA_STOPWORDS)
 
     # One sentence per person is a SHORT document, so an aggressive min_df can
-    # empty the vocabulary. Start strict, relax until enough terms survive.
+    # empty the vocabulary. 
     X, vec = None, None
     for min_df in (2, 1):
         vec = TfidfVectorizer(stop_words=stop, ngram_range=(1, 2),
