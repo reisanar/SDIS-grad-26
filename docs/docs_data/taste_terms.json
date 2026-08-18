@@ -1,6 +1,6 @@
 {
   "PC1": {
-    "explained_variance": 0.08092988621878976,
+    "explained_variance": 0.08018886669076505,
     "positive": [
       "energetic",
       "happy",
@@ -8,53 +8,53 @@
       "energetic energetic",
       "ready",
       "hopeful",
-      "light",
       "relaxed",
+      "light",
       "silly",
       "seen"
     ],
     "negative": [
+      "good",
       "energized",
       "nostalgic",
-      "good",
       "empowered",
-      "nostalgic nostalgic",
+      "good good",
       "pumped",
-      "excited",
+      "nostalgic nostalgic",
       "driving",
-      "home",
-      "want"
+      "excited",
+      "hypes"
     ]
   },
   "PC2": {
-    "explained_variance": 0.0757944688987763,
+    "explained_variance": 0.07472247040733178,
     "positive": [
+      "energetic",
+      "energetic energetic",
+      "good",
+      "ready",
+      "energized",
+      "good good",
+      "driving",
+      "pumped",
+      "hypes",
+      "want"
+    ],
+    "negative": [
       "happy",
       "happy happy",
       "nostalgic",
       "relaxed",
       "hopeful",
       "light",
-      "seen",
       "moved",
-      "silly",
-      "nostalgic nostalgic"
-    ],
-    "negative": [
-      "energetic",
-      "energetic energetic",
-      "energized",
-      "ready",
-      "good",
-      "pumped",
-      "driving",
-      "hypes",
-      "want",
-      "days"
+      "seen",
+      "nostalgic nostalgic",
+      "empowered"
     ]
   },
   "PC3": {
-    "explained_variance": 0.06866073782486842,
+    "explained_variance": 0.06853547963400615,
     "positive": [
       "nostalgic",
       "empowered",
@@ -65,19 +65,19 @@
       "energetic energetic",
       "ready",
       "home",
-      "home home"
+      "energized"
     ],
     "negative": [
-      "energized",
       "good",
       "happy",
-      "pumped",
-      "relaxed",
+      "good good",
       "happy happy",
-      "hopeful",
-      "relaxed relaxed",
+      "relaxed",
       "driving",
-      "light"
+      "hypes",
+      "hopeful",
+      "light",
+      "seen"
     ]
   },
   "_source": "free-text answers to 'how this song makes you feel'"

@@ -1,5 +1,5 @@
 {
-  "n_participants": 80,
+  "n_participants": 81,
   "programs": [
     [
       "MS in LS",
@@ -7,7 +7,7 @@
     ],
     [
       "CHIP MS",
-      14
+      15
     ],
     [
       "MS in DS",
@@ -64,12 +64,12 @@
       3
     ],
     [
-      "USA",
+      "CA",
       3
     ],
     [
-      "Colombia",
-      2
+      "USA",
+      3
     ]
   ],
   "n_locations": 33,
@@ -91,13 +91,13 @@
       7
     ],
     [
-      "Statistics",
-      5
+      "Other",
+      6
     ],
     [
-      "Other",
+      "Statistics",
       5
     ]
   ],
-  "n_unique_songs": 79
+  "n_unique_songs": 80
 }
