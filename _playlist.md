@@ -78,7 +78,7 @@ Every one of these 81 clips streams straight from this page — no account, no l
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6e/91/10/6e9110c5-c914-f215-ad28-4e5de562f191/26UMGIM17314.rgb.jpg/300x300bb.jpg" alt="Album art for The Let Out" loading="lazy">
   <div class="preview-meta"><strong>The Let Out</strong><br><span>J. Cole</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8f/76/74/8f7674da-a2fa-2d35-6a8c-aa3f63865955/mzaf_5485266274142222690.plus.aac.p.m4a"></audio>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/57/13/cb/5713cb1e-1fcf-393a-d790-c10c4203111a/mzaf_12829380951102278919.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/42/59/10/425910f2-133a-0d33-e086-796e635aa260/196871822480.jpg/300x300bb.jpg" alt="Album art for Solo" loading="lazy">
@@ -316,9 +316,9 @@ Every one of these 81 clips streams straight from this page — no account, no l
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/4e/37/50/4e375009-696b-b435-ec15-2f8043e92fe3/mzaf_13244431307274795740.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/db/9e/2a/db9e2ae0-cb9f-f2a9-2774-de399dff2580/4099964133639.jpg/300x300bb.jpg" alt="Album art for Never Gonna Give You Up (Pianoforte)" loading="lazy">
-  <div class="preview-meta"><strong>Never Gonna Give You Up (Pianoforte)</strong><br><span>Rick Astley</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8b/77/73/8b77731b-3c69-ca29-a8ad-b65f0d9d0937/mzaf_5046656274138690281.plus.aac.p.m4a"></audio>
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b3/21/d3/b321d3e4-edfe-124b-d0cd-a64ad1df3290/4050538793840.jpg/300x300bb.jpg" alt="Album art for Never Gonna Give You Up (2022 Remaster)" loading="lazy">
+  <div class="preview-meta"><strong>Never Gonna Give You Up (2022 Remaster)</strong><br><span>Rick Astley</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/48/8f/a4/488fa4b5-b606-71ee-572e-691f840503c8/mzaf_15586272016916254191.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/58/7c/e1/587ce150-44d9-e1fa-966c-18b72cd666ac/00602547876706.rgb.jpg/300x300bb.jpg" alt="Album art for Come What May" loading="lazy">
@@ -331,9 +331,9 @@ Every one of these 81 clips streams straight from this page — no account, no l
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d4/e2/cf/d4e2cfd1-d9be-d006-251c-97623e5a4729/mzaf_8831692341553483146.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/c4/6e/63/c46e6321-2a8a-dfaa-2c0f-21d4b62450b3/884977620108.jpg/300x300bb.jpg" alt="Album art for Waka Waka (Esto es Africa) [feat. Freshlyground]" loading="lazy">
-  <div class="preview-meta"><strong>Waka Waka (Esto es Africa) [feat. Freshlyground]</strong><br><span>Shakira</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c1/72/b5/c172b57b-0476-aeed-94d2-32d1a83562d1/mzaf_841448688891614243.plus.aac.p.m4a"></audio>
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/b5/8a/0db58a8b-7b17-dd53-3464-116a415d0f49/196872648836.jpg/300x300bb.jpg" alt="Album art for Hips Don&#x27;t Lie (featuring Wyclef Jean) [En Español]" loading="lazy">
+  <div class="preview-meta"><strong>Hips Don&#x27;t Lie (featuring Wyclef Jean) [En Español]</strong><br><span>Shakira</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/8e/b0/9a8eb009-2be0-f0f9-226e-2861ab9d76c3/mzaf_10838856194529443892.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Features115/v4/fc/65/98/fc6598f9-706b-48a2-dc37-9854f703b21e/dj.xnockfyi.jpg/300x300bb.jpg" alt="Album art for Under Pressure" loading="lazy">
@@ -376,9 +376,9 @@ Every one of these 81 clips streams straight from this page — no account, no l
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d6/97/c1/d697c1a8-2121-5152-0d86-5c8bbe389e35/mzaf_8430554934652995239.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music/56/5b/88/mzi.hpnqhyuu.jpg/300x300bb.jpg" alt="Album art for Carry On Wayward Son" loading="lazy">
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/98/1a/fb/981afb81-415b-c6f1-f725-147769022da6/mzi.dgzjndad.jpg/300x300bb.jpg" alt="Album art for Carry On Wayward Son" loading="lazy">
   <div class="preview-meta"><strong>Carry On Wayward Son</strong><br><span>Kansas</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a9/53/1f/a9531f42-9e61-e9e7-f4aa-9aa8f790df1a/mzaf_12422186337724231520.plus.aac.p.m4a"></audio>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/0f/f8/df/0ff8dff7-637b-0621-b847-c96a8b389c64/mzaf_14218586297172390325.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/eb/ca/25/ebca2596-cd1e-b295-91a3-771c868d0a79/191404113868.png/300x300bb.jpg" alt="Album art for Rolling in the Deep" loading="lazy">
@@ -478,10 +478,10 @@ Every one of these 81 clips streams straight from this page — no account, no l
 | 60 | happens | Elbi Lewes | 2026 | home, calm, days | [Spotify](https://open.spotify.com/search/happens%20Elbi%20Lewes) · [Apple](https://music.apple.com/us/album/happens/6771519244?i=6771519245&uo=4) · [YouTube](https://www.youtube.com/results?search_query=happens%20Elbi%20Lewes) |
 | 61 | I Follow You | Melody's Echo Chamber | 2012 | home, calm, days | [Spotify](https://open.spotify.com/search/I%20Follow%20You%20Melody%20Echo%20Chamber) · [Apple](https://music.apple.com/us/album/i-follow-you/1194793478?i=1194793822&uo=4) · [YouTube](https://www.youtube.com/results?search_query=I%20Follow%20You%20Melody%20Echo%20Chamber) |
 | 62 | Andromeda | Weyes Blood | 2019 | home, calm, days | [Spotify](https://open.spotify.com/search/Andromeda%20Weyes%20Blood) · [Apple](https://music.apple.com/us/album/andromeda/1450550344?i=1450550346&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Andromeda%20Weyes%20Blood) |
-| 63 | Never Gonna Give You Up (Pianoforte) | Rick Astley | 1987 | home, calm, days | [Spotify](https://open.spotify.com/search/Never%20gonna%20give%20you%20up%20Rick%20Ashley) · [Apple](https://music.apple.com/us/album/never-gonna-give-you-up-pianoforte/1773292758?i=1773293593&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Never%20gonna%20give%20you%20up%20Rick%20Ashley) |
+| 63 | Never Gonna Give You Up (2022 Remaster) | Rick Astley | 1987 | home, calm, days | [Spotify](https://open.spotify.com/search/Never%20gonna%20give%20you%20up%20Rick%20Ashley) · [Apple](https://music.apple.com/us/album/never-gonna-give-you-up-2022-remaster/1612648318?i=1612648319&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Never%20gonna%20give%20you%20up%20Rick%20Ashley) |
 | 64 | Come What May | Nicole Kidman & Ewan McGregor | 2001 | home, calm, days | [Spotify](https://open.spotify.com/search/Come%20what%20may%20Nicole) · [Apple](https://music.apple.com/us/album/come-what-may/1440845640?i=1440845923&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Come%20what%20may%20Nicole) |
 | 65 | Lost In Paradise | Rihanna | 2012 | home, calm, days | [Spotify](https://open.spotify.com/search/Lost%20in%20Paradise%20Rihanna) · [Apple](https://music.apple.com/us/album/lost-in-paradise/1446744832?i=1446745876&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Lost%20in%20Paradise%20Rihanna) |
-| 66 | Waka Waka (Esto es Africa) [feat. Freshlyground] | Shakira | 2010 | home, calm, days | [Spotify](https://open.spotify.com/search/FIFA%202026%20song%20Shakira) · [Apple](https://music.apple.com/us/album/waka-waka-esto-es-africa-feat-freshlyground/370711726?i=370711731&uo=4) · [YouTube](https://www.youtube.com/results?search_query=FIFA%202026%20song%20Shakira) |
+| 66 | Hips Don't Lie (featuring Wyclef Jean) [En Español] | Shakira | 2006 | home, calm, days | [Spotify](https://open.spotify.com/search/FIFA%202026%20song%20Shakira) · [Apple](https://music.apple.com/us/album/hips-dont-lie-featuring-wyclef-jean-en-espa%C3%B1ol/1817217057?i=1817217411&uo=4) · [YouTube](https://www.youtube.com/results?search_query=FIFA%202026%20song%20Shakira) |
 | 67 | Under Pressure | Queen & David Bowie | 1981 | home, calm, days | [Spotify](https://open.spotify.com/search/Under%20Pressure%20Queen%20and%20David%20Bowie) · [Apple](https://music.apple.com/us/album/under-pressure/697650603?i=697651445&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Under%20Pressure%20Queen%20and%20David%20Bowie) |
 | 68 | Detonator | Detox Unit | 2026 | home, calm, days | [Spotify](https://open.spotify.com/search/Detonator%20Detox%20Unit) · [Apple](https://music.apple.com/us/album/detonator/1894852771?i=1894852772&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Detonator%20Detox%20Unit) |
 | 69 | Human Being | Anna Vaus | 2026 | home, calm, days | [Spotify](https://open.spotify.com/search/Human%20Being%20Anna%20Vaus) · [Apple](https://music.apple.com/us/album/human-being/6778341599?i=6778341602&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Human%20Being%20Anna%20Vaus) |
@@ -490,7 +490,7 @@ Every one of these 81 clips streams straight from this page — no account, no l
 | 72 | Haircut | Noah Kahan | 2026 | home, calm, days | [Spotify](https://open.spotify.com/search/Haircut%20Noah%20Kahan) · [Apple](https://music.apple.com/us/album/haircut/1872241079?i=1872241464&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Haircut%20Noah%20Kahan) |
 | 73 | Otherside | Red Hot Chili Peppers | 1999 | home, calm, days | [Spotify](https://open.spotify.com/search/Otherside%20Red%20Hot%20Chili%20Peppers) · [Apple](https://music.apple.com/us/album/otherside/948446127?i=948446133&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Otherside%20Red%20Hot%20Chili%20Peppers) |
 | 74 | Disco Snails | Vulfmon & Zachary Barker | 2024 | home, calm, days | [Spotify](https://open.spotify.com/search/Disco%20Snails%20Vulfmon) · [Apple](https://music.apple.com/us/album/disco-snails/1891827618?i=1891828193&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Disco%20Snails%20Vulfmon) |
-| 75 | Carry On Wayward Son | Kansas | 1976 | home, calm, days | [Spotify](https://open.spotify.com/search/Carry%20on%20Wayward%20Son%20Kansas) · [Apple](https://music.apple.com/us/album/carry-on-wayward-son/190655957?i=190655992&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Carry%20on%20Wayward%20Son%20Kansas) |
+| 75 | Carry On Wayward Son | Kansas | 1976 | home, calm, days | [Spotify](https://open.spotify.com/search/Carry%20on%20Wayward%20Son%20Kansas) · [Apple](https://music.apple.com/us/album/carry-on-wayward-son/158580313?i=158580367&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Carry%20on%20Wayward%20Son%20Kansas) |
 | 76 | Rolling in the Deep | Adele | 2010 | nostalgic, nostalgic nostalgic, excited | [Spotify](https://open.spotify.com/search/Rolling%20in%20the%20Deep%20Adele) · [Apple](https://music.apple.com/us/album/rolling-in-the-deep/1544491232?i=1544491233&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Rolling%20in%20the%20Deep%20Adele) |
 | 77 | Tiny Dancer | Elton John | 1971 | nostalgic, nostalgic nostalgic, excited | [Spotify](https://open.spotify.com/search/Little%20Dancer%20Elton%20John) · [Apple](https://music.apple.com/us/album/tiny-dancer/1434905226?i=1434905339&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Little%20Dancer%20Elton%20John) |
 | 78 | Patience | Tame Impala | 2019 | nostalgic, nostalgic nostalgic, excited | [Spotify](https://open.spotify.com/search/Patience%20Tame%20Impala) · [Apple](https://music.apple.com/us/album/patience/1457154570?i=1457154574&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Patience%20Tame%20Impala) |
