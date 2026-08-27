@@ -199,7 +199,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="step-1-one-document-per-person" class="level2">
 <h2 class="anchored" data-anchor-id="step-1-one-document-per-person">Step 1 — one document per person</h2>
 <p>Each person’s “document” is the sentence they wrote about how their song makes them feel. Not their genre checkboxes, not their program — the sentence. That choice is the whole methodology: we are mapping <em>how people describe feeling</em>, and everything interesting on the map follows from it.</p>
-<div id="1ced290f" class="cell" data-execution_count="1">
+<div id="1d6e6f09" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Build the documents</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
@@ -243,7 +243,7 @@ Note
 <h2 class="anchored" data-anchor-id="step-2-tf-idf">Step 2 — tf-idf</h2>
 <p>The point to make out loud: <strong>term frequency</strong> rewards repetition, and <strong>inverse document frequency</strong> punishes ubiquity. A word earns weight only when it’s frequent <em>here</em> and rare <em>elsewhere</em>.</p>
 <p><code>min_df=2</code> (“ignore terms appearing in only one response”) is the right default for a full cohort, but with a handful of one-sentence answers it can throw away the entire vocabulary. So we start strict and relax if too little survives — the same thing <code>scripts/03_taste_map.py</code> does.</p>
-<div id="10b2d272" class="cell" data-execution_count="2">
+<div id="8cf6ea4b" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Vectorize</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.feature_extraction.text <span class="im">import</span> TfidfVectorizer</span>
@@ -273,7 +273,7 @@ Note
 <pre><code>81 responses x 40 terms (min_df=2)</code></pre>
 </div>
 </div>
-<div id="1717cf64" class="cell" data-execution_count="3">
+<div id="b6ad5f26" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Which terms carry the most weight overall?</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -383,7 +383,7 @@ Note
 <section id="step-3-pca" class="level2">
 <h2 class="anchored" data-anchor-id="step-3-pca">Step 3 — PCA</h2>
 <p>PCA can only extract as many components as the data actually has — bounded by both the number of responses and the size of the vocabulary. Asking for more than <code>min(n_samples, n_features)</code> raises an error, so we clamp it.</p>
-<div id="896de2e5" class="cell" data-execution_count="4">
+<div id="1c007cbe" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Project to two dimensions</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.decomposition <span class="im">import</span> PCA</span>
@@ -452,7 +452,7 @@ Note
 </section>
 <section id="step-4-plot-it" class="level2">
 <h2 class="anchored" data-anchor-id="step-4-plot-it">Step 4 — plot it</h2>
-<div id="bda7afcb" class="cell" data-execution_count="5">
+<div id="4c6cb11e" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>The scatter</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
