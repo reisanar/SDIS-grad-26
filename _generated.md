@@ -1,5 +1,5 @@
 ::: {.callout-note}
-**81 people** have filled out the cohort survey. Last refreshed September 02, 2026 at 02:51 PM.
+**81 people** have filled out the cohort survey. Last refreshed September 03, 2026 at 02:50 PM.
 :::
 
 Families are spread across 33 states and countries, most often **NC** (23), **China** (6), **VA** (5). The most common undergraduate backgrounds are **English & Literature**, **Biology & Life Sciences**, **Computer Science**. 80 distinct songs were nominated for the playlist.
