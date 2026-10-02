@@ -1,6 +1,6 @@
 {
   "PC1": {
-    "explained_variance": 0.08018886669076504,
+    "explained_variance": 0.08018886669076505,
     "positive": [
       "energetic",
       "happy",
@@ -27,7 +27,7 @@
     ]
   },
   "PC2": {
-    "explained_variance": 0.07472247040733172,
+    "explained_variance": 0.07472247040733178,
     "positive": [
       "energetic",
       "energetic energetic",
@@ -54,7 +54,7 @@
     ]
   },
   "PC3": {
-    "explained_variance": 0.06853547963400619,
+    "explained_variance": 0.06853547963400615,
     "positive": [
       "nostalgic",
       "empowered",
