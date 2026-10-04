@@ -1,8 +1,8 @@
 {
   "total": 81,
-  "matched": 77,
-  "unmatched": 4,
-  "previews": 77,
+  "matched": 81,
+  "unmatched": 0,
+  "previews": 81,
   "offline": false,
   "source": "iTunes Search API (no credentials)"
 }
