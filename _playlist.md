@@ -201,9 +201,9 @@ Every one of these 80 clips streams straight from this page — no account, no l
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c0/8f/96/c08f96ce-9680-70be-a2f0-e2f7c3b30369/mzaf_14629625077879865435.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/c6/0b/23/c60b23f8-98d3-aa35-3a93-a4abc849e4df/06UMGIM73605.rgb.jpg/300x300bb.jpg" alt="Album art for The Sweet Escape (feat. Akon)" loading="lazy">
-  <div class="preview-meta"><strong>The Sweet Escape (feat. Akon)</strong><br><span>Gwen Stefani</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ce/dc/cc/cedccc42-cc15-8b68-36f9-56cd3486e6e8/mzaf_16876100491037192186.plus.aac.p.m4a"></audio>
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/3b/85/97/3b8597d5-064c-de93-30f2-ca3e5ef58718/4099964200072.jpg/300x300bb.jpg" alt="Album art for GWEN STEFANI" loading="lazy">
+  <div class="preview-meta"><strong>GWEN STEFANI</strong><br><span>Waterparks</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d7/e7/da/d7e7da6c-5f6f-bb5c-99fd-b8337f738f80/mzaf_1464293712453975781.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/c9/ff/bd/c9ffbdce-7dff-4e15-a0d9-a384ad540310/cover.jpg/300x300bb.jpg" alt="Album art for Saltwater" loading="lazy">
@@ -211,14 +211,14 @@ Every one of these 80 clips streams straight from this page — no account, no l
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/85/10/b0/8510b088-1187-8958-61ed-cd4ca9ab76bb/mzaf_7491985257771432048.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/c5/32/53/c5325386-df33-9f20-519c-b1822a7022bc/06UMGIM01548.rgb.jpg/300x300bb.jpg" alt="Album art for It&#x27;s My House" loading="lazy">
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/6a/63/9b/6a639b03-d373-e1bd-aa35-10aa3404ef2e/06UMGIM11963.rgb.jpg/300x300bb.jpg" alt="Album art for It&#x27;s My House" loading="lazy">
   <div class="preview-meta"><strong>It&#x27;s My House</strong><br><span>Diana Ross</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ec/8e/4c/ec8e4c16-eaf0-8115-d40c-a3eb6a46df29/mzaf_14333745285088410352.plus.aac.p.m4a"></audio>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e9/73/1c/e9731c7f-1165-8b77-c629-e3ac31209bc4/mzaf_17389188503354920975.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Features124/v4/36/fd/6b/36fd6bef-0bba-eeef-2190-915515fb9a71/dj.axrmyrqv.jpg/300x300bb.jpg" alt="Album art for O-o-h Child" loading="lazy">
-  <div class="preview-meta"><strong>O-o-h Child</strong><br><span>The Five Stairsteps</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a2/f5/52/a2f552b1-5d8b-65b1-4a42-7909b4865119/mzaf_7828707596150935558.plus.aac.p.m4a"></audio>
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music60/v4/1b/48/16/1b481618-d8ca-da8c-5cf9-9b7ccf3aa376/886445169058.jpg/300x300bb.jpg" alt="Album art for O-o-h Child (Remastered)" loading="lazy">
+  <div class="preview-meta"><strong>O-o-h Child (Remastered)</strong><br><span>The Five Stairsteps</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2c/4b/a5/2c4ba5d0-c1c6-ad8c-38f8-e036d4061194/mzaf_15199567290826111390.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/a4/67/ba/a467ba62-87df-9d10-98d2-c517f68ac870/16UMGIM60882.rgb.jpg/300x300bb.jpg" alt="Album art for Synchronicity I (Remastered 2003)" loading="lazy">
@@ -226,14 +226,19 @@ Every one of these 80 clips streams straight from this page — no account, no l
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/48/15/47/481547b8-c9d4-0db8-d0c2-242bb48def49/mzaf_17496794010612887796.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/15/38/9b/15389bf4-8074-06c3-11ee-655b5453af68/21UM1IM25046.rgb.jpg/300x300bb.jpg" alt="Album art for Red (Taylor&#x27;s Version)" loading="lazy">
-  <div class="preview-meta"><strong>Red (Taylor&#x27;s Version)</strong><br><span>Taylor Swift</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/71/24/ac/7124acb5-5154-2f40-44cc-7cd53003fb08/mzaf_153836703705843645.plus.aac.p.m4a"></audio>
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/25/0d/7e/250d7e42-3a2f-19ac-f865-f1e04a4a1f97/12UMDIM01007.rgb.jpg/300x300bb.jpg" alt="Album art for Red" loading="lazy">
+  <div class="preview-meta"><strong>Red</strong><br><span>Taylor Swift</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/75/ef/46/75ef46c9-343a-bc96-eb3a-8b1e3f3a6c6a/mzaf_16182092304388650096.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ee/c7/54/eec75427-7653-029c-2b1a-5a19f167bb52/23UM1IM04601.rgb.jpg/300x300bb.jpg" alt="Album art for Conceited" loading="lazy">
   <div class="preview-meta"><strong>Conceited</strong><br><span>Lola Young</span></div>
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7b/eb/c2/7bebc2a6-1c18-5c3a-fb03-dddafe2fc2fb/mzaf_8245311487773720491.plus.aac.p.m4a"></audio>
+</div>
+<div class="preview-card">
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/52/5a/74/525a74dc-8286-a759-fe0c-6d2c6ee5caed/886447491034.jpg/300x300bb.jpg" alt="Album art for There Was Jesus" loading="lazy">
+  <div class="preview-meta"><strong>There Was Jesus</strong><br><span>Zach Williams &amp; Dolly Parton</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/84/33/9f/84339f27-a1ef-df51-131a-4a41d57c12ac/mzaf_14051848554052962516.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e0/92/da/e092da2d-9f6d-11dc-7843-2021e95a2b61/21UMGIM17518.rgb.jpg/300x300bb.jpg" alt="Album art for Peaches (feat. Daniel Caesar &amp; GIVĒON)" loading="lazy">
@@ -321,14 +326,9 @@ Every one of these 80 clips streams straight from this page — no account, no l
   <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b2/5d/82/b25d8269-c8e6-8bc7-46a7-f77f7f4829cd/mzaf_17715252399465757963.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ef/3e/8a/ef3e8aaa-18b7-3ae3-8020-f5fc384b0bf2/12UMGIM59889.rgb.jpg/300x300bb.jpg" alt="Album art for Lost In Paradise" loading="lazy">
-  <div class="preview-meta"><strong>Lost In Paradise</strong><br><span>Rihanna</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d4/e2/cf/d4e2cfd1-d9be-d006-251c-97623e5a4729/mzaf_8831692341553483146.plus.aac.p.m4a"></audio>
-</div>
-<div class="preview-card">
-  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/c4/6e/63/c46e6321-2a8a-dfaa-2c0f-21d4b62450b3/884977620108.jpg/300x300bb.jpg" alt="Album art for Waka Waka (Esto es Africa) [feat. Freshlyground]" loading="lazy">
-  <div class="preview-meta"><strong>Waka Waka (Esto es Africa) [feat. Freshlyground]</strong><br><span>Shakira</span></div>
-  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c1/72/b5/c172b57b-0476-aeed-94d2-32d1a83562d1/mzaf_841448688891614243.plus.aac.p.m4a"></audio>
+  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/98/69/58/9869582a-a29e-b828-11e2-4f484deabb7d/4547366477733.jpg/300x300bb.jpg" alt="Album art for LOST IN PARADISE (feat. AKLO)" loading="lazy">
+  <div class="preview-meta"><strong>LOST IN PARADISE (feat. AKLO)</strong><br><span>ALI</span></div>
+  <audio controls preload="none" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f3/50/5a/f3505a8e-6547-e3bb-33bd-95521ddfeec9/mzaf_7361094109626562212.plus.aac.p.m4a"></audio>
 </div>
 <div class="preview-card">
   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f0/fe/1b/f0fe1bbe-2dc6-f6a5-8eea-c9221ef4158a/190295842246.jpg/300x300bb.jpg" alt="Album art for Under Pressure (Single Version) [2017 Remastered Version]" loading="lazy">
@@ -450,14 +450,14 @@ Every one of these 80 clips streams straight from this page — no account, no l
 | 37 | Oil and Water | Incubus | 2006.0 | home, calm, days | [Spotify](https://open.spotify.com/search/Oil%20and%20Water%20Incubus) · [Apple](https://music.apple.com/us/album/oil-and-water/204285054?i=204285428&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Oil%20and%20Water%20Incubus) |
 | 38 | Brand New Day | Demi Lovato | 2010.0 | home, calm, days | [Spotify](https://open.spotify.com/search/Loser%20I%20am%20not%20sure%20who%20the%20singer%20is%20but%20I%20just%20watched%20the%20Spider-Man%3A%20Brand%20New%20Day%20movie%20and%20it%20was%20as%20a%20song%20that%20stuck%20out%20from%20there.) · [Apple](https://music.apple.com/us/album/brand-new-day/1440622360?i=1440622492&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Loser%20I%20am%20not%20sure%20who%20the%20singer%20is%20but%20I%20just%20watched%20the%20Spider-Man%3A%20Brand%20New%20Day%20movie%20and%20it%20was%20as%20a%20song%20that%20stuck%20out%20from%20there.) |
 | 39 | As | Stevie Wonder | 1976.0 | home, calm, days | [Spotify](https://open.spotify.com/search/As%20Stevie%20Wonder) · [Apple](https://music.apple.com/us/album/as/1440788438?i=1440788744&uo=4) · [YouTube](https://www.youtube.com/results?search_query=As%20Stevie%20Wonder) |
-| 40 | The Sweet Escape (feat. Akon) | Gwen Stefani | 2006.0 | home, calm, days | [Spotify](https://open.spotify.com/search/gwen%20stefani%20waterparks) · [Apple](https://music.apple.com/us/album/the-sweet-escape-feat-akon/1455389985?i=1455390118&uo=4) · [YouTube](https://www.youtube.com/results?search_query=gwen%20stefani%20waterparks) |
+| 40 | GWEN STEFANI | Waterparks | 2026.0 | home, calm, days | [Spotify](https://open.spotify.com/search/gwen%20stefani%20waterparks) · [Apple](https://music.apple.com/us/album/gwen-stefani/1894346508?i=1894346792&uo=4) · [YouTube](https://www.youtube.com/results?search_query=gwen%20stefani%20waterparks) |
 | 41 | Saltwater | Geowulf | 2016.0 | home, calm, days | [Spotify](https://open.spotify.com/search/Saltwater%20Geowulf) · [Apple](https://music.apple.com/us/album/saltwater/1316527015?i=1316530113&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Saltwater%20Geowulf) |
-| 42 | It's My House | Diana Ross | 1979.0 | home, calm, days | [Spotify](https://open.spotify.com/search/It%E2%80%99s%20My%20House%20Diana%20Ross) · [Apple](https://music.apple.com/us/album/its-my-house/1443815134?i=1443815868&uo=4) · [YouTube](https://www.youtube.com/results?search_query=It%E2%80%99s%20My%20House%20Diana%20Ross) |
-| 43 | O-o-h Child | The Five Stairsteps | 1970.0 | home, calm, days | [Spotify](https://open.spotify.com/search/Ooh%20child%20%28things%20are%20going%20to%20go%20easier%29%20The%20Five%20Stairsteps) · [Apple](https://music.apple.com/us/album/o-o-h-child/254339333?i=254340117&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Ooh%20child%20%28things%20are%20going%20to%20go%20easier%29%20The%20Five%20Stairsteps) |
+| 42 | It's My House | Diana Ross | 1979.0 | home, calm, days | [Spotify](https://open.spotify.com/search/It%E2%80%99s%20My%20House%20Diana%20Ross) · [Apple](https://music.apple.com/us/album/its-my-house/1445748288?i=1445749375&uo=4) · [YouTube](https://www.youtube.com/results?search_query=It%E2%80%99s%20My%20House%20Diana%20Ross) |
+| 43 | O-o-h Child (Remastered) | The Five Stairsteps | 1970.0 | home, calm, days | [Spotify](https://open.spotify.com/search/Ooh%20child%20%28things%20are%20going%20to%20go%20easier%29%20The%20Five%20Stairsteps) · [Apple](https://music.apple.com/us/album/o-o-h-child-remastered/1124197821?i=1124198582&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Ooh%20child%20%28things%20are%20going%20to%20go%20easier%29%20The%20Five%20Stairsteps) |
 | 44 | Synchronicity I (Remastered 2003) | The Police | 1983.0 | home, calm, days | [Spotify](https://open.spotify.com/search/Synchronicity%20I%20The%20Police) · [Apple](https://music.apple.com/us/album/synchronicity-i-remastered-2003/1440673959?i=1440673960&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Synchronicity%20I%20The%20Police) |
-| 45 | Red (Taylor's Version) | Taylor Swift | 2021.0 | home, calm, days | [Spotify](https://open.spotify.com/search/Red%20Taylor%20swift) · [Apple](https://music.apple.com/us/album/red-taylors-version/1590368448?i=1590368453&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Red%20Taylor%20swift) |
+| 45 | Red | Taylor Swift | 2012.0 | home, calm, days | [Spotify](https://open.spotify.com/search/Red%20Taylor%20swift) · [Apple](https://music.apple.com/us/album/red/1440935340?i=1440935346&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Red%20Taylor%20swift) |
 | 46 | Conceited | Lola Young | 2023.0 | home, calm, days | [Spotify](https://open.spotify.com/search/Conceited%20Lola%20Young) · [Apple](https://music.apple.com/us/album/conceited/1708632323?i=1708632329&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Conceited%20Lola%20Young) |
-| 47 | Butterfly | David Tao |  | home, calm, days | [Spotify](https://open.spotify.com/search/Butterfly%20David%20Tao) · [YouTube](https://www.youtube.com/results?search_query=Butterfly%20David%20Tao) |
+| 47 | There Was Jesus | Zach Williams & Dolly Parton | 2019.0 | home, calm, days | [Spotify](https://open.spotify.com/search/Butterfly%20David%20Tao) · [Apple](https://music.apple.com/us/album/there-was-jesus/1474695079?i=1474695389&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Butterfly%20David%20Tao) |
 | 48 | Peaches (feat. Daniel Caesar & GIVĒON) | Justin Bieber | 2021.0 | home, calm, days | [Spotify](https://open.spotify.com/search/Peaches%20Justin%20Bieber) · [Apple](https://music.apple.com/us/album/peaches-feat-daniel-caesar-giv%C4%93on/1556169567?i=1556170101&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Peaches%20Justin%20Bieber) |
 | 49 | 360 | Charli xcx | 2024.0 | home, calm, days | [Spotify](https://open.spotify.com/search/360%20Charli%20xcx) · [Apple](https://music.apple.com/us/album/360/1762679425?i=1762679426&uo=4) · [YouTube](https://www.youtube.com/results?search_query=360%20Charli%20xcx) |
 | 50 | El Chico del Apartamento 512 | Selena | 1994.0 | home, calm, days | [Spotify](https://open.spotify.com/search/El%20Chico%20Del%20Apartamento%20512%20Selena) · [Apple](https://music.apple.com/us/album/el-chico-del-apartamento-512/1703307720?i=1703308131&uo=4) · [YouTube](https://www.youtube.com/results?search_query=El%20Chico%20Del%20Apartamento%20512%20Selena) |
@@ -475,8 +475,8 @@ Every one of these 80 clips streams straight from this page — no account, no l
 | 62 | Andromeda | Weyes Blood | 2019.0 | home, calm, days | [Spotify](https://open.spotify.com/search/Andromeda%20Weyes%20Blood) · [Apple](https://music.apple.com/us/album/andromeda/1450550344?i=1450550346&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Andromeda%20Weyes%20Blood) |
 | 63 | Never Gonna Give You Up (Pianoforte) | Rick Astley | 1987.0 | home, calm, days | [Spotify](https://open.spotify.com/search/Never%20gonna%20give%20you%20up%20Rick%20Ashley) · [Apple](https://music.apple.com/us/album/never-gonna-give-you-up-pianoforte/1773292758?i=1773293593&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Never%20gonna%20give%20you%20up%20Rick%20Ashley) |
 | 64 | Come What May | Nicole Kidman & Ewan McGregor | 2001.0 | home, calm, days | [Spotify](https://open.spotify.com/search/Come%20what%20may%20Nicole) · [Apple](https://music.apple.com/us/album/come-what-may/1440845640?i=1440845923&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Come%20what%20may%20Nicole) |
-| 65 | Lost In Paradise | Rihanna | 2012.0 | home, calm, days | [Spotify](https://open.spotify.com/search/Lost%20in%20Paradise%20Rihanna) · [Apple](https://music.apple.com/us/album/lost-in-paradise/1446744832?i=1446745876&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Lost%20in%20Paradise%20Rihanna) |
-| 66 | Waka Waka (Esto es Africa) [feat. Freshlyground] | Shakira | 2010.0 | home, calm, days | [Spotify](https://open.spotify.com/search/FIFA%202026%20song%20Shakira) · [Apple](https://music.apple.com/us/album/waka-waka-esto-es-africa-feat-freshlyground/370711726?i=370711731&uo=4) · [YouTube](https://www.youtube.com/results?search_query=FIFA%202026%20song%20Shakira) |
+| 65 | LOST IN PARADISE (feat. AKLO) | ALI | 2020.0 | home, calm, days | [Spotify](https://open.spotify.com/search/Lost%20in%20Paradise%20Rihanna) · [Apple](https://music.apple.com/us/album/lost-in-paradise-feat-aklo/1533684237?i=1533684239&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Lost%20in%20Paradise%20Rihanna) |
+| 66 | FIFA 2026 song | Shakira |  | home, calm, days | [Spotify](https://open.spotify.com/search/FIFA%202026%20song%20Shakira) · [YouTube](https://www.youtube.com/results?search_query=FIFA%202026%20song%20Shakira) |
 | 67 | Under Pressure (Single Version) [2017 Remastered Version] | Queen & David Bowie | 2017.0 | home, calm, days | [Spotify](https://open.spotify.com/search/Under%20Pressure%20Queen%20and%20David%20Bowie) · [Apple](https://music.apple.com/us/album/under-pressure-single-version-2017-remastered-version/1255088551?i=1255089803&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Under%20Pressure%20Queen%20and%20David%20Bowie) |
 | 68 | Detonator | Detox Unit | 2026.0 | home, calm, days | [Spotify](https://open.spotify.com/search/Detonator%20Detox%20Unit) · [Apple](https://music.apple.com/us/album/detonator/1894852771?i=1894852772&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Detonator%20Detox%20Unit) |
 | 69 | Human Being | Anna Vaus | 2026.0 | home, calm, days | [Spotify](https://open.spotify.com/search/Human%20Being%20Anna%20Vaus) · [Apple](https://music.apple.com/us/album/human-being/6778341599?i=6778341602&uo=4) · [YouTube](https://www.youtube.com/results?search_query=Human%20Being%20Anna%20Vaus) |
