@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://reisanar.github.io/SDIS-grad-26/schemas/google_form_schema.html</loc>
-    <lastmod>2026-10-27T16:05:53.984Z</lastmod>
-  </url>
-  <url>
-    <loc>https://reisanar.github.io/SDIS-grad-26/data.html</loc>
-    <lastmod>2026-10-27T16:05:53.972Z</lastmod>
-  </url>
-  <url>
-    <loc>https://reisanar.github.io/SDIS-grad-26/index.html</loc>
-    <lastmod>2026-10-27T16:05:53.983Z</lastmod>
+    <loc>https://reisanar.github.io/SDIS-grad-26/workshop.html</loc>
+    <lastmod>2026-10-28T16:52:20.432Z</lastmod>
   </url>
   <url>
     <loc>https://reisanar.github.io/SDIS-grad-26/taste-map.html</loc>
-    <lastmod>2026-10-27T16:05:53.984Z</lastmod>
+    <lastmod>2026-10-28T16:52:20.432Z</lastmod>
   </url>
   <url>
-    <loc>https://reisanar.github.io/SDIS-grad-26/workshop.html</loc>
-    <lastmod>2026-10-27T16:05:53.984Z</lastmod>
+    <loc>https://reisanar.github.io/SDIS-grad-26/data.html</loc>
+    <lastmod>2026-10-28T16:52:20.416Z</lastmod>
+  </url>
+  <url>
+    <loc>https://reisanar.github.io/SDIS-grad-26/schemas/google_form_schema.html</loc>
+    <lastmod>2026-10-28T16:52:20.432Z</lastmod>
   </url>
   <url>
     <loc>https://reisanar.github.io/SDIS-grad-26/playlist.html</loc>
-    <lastmod>2026-10-27T16:05:53.983Z</lastmod>
+    <lastmod>2026-10-28T16:52:20.431Z</lastmod>
+  </url>
+  <url>
+    <loc>https://reisanar.github.io/SDIS-grad-26/index.html</loc>
+    <lastmod>2026-10-28T16:52:20.431Z</lastmod>
   </url>
 </urlset>
