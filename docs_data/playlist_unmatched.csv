@@ -1,3 +1,5 @@
 position,participant_id,requested_title,requested_artist,mood,neighborhood,spotify_search_url,youtube_search_url
-61,p3b10ff06,Self Aware,Temper City,,"home, calm, days",https://open.spotify.com/search/Self%20Aware%20Temper%20City,https://www.youtube.com/results?search_query=Self%20Aware%20Temper%20City
-65,p7db4ddaf,Never gonna give you up,Rick Ashley,,"home, calm, days",https://open.spotify.com/search/Never%20gonna%20give%20you%20up%20Rick%20Ashley,https://www.youtube.com/results?search_query=Never%20gonna%20give%20you%20up%20Rick%20Ashley
+26,peafd92a6,Amarillo By Morning,George Strait,,"home, calm, days",https://open.spotify.com/search/Amarillo%20By%20Morning%20George%20Strait,https://www.youtube.com/results?search_query=Amarillo%20By%20Morning%20George%20Strait
+45,p64c35f70,Synchronicity I,The Police,,"home, calm, days",https://open.spotify.com/search/Synchronicity%20I%20The%20Police,https://www.youtube.com/results?search_query=Synchronicity%20I%20The%20Police
+54,p029faade,CIEL,GIMS,,"home, calm, days",https://open.spotify.com/search/CIEL%20GIMS,https://www.youtube.com/results?search_query=CIEL%20GIMS
+58,p130cc6aa,Loser,Tame Impala,,"home, calm, days",https://open.spotify.com/search/Loser%20Tame%20Impala,https://www.youtube.com/results?search_query=Loser%20Tame%20Impala
